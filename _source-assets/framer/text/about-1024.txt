@@ -1,0 +1,148 @@
+Join
+
+Sign in
+
+The Global Building Data Initiative (GBDI) advances decision making power for industry leaders, policy makers, design professionals, and building owners. Our knowledge and tools help you make informed, impactful decisions for improving resource use, emissions, and whole life cycle performance of buildings.
+Our Objectives
+
+10.000+
+
+buildings publicly featured in the Open Building Data Platform
+
+1.000+
+
+advanced, high-definition life cycle assessments with reduction measures defined
+
+100 Mt
+
+Mt of CO2e emission reductions unlocked through effective WLC policy support
+
+Our Approach
+
+Global cooperation & inclusion
+
+We facilitate global cooperation for establishing life cycle data for diverse regions to create comprehensive global buildings datasets, with special attention for including partners in the Global South.
+
+Open data & development
+
+We trust in the power of open science and open data to help democratize climate action. Open-source development and coordinated, open data protocols drive GBDI’s technical ecosystem.
+
+Customization & Scalability
+
+We offer open interfaces, scalable infrastructures and custom integrations. With a focus on resource use and embodied emissions in building structure, our formats and platform support comprehensive whole building life cycle assessments.
+
+Phase 1
+
+2024
+
+Phase 2
+
+2025
+
+Phase 3
+
+2027
+
+Design and development of the foundational methods and tools powering the Global Building Data Initiative.
+
+Scaling and implementation to support partners in setting data-informed benchmarks and tangible targets.
+
+Advancing assessment methods and data reporting to support monitoring of WLC performance along policy pathways.
+
+Team & Organization
+
+Dr. Martin Röck
+
+Executive Director
+
+martin.roeck@riselabs.at
+
+Dr. Karen Scrivener
+
+Chief Advisor
+
+karen.scrivener@epfl.ch
+
+Dr. Vanderley John
+
+Advisor GLOBE
+
+vmjohn@lme.pcc.usp.br
+
+Barbara Droste-Luckmann
+
+Stakeholder & Communication 
+
+Manager
+
+barbara.droste-luckmann@riselabs.at
+
+Dr. Nicole Di Santo
+
+Senior Scientist - WLCA and 
+
+Digital Integrations Lead
+
+nicole.disanto@epfl.ch
+
+Dr. Zuhaib Batra
+
+Senior Scientist · Global Policy
+
+Lead, Energy & Emissions
+
+zuhaib.batra@epfl.ch
+
+Son Pham-Ba
+
+Software Engineer
+
+enacit4research@epfl.ch
+
+Pierre Guilbert 
+
+Software Engineer
+
+enacit4research@epfl.ch
+
+Yannick Marcon
+
+Software Engineer
+
+enacit4research@epfl.ch
+
+
+
+
+Former collaborators
+
+Christian Kongsgaard, Senior Developer
+Hassan Shahzad, Junior Developer
+Lea de Courten-Serikoff, Stakeholder & Communication Manager
+
+GBDI is implemented under the umbrella of GLOBE - The Global Consensus on Sustainability in the Built Environment. Supported by six leading international construction engineering associations (RILEM, IABSE, fib, CIB, ECCS and IASS).
+
+GLOBE comprises an extensive network of 5000+ experts across 150+ nation states, covering the entire construction value chain.
+
+Learn more
+
+Address
+
+EPFL STI IMC LMC  Station 12  
+1015 Lausanne  
+Switzerland
+
+office@gbdi.io
+
+Open Data · Better Buildings 
+Better Business · Better Planet
+
+Sign up
+
+Join community
+
+© 2026 GBDI · All rights reserved
+
+Terms and conditions
+
+ 

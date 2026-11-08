@@ -1,0 +1,37 @@
+Home
+About
+Community
+Platform
+Resources
+Join
+Sign in
+Resources overview
+CLEAR
+Launch Event
+Data Reporting
+Data Collection
+Open Data Format
+FAQ
+Job Opportunities
+Frequently Asked Questions
+What is the GBDI?
+For whom is the Open Building Data Platform?
+What kind of data is required to use the Open Building Data Platform?
+Is GBDI aligned with other standards and data models?
+Can the data contributions be anonymized?
+Is there a fee to access the platform?
+When was the Platform launched?
+Open Data · Better Buildings
+Better Business · Better Planet
+Sign up
+Join community
+© 2026 GBDI · All rights reserved
+Terms and conditions
+The Global Building Data Initiative empowers key actors in the building industry and policy to use building data to reduce resource use and upfront embodied carbon of buildings. We offer The Open Building Data Format (openBDF) – a data format for data reporting and collection, assessment methods for building data analytics, and the Open Building Data Platform – a database for building visualizations and benchmarks. The insights will enable the setting of data-informed targets and the development of decarbonization strategies.
+Policy makers, building owners, design professionals, who wish to drive the transition to sustainable building practices.
+The required and optional data for the platform follows a 4-level structure: Project level (general information, project description), Assembly level (construction components, quantities), Product level (assembly elements, LCA results) and Impact level (EPDs, generic data, tech flows).
+A free data template is available for download on the Open Data Format page on the left menu and in the Platform.
+openBDF is a harmonized data structure established by GBDI, which integrates existing data protocols and reporting standards such as ECHO and RICS.
+The data you provide can be anonymized. However, we encourage you to share as much as possible so that you can use the benchmarking feature and contribute as well as promote knowledge-sharing.
+There is no fee - the Open Building Data Platform is currently free to use.
+The Open Building Data Platform "Beta" was launched in February 2025. You can find more details, rewatch the launch or download the presentation by visiting our Launch Event page on the left menu.

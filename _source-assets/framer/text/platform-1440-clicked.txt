@@ -1,0 +1,61 @@
+Home
+About
+Community
+Platform
+Resources
+Join
+Sign in
+Open Building Data Platform
+Make net-zero whole life cycle (WLC) emissions buildings the new norm using GBDI’s open building data platform. Identify scalable strategies for embodied carbon reduction and removal, and improve building life cycle performance.
+Get actionable insights and learn from best-in-class examples and emerging practice to set tangible targets and create effective policy.
+Sign up
+Effective Policy
+Develop and implement effective policy for improving life cycle climate performance of buildings in public and private portfolios.
+Reduced Emissions
+Dynamically assess buildings and portfolios using prospective LCA methods to effectively manage emission reduction.
+Open Data
+Be part of the global exchange of detailed, high-quality WLC data on buildings across platforms, thanks to the openBDF format.
+Dashboard
+Portfolio
+Contributions
+Organization
+Profile
+GWP Intensity
+Australia
+Austria
+Belgium
+Brazil
+Typology
+Commercial
+Lab
+Life Cycle Stage
+A1A3
+Gross Floor Area
+0m2
+5000m2
+Open Building Data Format
+Facilitates open data exchange via the open building data format (openBDF)
+Global Benchmarking
+Provides analytics and benchmarking against a global buildings database
+Life cycle assessment
+Drives in-depth analysis of current and future WLC impacts
+From Analysis to Action
+Supports identification of effective decarbonization strategies at scale
+Open API Integration
+Enables third parties to create custom instances and integrations
+Custom analytics
+Tailored solutions adapted to the needs of your organization or clients
+From Portfolio to Policy
+High quality whole life cycle data is essential for informed decision making and effective development of building portfolios. GBDI empowers stakeholders to implement effective decarbonization strategies and robust climate policy.
+Policy Makers
+Portfolio Managers
+Building Designers
+Use the open building data format (openBDF) to facilitate exchange  of building life cycle data. The open building data platform offers you open-source data management and advanced analytics to implement monitoring, verification, and reporting (MRV). We help you understand the life cycle climate performance of regional and national building stocks to design and implement effective policies.
+Get in touch
+Open Data · Better Buildings
+Better Business · Better Planet
+Join community
+© 2026 GBDI · All rights reserved
+Terms and conditions
+Understand the carbon footprint of buildings in your portfolio to check compliance, assess value, and identify potential for cost-effective improvements to ensure robust development of your assets through challenging times. GBDI’s open formats and platform help you facilitate data exchange across partners to reduce friction and advance insights.
+Improve your design through detailed comparison against a global database of best-practice cases relevant to your context. Identify hotspots of resource use and emissions using our systematic protocol. We help you identify effective strategies for optimizing the life cycle performance of your buildings.

@@ -1,0 +1,78 @@
+Home
+
+About
+
+Community
+
+Platform
+
+Resources
+
+Join
+
+Sign in
+
+Resources overview
+
+CLEAR
+
+Launch Event
+
+Data Reporting
+
+Data Collection
+
+Open Data Format
+
+FAQ
+
+Job Opportunities
+
+Open Data Format
+
+The database is built on a unified and interoperable data structure – the open Building Data Format. 
+
+The need: A unified and interoperable data structure for data management and analysis
+
+When reporting or collecting data, a well-defined and harmonized data structure, known as a data model, is necessary for comparable analytics, to make meaningful evaluations between building data, draw reliable conclusions and make informed decisions. 
+
+For efficient collaboration and data sharing between LCA (Life-Cycle Assessment) actors, interoperability between existing formats is essential. Having a flexible yet robust data structure makes sure that even with advancements in methodology, technology and data availability, stored projects can continue to have relevance and address the evolving challenges and stakeholder needs.  
+
+The solution: Introducing the open Building Data Format (openBDF)
+
+The openBDF aligns with and incorporates best practice from leading initiatives such as RICS, ECHO and SLiCE, and utilizes the LCAx data schema. The aim is to ensure compatibility with other prominent schemas and to seamlessly integrate with existing data protocols and reporting standards.
+
+This approach not only addresses the current lack of digital schemas but also positions the wider GBDI network to effectively meet evolving LCA data needs and foster greater collaboration within the built environment sector. 
+
+OpenBDF is:
+
+OPEN: accessible, interoperable via open interfaces, free & easy to use with your tools.
+
+GLOBAL: a common language for exchange, aligned with leading initiatives, flexible in levels of complexity.
+
+DOCUMENTED: Clear technical documentation includes a protocol (a guide on how to use openBDF), a schema (with scalable attributes and options) and integrations (versatile code in Python & JSON).
+
+
+
+
+OpenBDF schema (data template)
+
+We are currently working on a new version of OpenBDF. If you are interested in finding out more, please get in touch at office@gbdi.io 
+
+Review GBDI on Github
+
+
+
+
+Open Data · Better Buildings 
+Better Business · Better Planet
+
+Sign up
+
+Join community
+
+© 2026 GBDI · All rights reserved
+
+Terms and conditions
+
+ 

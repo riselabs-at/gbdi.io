@@ -1,0 +1,109 @@
+Join
+
+Sign in
+
+Resources overview
+
+CLEAR
+
+Launch Event
+
+Data Reporting
+
+Data Collection
+
+Open Data Format
+
+FAQ
+
+Job Opportunities
+
+CLEAR – Coalition for Life Cycle Emissions Alignment and Reporting
+Info 
+
+Date: 2026 - ongoing (initial 3-year initiative)
+
+GBDI collaborators: Martin Röck, Zuhaib Batra, Nicole Di Santo
+
+Partners: RICS, WBCSD
+
+Category of activity : collaboration, data harmonization
+
+Hashtags: #CLEAR #CarbonReporting #Methodologies #Sustainability #BuiltEnvironment 
+
+Summary
+
+Context
+Founded by RICS, WBSCD, and GBDI, the Coalition for Life Cycle Emissions Alignment and Reporting (CLEAR) is a global coalition established to address a critical barrier to decarbonizing the built environment: the fragmentation and inconsistencies of whole life cycle assessment (WLCA) methods and reporting. Multiple standards and tools exist globally, but differences in scope, assumptions, and reporting approaches limit comparability and hinder effective policy, investment, and design decisions. CLEAR responds to the need for clarity, consistency and credibility in carbon reporting, enabling stakeholders to better measure, manage, and reduce emissions across the value chain.
+
+Approach
+CLEAR’s purpose is to drive alignment across the WLCA ecosystem. The coalition will analyse and compare established methodologies, and develop a shared framework, aligned data standard, and a supporting resource hub. Within this collaboration, GBDI leads the technical development of the data standard and enables implementation through open, interoperable data exchange via openBDF and the Open Building Data Platform. Additional outputs from CLEAR include guidance, insights and training materials supporting both industry and policymakers across regions.
+
+Relevance
+CLEAR establishes a shared foundation for globally aligned carbon assessment and reporting across the built environment. By combining technical standardization with coalition-driven adoption and capacity development, the initiative enables more consistent benchmarking, stronger policy frameworks, and scalable data-driven decision-making. 
+
+Key goals 
+
+Objectives
+
+Global alignment essential for effective decarbonization
+Fragmented WLCA methodologies limit comparability and slow decision-making. CLEAR creates a common foundation to enable consistent, reliable emissions data across markets and stakeholders.
+
+Interoperable data standards critical for scaling across stakeholders
+Aligning existing approaches ensures that emissions data can be exchanged, compared, and integrated across tools, platforms, and regulatory frameworks.
+
+Global collaboration accelerates adoption across industry
+Bringing together industry, policymakers and technical experts enables coordinated action and increases credibility, relevance, and uptake of aligned methodologies.
+
+Capacity building key to implementation in emerging markets
+Guidance, training, and accessible resources are essential to support adoption, particularly in markets where WLCA frameworks are still emerging.
+
+Outcomes
+
+Analysis of WLCA systems: A detailed assessment of existing methodologies and their impacts on results
+
+Harmonized WLCA framework : Shared principles and procedures to enable alignment and comparability
+
+Global WLCA data standard:  A technical foundation for consistent, interoperable emissions data
+
+Open WLCA resource hub:  A central platform providing access to tools, outputs, and guidance
+
+WLCA policy playbook: Actionable guidance for governments and regulators
+
+WLCA training packages: Capacity-building resources to support implementation across markets
+
+GBDI experts 
+
+Martin Röck, martin.roeck@riselabs.at
+
+Zuhaib Batra, zuhaib.batra@epfl.ch
+
+Nicole Di Santo, nicole.disanto@epfl.ch
+
+Partners
+
+RICS https://www.rics.org/ 
+
+WBCSD https://www.wbcsd.org/ 
+
+Related documents / Links
+
+CLEAR is an open and growing coalition. We welcome engagement from policymakers, industry leaders, and technical experts committed to advancing WLCA alignment.
+
+Learn more about CLEAR and explore opportunities to collaborate: Coalition for life cycle emissions alignment and reporting (CLEAR)
+
+
+
+
+Open Data · Better Buildings 
+Better Business · Better Planet
+
+Sign up
+
+Join community
+
+© 2026 GBDI · All rights reserved
+
+Terms and conditions
+
+ 
