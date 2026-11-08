@@ -1,0 +1,40 @@
+# Captures Framer files that load only after interaction (tabs, carousels).
+# See tools/capture/capture-late-assets.mjs. Runs here because the AI
+# working environment cannot reach www.gbdi.io.
+name: Capture late-loading Framer files
+
+on:
+  push:
+    branches: ["step-1b-*"]
+    paths:
+      - "tools/capture/capture-late-assets.mjs"
+      - ".github/workflows/capture-late.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  late:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright and Chromium
+        working-directory: tools/capture
+        run: |
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - run: node tools/capture/capture-late-assets.mjs https://www.gbdi.io
+      - name: Commit to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _source-assets/framer/late
+          if git diff --cached --quiet; then echo "Nothing new."; else
+            git commit -m "Capture late-loading Framer files ($(date -u +%Y-%m-%d))"
+            git push
+          fi
