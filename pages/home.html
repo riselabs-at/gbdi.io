@@ -98,7 +98,7 @@ scripts: [home-tabs, home-ticker]
   {% include home-tabs.html %}
   <div class="h-platform__buttons">
     {% include button.html href=site.links.app label="Sign up" arrow=true %}
-    <a class="btn btn--panel h-more" href="{{ '/platform' | relative_url }}"><span class="btn__label">Learn more</span>{% include svg/home-arrow-16.svg %}</a>
+    <a class="btn btn--panel h-more" href="{{ '/platform' | relative_url }}"><span class="btn__label">Learn more<span class="visually-hidden"> about the platform</span></span>{% include svg/home-arrow-16.svg %}</a>
   </div>
 </section>
 
@@ -118,7 +118,7 @@ scripts: [home-tabs, home-ticker]
       </div>
       <div class="h-community__buttons">
         {% include button.html href=site.links.join_form label="Join community" arrow=true %}
-        {% include button.html href="/community" label="Learn more" style="panel" %}
+        {% include button.html href="/community" label="Learn more" context="about the community" style="panel" %}
       </div>
     </div>
     <div class="h-community__media">
