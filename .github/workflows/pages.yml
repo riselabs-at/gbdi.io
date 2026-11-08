@@ -53,7 +53,7 @@ jobs:
           JEKYLL_ENV: production
         run: |
           if [ "$PREVIEW" = "true" ]; then
-            bundle exec jekyll build --baseurl "$PREVIEW_BASEURL" --trace
+            bundle exec jekyll build --config _config.yml,_config.preview.yml --baseurl "$PREVIEW_BASEURL" --trace
           else
             bundle exec jekyll build --trace
           fi

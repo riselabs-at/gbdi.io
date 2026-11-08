@@ -34,6 +34,7 @@ sass:
 # Not published. Folders starting with _ are skipped anyway.
 exclude:
   - AGENTS.md
+  - _config.preview.yml
   - CLAUDE.md
   - README.md
   - Gemfile
