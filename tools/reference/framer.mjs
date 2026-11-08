@@ -31,7 +31,7 @@ const TYPES = { ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg"
 
 function localFile(url) {
   const name = new URL(url).pathname.split("/").pop();
-  for (const dir of [SRC, path.join(SRC, "fonts")]) {
+  for (const dir of [SRC, path.join(SRC, "fonts"), path.join(SRC, "late")]) {
     const file = path.join(dir, name);
     if (fs.existsSync(file)) return file;
   }

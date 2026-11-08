@@ -1,0 +1,29 @@
+{%- comment -%}
+  Home photo strip and text marquee. Both drift left continuously on the
+  live site (about 14 px per second, measured on the recording); here they
+  run with a CSS animation that home-ticker.js sizes, and stop under
+  prefers-reduced-motion. The second copy of each set is only there to make
+  the loop seamless, so it is hidden from screen readers.
+  Image crops: each photo is placed at the size and offset the live page
+  used at desktop width (measured 8 Nov 2026).
+{%- endcomment -%}
+{%- capture photos -%}
+<li class="h-photo h-photo--1"><img src="{{ '/assets/img/framer/vewTYSZgj5VNzGoSSmYIryMh2w.webp' | relative_url }}" width="782" height="521" alt="White building facade with flowing, wave-shaped balconies" loading="lazy"></li>
+<li class="h-photo h-photo--2"><img src="{{ '/assets/img/framer/IfdcjppBH03hK89JCSFAsaPAyCc.webp' | relative_url }}" width="724" height="1084" alt="Curved building edge clad in gold-coloured louvres against a pale sky" loading="lazy"></li>
+<li class="h-photo h-photo--3"><img src="{{ '/assets/img/framer/acmLONyPFtHBDPH59KCicAozbY.webp' | relative_url }}" width="400" height="600" alt="Curving blue and white facade bands framing the sky" loading="lazy"></li>
+<li class="h-photo h-photo--4"><img src="{{ '/assets/img/framer/bIPpzx5LoeCLtd3qeidwas9yg8.webp' | relative_url }}" width="400" height="600" alt="Sweeping white tiled facade seen from below" loading="lazy"></li>
+<li class="h-photo h-photo--5"><img src="{{ '/assets/img/framer/Yaow2bJkEBNrZdND7xN0YHLSMTc.webp' | relative_url }}" width="401" height="301" alt="Ceiling of warm brown timber slats" loading="lazy"></li>
+{%- endcapture -%}
+<section class="h-photos" aria-label="Photos">
+  <div class="h-ticker" data-ticker>
+    <ul class="h-ticker__set">{{ photos }}</ul>
+    <ul class="h-ticker__set" aria-hidden="true">{{ photos | replace: ' alt="', ' data-alt="' | replace: '<img ', '<img alt="" ' }}</ul>
+  </div>
+</section>
+{%- assign words = "Open Data · Better Buildings · Better Business · Better Planet · Open Data · Better Buildings · Better Business · Better Planet · Open Data · Better Buildings · Better Business · Better Planet · Open Data · Better Buildings · Better Business · Better Planet · Open Data · Better Buildings · Better Business · Better Planet · Open Data · Better Buildings · Better Business · Better Planet · " %}
+<div class="h-marquee" aria-hidden="true">
+  <div class="h-ticker" data-ticker>
+    <p class="h-ticker__set">{{ words }}</p>
+    <p class="h-ticker__set">{{ words }}</p>
+  </div>
+</div>
