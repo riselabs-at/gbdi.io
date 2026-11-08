@@ -1,0 +1,143 @@
+---
+layout: default
+slug: about
+permalink: /about
+title: "About"
+description: "The Global Building Data Initiative (GBDI) advances decision making power for industry leaders, policy makers, design professionals, and building owners."
+header_fixed: true
+header_desktop: rounded
+header_tablet: rounded
+header_phone: rounded
+styles: [about]
+scripts: [about-intro, about-reveal]
+---
+{%- comment -%}
+  /about, rebuilt from the Framer page (captured 8 Nov 2026). Text word for
+  word from the capture. Team, roles and emails live in _data/team.yml.
+{%- endcomment -%}
+
+{%- comment -%}
+  Intro. On the live site the sentence starts grey after "power" and turns
+  dark as the page scrolls, in three steps, with three phrases turning green
+  (Framer scroll variants, triggers at 32, 64 and 96 px of scrolling).
+  Each span says from which step it is dark (i-d1..3) or green (i-g1..3).
+  Without JavaScript it stays in the first state, as Framer serves it.
+{%- endcomment -%}
+<section class="about-intro">
+  <h1 class="about-intro__text" data-about-intro><span class="i-d0">The Global Building Data Initiative (GBDI) </span><span class="i-d0 i-g1">advances decision making</span><span class="i-d0"> power</span><span class="i-d1"> for industry leaders, policy makers, design professionals, and building owners.</span><span class="i-d2"> Our </span><span class="i-g2">knowledge and tools</span><span class="i-d2"> help you make informed, impactful</span><span class="i-d3"> decisions for improving resource use, emissions, and </span><span class="i-g3">whole life cycle performance</span><span class="i-d3"> of buildings.</span></h1>
+</section>
+
+<section class="about-objectives" aria-labelledby="about-objectives">
+  <h2 class="about-heading" id="about-objectives">Our Objectives</h2>
+  <div class="about-stats">
+    <div class="about-stat about-stat--green">
+      <p class="about-stat__figure">10.000+</p>
+      <p class="about-stat__text about-stat__text--faded">buildings publicly featured in the Open Building Data Platform</p>
+    </div>
+    <div class="about-stat about-stat--blue">
+      <p class="about-stat__figure">1.000+</p>
+      <p class="about-stat__text">advanced, high-definition life cycle assessments with reduction measures defined</p>
+    </div>
+    <div class="about-stat about-stat--purple">
+      <p class="about-stat__figure">100 Mt</p>
+      <p class="about-stat__text">Mt of CO<span class="about-dnom">2</span>e emission reductions unlocked through effective WLC policy support</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-approach" aria-labelledby="about-approach">
+  <h2 class="about-heading about-approach__heading" id="about-approach">Our Approach</h2>
+  <div class="about-approach__cols">
+    <div class="about-approach__col">
+      <h3 class="about-approach__title">Global cooperation &amp; inclusion</h3>
+      <p class="about-approach__text">We facilitate global cooperation for establishing life cycle data for diverse regions to create comprehensive global buildings datasets, with special attention for including partners in the Global South.</p>
+    </div>
+    <div class="about-approach__col">
+      <h3 class="about-approach__title">Open data &amp; development</h3>
+      <p class="about-approach__text">We trust in the power of open science and open data to help democratize climate action. Open-source development and coordinated, open data protocols drive GBDI’s technical ecosystem.</p>
+    </div>
+    <div class="about-approach__col">
+      <h3 class="about-approach__title">Customization &amp; Scalability</h3>
+      <p class="about-approach__text">We offer open interfaces, scalable infrastructures and custom integrations. With a focus on resource use and embodied emissions in building structure, our formats and platform support comprehensive whole building life cycle assessments.</p>
+    </div>
+  </div>
+
+  {%- comment -%}
+    Phase timeline: a static ruler with one orange mark per phase. On phones
+    the live site drops the ruler and lists the phases above the texts.
+  {%- endcomment -%}
+  <div class="about-timeline" data-about-reveal>
+    <ol class="about-timeline__phases">
+      <li class="about-phase">
+        <h3 class="about-phase__title">Phase 1</h3>
+        <p class="about-phase__year">2024</p>
+        <div class="about-phase__ruler about-phase__ruler--first" aria-hidden="true"></div>
+        <p class="about-phase__text">Design and development of the foundational methods and tools powering the Global Building Data Initiative.</p>
+      </li>
+      <li class="about-phase">
+        <h3 class="about-phase__title">Phase 2</h3>
+        <p class="about-phase__year">2025</p>
+        <div class="about-phase__ruler" aria-hidden="true"></div>
+        <p class="about-phase__text">Scaling and implementation to support partners in setting data-informed benchmarks and tangible targets.</p>
+      </li>
+      <li class="about-phase">
+        <h3 class="about-phase__title">Phase 3</h3>
+        <p class="about-phase__year">2027</p>
+        <div class="about-phase__ruler about-phase__ruler--last" aria-hidden="true"></div>
+        <p class="about-phase__text">Advancing assessment methods and data reporting to support monitoring of WLC performance along policy pathways.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+{%- comment -%} The anchor id is the one /clear links to (./about#about-teamorg). {%- endcomment -%}
+<section class="about-team" id="about-teamorg" aria-labelledby="about-team">
+  <h2 class="about-heading" id="about-team">Team &amp; Organization</h2>
+  <div class="about-team__rows">
+    {%- for person in site.data.team.people %}
+    {%- assign i = forloop.index0 | modulo: 3 %}
+    {%- if i == 0 %}
+    <ul class="about-team__row">
+    {%- endif %}
+      <li class="about-person">
+        <div class="about-person__frame{% if person.hatch %} about-person__frame--hatch{% endif %}" style="--dl: {{ person.crop.desktop[0] }}%; --dt: {{ person.crop.desktop[1] }}%; --dw: {{ person.crop.desktop[2] }}%; --dh: {{ person.crop.desktop[3] }}%; --tl: {{ person.crop.tablet[0] }}%; --tt: {{ person.crop.tablet[1] }}%; --tw: {{ person.crop.tablet[2] }}%; --th: {{ person.crop.tablet[3] }}%; --pl: {{ person.crop.phone[0] }}%; --pt: {{ person.crop.phone[1] }}%; --pw: {{ person.crop.phone[2] }}%; --ph: {{ person.crop.phone[3] }}%;">
+          <img src="{{ person.photo | relative_url }}" alt="{{ person.name | strip }}" loading="lazy" style="object-fit: {{ person.fit }}; object-position: {{ person.position }};">
+        </div>
+        <h3 class="about-person__name">{{ person.name }}</h3>
+        <div class="about-person__role">
+          {%- for line in person.role %}<p>{{ line }}</p>{% endfor -%}
+        </div>
+        <p class="about-person__email{% if person.email_tight %} about-person__email--tight{% endif %}"><a href="{{ person.href }}" target="_blank" rel="noopener">{{ person.email }}</a></p>
+      </li>
+    {%- if i == 2 or forloop.last %}
+    </ul>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+
+  <div class="about-former">
+    <h3 class="about-small-title">Former collaborators</h3>
+    <p>{{ site.data.team.former | join: "<br>" }}</p>
+  </div>
+
+  <div class="about-bottom">
+    <div class="about-globe">
+      {%- comment -%} The tablet layout of the live site has no "GLOBE" title. {%- endcomment -%}
+      <h3 class="about-small-title about-globe__title">GLOBE</h3>
+      <p>GBDI is implemented under the umbrella of GLOBE - The Global Consensus on Sustainability in the Built Environment. Supported by six leading international construction engineering associations (RILEM, IABSE, fib, CIB, ECCS and IASS).</p>
+      <p>GLOBE comprises an extensive network of 5000+ experts across 150+ nation states, covering the entire construction value chain.</p>
+      {% include button.html href="https://globe-consensus.com/" label="Learn more" arrow=true class="about-globe__button" %}
+    </div>
+    <div class="about-address">
+      <h3 class="about-small-title">Address</h3>
+      {%- comment -%}
+        &#8232; is the line separator character the live text has here; it
+        renders as a space, so "LMC  Station 12" shows two spaces, as live.
+        On tablet the live site links this address to info@gbdi.io while
+        showing office@gbdi.io; copied as it is (docs/content-issues.md).
+      {%- endcomment -%}
+      <p>EPFL STI IMC LMC&#8232;&#8232;Station 12&#8232;&#8232;<br>1015 Lausanne&#8232;&#8232;<br>Switzerland<br><br><a class="about-address__mail" href="mailto: office@gbdi.io" target="_blank" rel="noopener">office@gbdi.io</a><a class="about-address__mail about-address__mail--tablet" href="mailto: info@gbdi.io" target="_blank" rel="noopener">office@gbdi.io</a></p>
+      <a class="about-address__logo" href="https://globe-consensus.com/" target="_blank" rel="noopener"><img src="{{ '/assets/img/framer/phIaPFOkqa8J5hc6HM4rX7kTR20.png' | relative_url }}" alt="GLOBE" width="110" height="73" loading="lazy"></a>
+    </div>
+  </div>
+</section>

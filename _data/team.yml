@@ -1,0 +1,115 @@
+# Team on /about, word for word from the live site (captured 8 Nov 2026).
+# Edit names, roles and emails here; the page is built from this file.
+#
+# role: one entry per line, as the live site breaks them (HTML allowed).
+# href: the email link exactly as on the site, including "mailto: " with a
+#   space where the site has one (logged in docs/content-issues.md).
+# photo: web version of the portrait. crop: how the photo sits in its square
+#   frame on desktop, tablet and phone, as [left, top, width, height] in % of
+#   the frame, measured on the live site. fit and position as Framer set them.
+# email_tight: true sets the email 0.56 px tighter, as the live site does for
+#   the longest address.
+# hatch: the grey diagonal pattern the live site shows behind a photo until
+#   it loads (every card but one has it).
+
+people:
+  - name: "Dr. Martin Röck"
+    role:
+      - "Executive Director"
+    href: "mailto: martin.roeck@riselabs.at"
+    email: "martin.roeck@riselabs.at"
+    photo: /assets/img/framer/Gr95qLMAADwsL6LttZfZ4v0HBQ.webp
+    fit: cover
+    position: "50% 50%"
+    crop: { desktop: [-44.39, 0.37, 189.25, 125.79], tablet: [-33.61, 0.64, 167.58, 111.37], phone: [-29.14, 0.00, 158.59, 105.40] }
+    hatch: true
+  - name: "Dr. Karen Scrivener"
+    role:
+      - "Chief Advisor"
+    href: "mailto:karen.scrivener@epfl.ch"
+    email: "karen.scrivener@epfl.ch"
+    photo: /assets/img/framer/m7JJnIZM6jrqfUu7yUkXVcfgUFI.webp
+    fit: cover
+    position: "50% 50%"
+    crop: { desktop: [0.00, -3.97, 100.00, 132.01], tablet: [0.00, -10.79, 100.01, 131.99], phone: [0.00, -13.59, 100.00, 131.99] }
+    hatch: true
+  - name: "Dr. Vanderley John"
+    role:
+      - "Advisor GLOBE"
+    href: "mailto: vmjohn@lme.pcc.usp.br"
+    email: "vmjohn@lme.pcc.usp.br"
+    photo: /assets/img/framer/skk9eVT40J4gtbS3LAvUUXFgk.webp
+    fit: cover
+    position: "53.7% 40.6%"
+    crop: { desktop: [0.00, -10.05, 100.00, 132.01], tablet: [0.00, -15.35, 100.01, 131.99], phone: [0.00, -17.58, 100.00, 131.99] }
+    hatch: true
+  - name: "Barbara Droste-Luckmann"
+    role:
+      - "Stakeholder &amp; Communication "
+      - "Manager"
+    href: "mailto: barbara.droste-luckmann@riselabs.at"
+    email: "barbara.droste-luckmann@riselabs.at"
+    email_tight: true
+    photo: /assets/img/framer/KnykujijosgspCwmIj4hhbd1I.png
+    fit: cover
+    position: "100% 0%"
+    crop: { desktop: [-12.62, -0.28, 113.08, 112.43], tablet: [-9.55, -0.07, 109.92, 109.28], phone: [-8.28, 0.00, 108.59, 107.98] }
+    hatch: true
+  - name: "Dr. Nicole Di Santo"
+    role:
+      - "Senior Scientist - WLCA and "
+      - "Digital Integrations Lead"
+    href: "mailto: nicole.disanto@epfl.ch"
+    email: "nicole.disanto@epfl.ch"
+    photo: /assets/img/framer/xV9r6IUDD9inf7v7NgULkwRCZ5Q.webp
+    fit: cover
+    position: "50% 50%"
+    crop: { desktop: [0.00, 0.47, 100.00, 100.00], tablet: [0.00, 0.35, 100.01, 100.01], phone: [0.00, 0.31, 100.00, 100.00] }
+    hatch: true
+  - name: "Dr. Zuhaib Batra"
+    role:
+      - "Senior Scientist <strong>·</strong> Global Policy"
+      - "Lead, Energy &amp; Emissions"
+    href: "mailto: zuhaib.batra@epfl.ch"
+    email: "zuhaib.batra@epfl.ch"
+    photo: /assets/img/framer/WtraPmFFlb1xoRGcIhCpqGMFiG8.webp
+    fit: contain
+    position: "50% 50%"
+    crop: { desktop: [0.00, -11.82, 107.94, 129.58], tablet: [0.00, -13.83, 106.02, 127.29], phone: [0.00, -14.66, 105.21, 126.32] }
+    hatch: true
+  - name: "Son Pham-Ba"
+    role:
+      - "Software Engineer"
+    href: "mailto: enacit4research@epfl.ch"
+    email: "enacit4research@epfl.ch"
+    photo: /assets/img/framer/vZMp1aIqvDqgeCFIsFzNAiQbvE.webp
+    fit: cover
+    position: "0% 0%"
+    crop: { desktop: [0.00, 0.00, 100.00, 100.00], tablet: [0.00, 0.00, 100.01, 100.01], phone: [0.00, 0.00, 100.00, 100.00] }
+    hatch: false
+  - name: "Pierre Guilbert "
+    role:
+      - "Software Engineer"
+    href: "mailto: enacit4research@epfl.ch"
+    email: "enacit4research@epfl.ch"
+    photo: /assets/img/framer/CoWacegIsoZ0pUJ4NTPrTcRNVEs.webp
+    fit: cover
+    position: "0% 0%"
+    crop: { desktop: [0.00, 0.00, 100.00, 100.00], tablet: [0.00, 0.00, 100.01, 100.01], phone: [0.00, 0.00, 100.00, 100.00] }
+    hatch: true
+  - name: "Yannick Marcon"
+    role:
+      - "Software Engineer"
+    href: "mailto: enacit4research@epfl.ch"
+    email: "enacit4research@epfl.ch"
+    photo: /assets/img/framer/XjK1voePAvC0Ld6yX3JsE5y5wkA.png
+    fit: cover
+    position: "50% 50%"
+    crop: { desktop: [0.00, 0.00, 100.00, 100.00], tablet: [0.00, 0.00, 100.01, 100.01], phone: [0.00, 0.00, 100.00, 100.00] }
+    hatch: true
+
+# "Former collaborators", one line each, as on the site.
+former:
+  - "Christian Kongsgaard, Senior Developer"
+  - "Hassan Shahzad, Junior Developer"
+  - "Lea de Courten-Serikoff, Stakeholder &amp; Communication Manager"

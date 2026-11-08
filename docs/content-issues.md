@@ -44,3 +44,7 @@ were checked against, or found in, the step 1 capture of 8 November 2026.
 | `/community` | RISE logo links to riseregenerate.com | Confirms the review: it is in Lead Partners on this page | Review 4 Nov, capture 8 Nov |
 | `/platform` | "Get in touch" links to `mailto: office@gbdi.io` (space after the colon) | Same as the other mailto links; copied as it is | Capture 8 Nov |
 | `/platform` | Policy Makers text: "exchange  of" with a double space | Not visible in HTML; copied as it is | Capture 8 Nov |
+| `/about` (tablet) | The Address email reads office@gbdi.io but links to `mailto: info@gbdi.io` | Text and link disagree, on the tablet layout only. Copied as it is | Capture 8 Nov |
+| `/about` (tablet) | The GLOBE block has no "GLOBE" title | Desktop and phone have it. Copied as it is | Capture 8 Nov |
+| `/about` | Address uses line-separator characters (U+2028): "LMC  Station 12" shows a double space | Copied as it is | Capture 8 Nov |
+| `/about` | Son Pham-Ba, Pierre Guilbert and Yannick Marcon all list enacit4research@epfl.ch | A shared group address, not personal ones | Capture 8 Nov |
