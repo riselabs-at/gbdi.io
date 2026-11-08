@@ -10,18 +10,24 @@
   {%- endcomment -%}
   {%- if page.title and page.url != "/" %}{% assign full_title = page.title | append: " – " | append: site.title %}{% else %}{% assign full_title = site.title %}{% endif %}
   {%- assign description = page.description | default: site.description %}
+  {%- comment -%}
+    Canonical and sharing addresses always name the live site, also on the
+    github.io preview, so they are built from site.url without the baseurl.
+  {%- endcomment -%}
+  {%- assign live_url = site.url | append: page.url %}
+  {%- assign share_image = site.url | append: site.share_image %}
   <title>{{ full_title }}</title>
   <meta name="description" content="{{ description | xml_escape }}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ live_url }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:url" content="{{ live_url }}">
   <meta property="og:title" content="{{ full_title | xml_escape }}">
   <meta property="og:description" content="{{ description | xml_escape }}">
-  <meta property="og:image" content="{{ site.share_image | absolute_url }}">
+  <meta property="og:image" content="{{ share_image }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ full_title | xml_escape }}">
   <meta name="twitter:description" content="{{ description | xml_escape }}">
-  <meta name="twitter:image" content="{{ site.share_image | absolute_url }}">
+  <meta name="twitter:image" content="{{ share_image }}">
   <meta name="robots" content="max-image-preview:large">
   <link rel="icon" href="{{ '/assets/img/favicon-light.jpg' | relative_url }}" media="(prefers-color-scheme: light)">
   <link rel="icon" href="{{ '/assets/img/favicon-dark.jpg' | relative_url }}" media="(prefers-color-scheme: dark)">
