@@ -94,3 +94,7 @@ by step. Update this table whenever a step adds a folder.
 | --- | --- |
 | `docs/01-rebuild-work-order.md` | Phase A work order (6 Nov 2026) |
 | `docs/content-issues.md` | Everything noticed on the live site but not changed |
+| `docs/baseline/` | Screenshots and recordings of the Framer site (step 1), the reference for every visual check |
+| `_source-assets/framer/` | Everything captured from the Framer site (step 1): CDN files, HTML, text, metadata, inline SVGs. Not published |
+| `tools/capture/` | The capture scripts (step 1); see its README |
+| `.github/workflows/capture.yml` | Runs the capture on GitHub's runner and commits the result |

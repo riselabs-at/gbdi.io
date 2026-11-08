@@ -1,0 +1,9 @@
+{
+  "name": "gbdi-capture",
+  "private": true,
+  "description": "Captures the live Framer site for step 1 of the rebuild work order",
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.65.0"
+  }
+}

@@ -1,0 +1,122 @@
+# Step 1 of docs/01-rebuild-work-order.md: capture the live Framer site.
+#
+# Runs here and not in the AI working environment, because that environment
+# cannot reach www.gbdi.io or framerusercontent.com (6 Nov 2026). The runner
+# can.
+#
+# It runs both capture scripts and commits what they produce to the branch it
+# ran on:
+#   tools/capture/capture-assets.py  the 66 Framer CDN files and manifest.csv (3.3)
+#   tools/capture/capture-pages.mjs  screenshots, recordings, HTML, text,
+#                                    metadata and inline SVGs (3.1, 3.2, 3.4)
+#
+# It starts on its own when the capture scripts change on a step-1 branch, or
+# by hand from the Actions tab (Run workflow), which only offers the branches
+# where this file exists. A commit made by this workflow does not start it
+# again: GitHub does not run workflows for pushes made with GITHUB_TOKEN.
+name: Capture Framer site
+
+on:
+  push:
+    branches: ["step-1-*"]
+    paths:
+      - "tools/capture/**"
+      - ".github/workflows/capture.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capture-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The script stops at the first file that fails to download. The pages
+      # are still worth capturing if it does, so the job carries on and is
+      # marked failed at the end.
+      - name: Download the Framer CDN files
+        id: assets
+        continue-on-error: true
+        run: python3 tools/capture/capture-assets.py
+
+      # The work order expects 66 files on 6 Nov 2026: 20 JPG, 28 PNG, 17 SVG,
+      # 1 PDF. A different count is reported, not failed: the site may have
+      # changed, and the reason belongs in the pull request.
+      - name: Count them against the work order
+        run: |
+          [ -f _source-assets/framer/manifest.csv ] || { echo "No manifest: the download failed, see its log." >> "$GITHUB_STEP_SUMMARY"; exit 0; }
+          {
+            echo "## Framer CDN files"
+            echo
+            echo "| Type | Found | Expected |"
+            echo "| --- | --- | --- |"
+            for t in "jpg jpeg:20" "png:28" "svg:17" "pdf:1" "webp:0" "gif:0" "mp4:0"; do
+              exts="${t%%:*}"; want="${t##*:}"; n=0
+              for e in $exts; do
+                n=$((n + $(find _source-assets/framer -maxdepth 1 -iname "*.$e" | wc -l)))
+              done
+              echo "| ${exts%% *} | $n | $want |"
+            done
+            echo "| **all** | $(($(wc -l < _source-assets/framer/manifest.csv) - 1)) | 66 |"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Playwright and Chromium
+        working-directory: tools/capture
+        run: |
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Capture pages, text and recordings
+        run: node tools/capture/capture-pages.mjs https://www.gbdi.io
+
+      - name: Report
+        if: always()
+        run: |
+          if [ -f _source-assets/framer/capture-report.md ]; then
+            cat _source-assets/framer/capture-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo >> "$GITHUB_STEP_SUMMARY"
+          echo "Sizes: $(du -sh docs/baseline | cut -f1) screenshots and recordings, $(du -sh _source-assets/framer | cut -f1) source files." >> "$GITHUB_STEP_SUMMARY"
+
+      # Kept for 30 days in case the commit below fails.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: framer-capture
+          path: |
+            docs/baseline
+            _source-assets/framer
+          retention-days: 30
+
+      - name: Commit the capture to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/baseline _source-assets/framer
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+          else
+            git commit -m "Capture the Framer site ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - name: Fail if the downloads failed
+        if: steps.assets.outcome == 'failure'
+        run: |
+          echo "The Framer CDN download failed; pages were captured anyway. See the 'Download the Framer CDN files' log."
+          exit 1

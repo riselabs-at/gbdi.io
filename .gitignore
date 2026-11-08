@@ -11,3 +11,4 @@ node_modules/
 .visual/
 
 .DS_Store
+__pycache__/

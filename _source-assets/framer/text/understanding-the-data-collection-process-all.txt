@@ -1,0 +1,47 @@
+Home
+About
+Community
+Platform
+Resources
+Join
+Sign in
+Resources overview
+CLEAR
+Launch Event
+Data Reporting
+Data Collection
+Open Data Format
+FAQ
+Job Opportunities
+Understanding the Data Collection Process
+The data collection and reporting process is designed to be straightforward.
+By leveraging open-access tools, stakeholders can easily gather essential building data. This data serves as a foundation for informed decision-making and effective carbon reduction strategies.
+Steps to Collect and Report Data
+Begin by
+identifying the relevant metrics
+for your building. GBDI's free data template is available on the
+Open Data Format page
+and in the
+Platform
+.
+Use the collected data to
+assess your building’s carbon footprint
+.
+Share your findings
+to influence policy, design and investment.
+The Open Building Data Platform for Global Collection and Analysis
+GBDI's objective is to offer a robust system that facilitates seamless data reporting and interactive analysis through a user-friendly web-based platform. The infrastructure encompasses both the backend architecture responsible for data storage and processing, and the frontend user interface designed for efficient data upload and visualization.
+Throughout the development, GBDI prioritized collaboration with key partners such as SLiCE, CarbEnMats, and Structural Panda, ensuring that the tool meets the needs of diverse data providers through the development of parsers that harmonize their data with GBDI's openBDF format.
+The technical infrastructure designed by GBDI,
+the Open Building Data Platform
+, addresses the need for an integrated, scalable, and interoperable system for global carbon data reporting. By leveraging modern cloud and software technologies, the platform is positioned to facilitate cross-country data collection and analysis, supporting GBDI's broader mission of global decarbonization efforts in the built environment through collaboration, open data and open science.
+The Open Building Data Platform Guidance Document
+outlines the design and development of the GBDI tool, focusing on the technical infrastructure and data management system, as well as on the developed frontend and user flows, aligning the design goals for seamless global data collection and analysis.
+Download the Open Building Data Platform Guidance Document
+Go to the Platform
+Open Data · Better Buildings
+Better Business · Better Planet
+Sign up
+Join community
+© 2026 GBDI · All rights reserved
+Terms and conditions

@@ -1,0 +1,328 @@
+{
+  "title": "Global Building Data Initiative",
+  "lang": null,
+  "viewport": "width=device-width",
+  "canonical": "https://www.gbdi.io/clear",
+  "favicon": "https://framerusercontent.com/images/9kbKTByhYn8BQ9fZUCsvN1If328.jpg",
+  "generator": "Framer 49ba03b",
+  "metas": [
+    {
+      "name": "viewport",
+      "property": null,
+      "content": "width=device-width"
+    },
+    {
+      "name": "generator",
+      "property": null,
+      "content": "Framer 49ba03b"
+    },
+    {
+      "name": null,
+      "property": "og:url",
+      "content": "https://www.gbdi.io/clear"
+    },
+    {
+      "name": "description",
+      "property": null,
+      "content": "Open Data · Better Buildings · Better Business · Better Planet"
+    },
+    {
+      "name": "framer-search-index",
+      "property": null,
+      "content": "https://framerusercontent.com/sites/D1uMHoB7vbI2wmYdP8p5b/searchIndex-tOLwMQIISXsz.json"
+    },
+    {
+      "name": "framer-search-index-fallback",
+      "property": null,
+      "content": "https://framerusercontent.com/sites/D1uMHoB7vbI2wmYdP8p5b/searchIndex-QVrazWEARkOb.json"
+    },
+    {
+      "name": null,
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "name": null,
+      "property": "og:title",
+      "content": "Global Building Data Initiative"
+    },
+    {
+      "name": null,
+      "property": "og:description",
+      "content": "Open Data · Better Buildings · Better Business · Better Planet"
+    },
+    {
+      "name": null,
+      "property": "og:image",
+      "content": "https://framerusercontent.com/images/YrxbK6jWjw7p6pIiMgofiUScQ.jpg"
+    },
+    {
+      "name": "twitter:card",
+      "property": null,
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:title",
+      "property": null,
+      "content": "Global Building Data Initiative"
+    },
+    {
+      "name": "twitter:description",
+      "property": null,
+      "content": "Open Data · Better Buildings · Better Business · Better Planet"
+    },
+    {
+      "name": "twitter:image",
+      "property": null,
+      "content": "https://framerusercontent.com/images/YrxbK6jWjw7p6pIiMgofiUScQ.jpg"
+    },
+    {
+      "name": "robots",
+      "property": null,
+      "content": "max-image-preview:large"
+    }
+  ],
+  "links": [
+    {
+      "text": "",
+      "label": null,
+      "href": "./",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Home",
+      "label": null,
+      "href": "./",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "About",
+      "label": null,
+      "href": "./about",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Community",
+      "label": null,
+      "href": "./community",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Platform",
+      "label": null,
+      "href": "./platform",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Resources",
+      "label": null,
+      "href": "./resources",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Join",
+      "label": null,
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSfhUf_u1IkptRj-CPOWTPJhyooyzdQsA8TzX88Rflu-ctdItg/viewform",
+      "target": "_blank",
+      "rel": null
+    },
+    {
+      "text": "Sign in",
+      "label": null,
+      "href": "https://app.gbdi.io/",
+      "target": "_blank",
+      "rel": null
+    },
+    {
+      "text": "Resources overview",
+      "label": null,
+      "href": "./resources",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "CLEAR",
+      "label": null,
+      "href": "./clear",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Launch Event",
+      "label": null,
+      "href": "./launch-webinar",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Data Reporting",
+      "label": null,
+      "href": "./the-importance-of-data",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Data Collection",
+      "label": null,
+      "href": "./understanding-the-data-collection-process",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Open Data Format",
+      "label": null,
+      "href": "./open-data-format",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "FAQ",
+      "label": null,
+      "href": "./frequently-asked-questions",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Job Opportunities",
+      "label": null,
+      "href": "./job-opportunities",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "Martin Röck, Zuhaib Batra, Nicole Di Santo",
+      "label": null,
+      "href": "./about#about-teamorg",
+      "target": null,
+      "rel": null
+    },
+    {
+      "text": "https://www.rics.org/",
+      "label": null,
+      "href": "https://www.rics.org/",
+      "target": "_blank",
+      "rel": ""
+    },
+    {
+      "text": "https://www.wbcsd.org/",
+      "label": null,
+      "href": "https://www.wbcsd.org/",
+      "target": "_blank",
+      "rel": ""
+    },
+    {
+      "text": "Coalition for life cycle emissions alignment and reporting (CLEAR)",
+      "label": null,
+      "href": "https://www.rics.org/news-insights/current-topics-campaigns/sustainability/clear",
+      "target": "_blank",
+      "rel": ""
+    },
+    {
+      "text": "Sign up",
+      "label": null,
+      "href": "https://app.gbdi.io/",
+      "target": "_blank",
+      "rel": null
+    },
+    {
+      "text": "Join community",
+      "label": null,
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSfhUf_u1IkptRj-CPOWTPJhyooyzdQsA8TzX88Rflu-ctdItg/viewform",
+      "target": "_blank",
+      "rel": null
+    },
+    {
+      "text": "",
+      "label": null,
+      "href": "https://www.linkedin.com/company/global-building-data-initiative",
+      "target": "_blank",
+      "rel": null
+    },
+    {
+      "text": "",
+      "label": null,
+      "href": "https://bsky.app/profile/gbdi.io",
+      "target": "_blank",
+      "rel": null
+    },
+    {
+      "text": "Terms and conditions",
+      "label": null,
+      "href": "./termsandconditions",
+      "target": null,
+      "rel": null
+    }
+  ],
+  "images": [
+    {
+      "src": "https://framerusercontent.com/images/urPl3QFXiWRtOSml9Q2VxSYbw.png",
+      "srcset": "https://framerusercontent.com/images/urPl3QFXiWRtOSml9Q2VxSYbw.png?scale-down-to=512&width=1082&height=1082 512w,https://framerusercontent.com/images/urPl3QFXiWRtOSml9Q2VxSYbw.png?scale-down-to=1024&width=1082&height=1082 1024w,https://framerusercontent.com/images/urPl3QFXiWRtOSml9Q2VxSYbw.png?width=1082&height=1082 1082w",
+      "alt": "",
+      "width": 1440,
+      "height": 1440
+    },
+    {
+      "src": "https://framerusercontent.com/images/rJmRFdkwEyiZ6eNRy7o8pdcGU4.png",
+      "srcset": "https://framerusercontent.com/images/rJmRFdkwEyiZ6eNRy7o8pdcGU4.png?scale-down-to=512 512w,https://framerusercontent.com/images/rJmRFdkwEyiZ6eNRy7o8pdcGU4.png 840w",
+      "alt": "",
+      "width": 20,
+      "height": 18
+    },
+    {
+      "src": "https://framerusercontent.com/images/YpQeG3bNkwjbc4aspsdw2sMow0.svg",
+      "srcset": "https://framerusercontent.com/images/YpQeG3bNkwjbc4aspsdw2sMow0.svg?scale-down-to=512 512w,https://framerusercontent.com/images/YpQeG3bNkwjbc4aspsdw2sMow0.svg 600w",
+      "alt": "",
+      "width": 25,
+      "height": 22
+    }
+  ],
+  "backgrounds": [
+    "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 180 40%22><path d=%22M 61.323 4.986 L 62.895 4.986 L 62.895 18.256 L 61.323 18.256 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 63.995 13.419 C 63.995 10.401 65.98 8.39 68.929 8.39 C 71.877 8.39 73.862 10.401 73.862 13.419 C 73.862 16.437 71.877 18.448 68.929 18.448 C 65.98 18.448 63.995 16.437 63.995 13.419 Z M 72.29 13.419 C 72.29 11.214 70.934 9.744 68.929 9.744 C 66.923 9.744 65.567 11.215 65.567 13.419 C 65.567 15.624 66.923 17.095 68.929 17.095 C 70.934 17.095 72.29 15.624 72.29 13.419 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 76.339 16.611 L 76.339 18.255 L 74.766 18.255 L 74.766 4.986 L 76.339 4.986 L 76.339 10.229 C 77.106 9.126 78.54 8.391 79.916 8.391 C 82.826 8.391 84.792 10.402 84.792 13.42 C 84.792 16.438 82.826 18.449 79.916 18.449 C 78.54 18.449 77.106 17.714 76.339 16.612 Z M 83.219 13.419 C 83.219 11.214 81.824 9.744 79.76 9.744 C 77.697 9.744 76.34 11.215 76.34 13.419 C 76.34 15.624 77.716 17.095 79.76 17.095 C 81.804 17.095 83.219 15.624 83.219 13.419 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 85.543 13.419 C 85.543 10.401 87.469 8.39 90.339 8.39 C 91.656 8.39 93.071 9.125 93.837 10.208 L 93.837 8.584 L 95.41 8.584 L 95.41 18.255 L 93.837 18.255 L 93.837 16.63 C 93.071 17.713 91.656 18.448 90.339 18.448 C 87.469 18.448 85.543 16.436 85.543 13.418 Z M 93.837 13.419 C 93.837 11.214 92.501 9.744 90.496 9.744 C 88.491 9.744 87.115 11.215 87.115 13.419 C 87.115 15.624 88.472 17.095 90.496 17.095 C 92.521 17.095 93.837 15.624 93.837 13.419 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 96.738 4.986 L 98.311 4.986 L 98.311 18.256 L 96.738 18.256 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 52.825 10.423 L 52.825 11.971 L 58.181 11.971 C 58.076 14.591 56.619 16.44 54.391 16.868 L 54.393 16.868 C 53.927 16.971 53.388 17.027 52.773 17.027 C 52.257 17.027 51.669 16.977 51.153 16.868 L 51.155 16.868 C 48.84 16.424 47.357 14.445 47.357 11.662 C 47.357 8.879 48.84 6.934 51.155 6.494 L 51.153 6.494 C 51.669 6.385 52.257 6.335 52.773 6.334 C 53.388 6.334 53.926 6.39 54.393 6.494 L 54.39 6.494 C 55.825 6.766 56.939 7.623 57.58 8.896 L 59.137 8.102 C 58.067 6.074 56.017 4.853 53.373 4.853 L 52.175 4.853 C 48.224 4.853 45.591 7.581 45.591 11.663 C 45.591 15.744 48.224 18.511 52.175 18.511 L 53.373 18.511 C 57.325 18.511 59.96 15.763 59.96 11.663 L 59.96 10.424 L 52.828 10.424 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 124.615 18.255 L 123.042 18.255 L 123.042 17.016 C 122.354 17.867 121.116 18.447 119.975 18.447 C 117.518 18.447 115.887 16.9 115.887 14.579 L 115.887 8.582 L 117.46 8.582 L 117.46 14.308 C 117.46 15.971 118.58 17.094 120.251 17.094 C 121.921 17.094 123.042 15.972 123.042 14.308 L 123.042 8.582 L 124.615 8.582 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 126.309 7.113 L 126.309 4.985 L 127.881 4.985 L 127.881 7.113 Z M 126.309 18.255 L 126.309 8.583 L 127.881 8.583 L 127.881 18.255 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 129.772 4.986 L 131.345 4.986 L 131.345 18.256 L 129.772 18.256 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 132.568 13.419 C 132.568 10.401 134.533 8.39 137.442 8.39 C 138.818 8.39 140.253 9.125 141.02 10.227 L 141.02 4.985 L 142.593 4.985 L 142.593 18.255 L 141.02 18.255 L 141.02 16.611 C 140.253 17.713 138.818 18.448 137.442 18.448 C 134.533 18.448 132.568 16.437 132.568 13.419 Z M 141.02 13.419 C 141.02 11.214 139.644 9.744 137.6 9.744 C 135.556 9.744 134.141 11.215 134.141 13.419 C 134.141 15.623 135.535 17.095 137.6 17.095 C 139.665 17.095 141.02 15.624 141.02 13.419 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 144.313 7.113 L 144.313 4.985 L 145.886 4.985 L 145.886 7.113 Z M 144.313 18.255 L 144.313 8.583 L 145.886 8.583 L 145.886 18.255 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 147.58 8.583 L 149.152 8.583 L 149.152 9.822 C 149.841 8.971 151.08 8.391 152.22 8.391 C 154.677 8.391 156.308 9.938 156.308 12.259 L 156.308 18.256 L 154.735 18.256 L 154.735 12.53 C 154.735 10.867 153.614 9.745 151.944 9.745 C 150.274 9.745 149.152 10.867 149.152 12.53 L 149.152 18.256 L 147.58 18.256 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 165.479 8.583 L 167.052 8.583 L 167.052 17.21 C 167.052 20.111 165.106 22.046 162.217 22.046 C 159.839 22.046 157.991 20.517 157.598 18.255 L 159.073 18.255 C 159.367 19.706 160.626 20.692 162.218 20.692 C 164.164 20.692 165.481 19.299 165.481 17.21 L 165.481 16.533 C 164.774 17.559 163.396 18.255 162.081 18.255 C 159.27 18.255 157.383 16.281 157.383 13.323 C 157.383 10.364 159.27 8.391 162.081 8.391 C 163.396 8.391 164.753 9.087 165.481 10.131 L 165.481 8.583 Z M 165.479 13.323 C 165.479 11.175 164.183 9.744 162.236 9.744 C 160.29 9.744 158.954 11.175 158.954 13.323 C 158.954 15.47 160.271 16.901 162.236 16.901 C 164.202 16.901 165.479 15.47 165.479 13.323 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 112.42 10.987 C 113.283 10.368 113.873 9.325 113.873 8.358 C 113.873 6.387 112.282 5.054 109.886 5.054 L 103.566 5.054 L 103.566 18.311 L 110.77 18.311 C 113.264 18.311 114.932 16.803 114.932 14.543 C 114.932 12.939 113.931 11.51 112.419 10.987 Z M 105.334 6.6 L 109.886 6.6 C 111.221 6.6 112.105 7.373 112.105 8.513 C 112.105 9.653 111.221 10.426 109.886 10.426 L 105.334 10.426 Z M 110.77 16.765 L 105.334 16.765 L 105.334 11.973 L 110.789 11.973 C 112.202 11.973 113.164 12.939 113.164 14.389 C 113.164 15.839 112.202 16.765 110.77 16.765 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 69.636 29.72 C 69.636 26.703 71.562 24.691 74.432 24.691 C 75.749 24.691 77.164 25.426 77.931 26.51 L 77.931 24.885 L 79.503 24.885 L 79.503 34.556 L 77.931 34.556 L 77.931 32.931 C 77.164 34.015 75.749 34.749 74.432 34.749 C 71.562 34.749 69.636 32.737 69.636 29.72 Z M 77.931 29.72 C 77.931 27.515 76.594 26.046 74.589 26.046 C 72.585 26.046 71.208 27.516 71.208 29.72 C 71.208 31.925 72.565 33.396 74.589 33.396 C 76.614 33.396 77.931 31.926 77.931 29.72 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 81.788 32.081 L 81.788 26.239 L 80.215 26.239 L 80.215 24.885 L 81.788 24.885 L 81.788 21.288 L 83.36 21.288 L 83.36 24.885 L 86.23 24.885 L 86.23 26.239 L 83.36 26.239 L 83.36 32.081 C 83.36 32.874 83.871 33.396 84.618 33.396 L 86.329 33.396 L 86.329 34.557 C 85.838 34.674 85.189 34.751 84.718 34.751 C 82.968 34.751 81.789 33.687 81.789 32.082 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 86.568 29.72 C 86.568 26.703 88.495 24.691 91.365 24.691 C 92.681 24.691 94.096 25.426 94.863 26.51 L 94.863 24.885 L 96.435 24.885 L 96.435 34.556 L 94.863 34.556 L 94.863 32.931 C 94.096 34.015 92.681 34.749 91.365 34.749 C 88.495 34.749 86.568 32.737 86.568 29.72 Z M 94.863 29.72 C 94.863 27.515 93.526 26.046 91.521 26.046 C 89.517 26.046 88.141 27.516 88.141 29.72 C 88.141 31.925 89.496 33.396 91.521 33.396 C 93.546 33.396 94.863 31.926 94.863 29.72 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 62.374 21.294 L 56.248 21.294 L 56.248 34.55 L 62.374 34.55 C 66.223 34.55 68.797 31.884 68.797 27.902 C 68.797 23.92 66.223 21.294 62.374 21.294 Z M 62.374 33.004 L 58.016 33.004 L 58.016 22.839 L 62.374 22.839 C 65.163 22.839 67.028 24.868 67.028 27.902 C 67.028 30.936 65.162 33.003 62.374 33.003 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 113.036 24.885 L 114.609 24.885 L 114.609 26.123 C 115.296 25.273 116.536 24.692 117.675 24.692 C 120.133 24.692 121.764 26.24 121.764 28.56 L 121.764 34.557 L 120.191 34.557 L 120.191 28.832 C 120.191 27.169 119.071 26.047 117.4 26.047 C 115.729 26.047 114.609 27.169 114.609 28.832 L 114.609 34.557 L 113.036 34.557 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 123.458 23.415 L 123.458 21.287 L 125.031 21.287 L 125.031 23.415 Z M 123.458 34.556 L 123.458 24.885 L 125.031 24.885 L 125.031 34.556 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 127.708 32.081 L 127.708 26.239 L 126.136 26.239 L 126.136 24.885 L 127.708 24.885 L 127.708 21.288 L 129.281 21.288 L 129.281 24.885 L 132.151 24.885 L 132.151 26.239 L 129.281 26.239 L 129.281 32.081 C 129.281 32.874 129.791 33.396 130.539 33.396 L 132.249 33.396 L 132.249 34.557 C 131.758 34.674 131.109 34.751 130.638 34.751 C 128.888 34.751 127.709 33.687 127.709 32.082 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 133.746 23.415 L 133.746 21.287 L 135.319 21.287 L 135.319 23.415 Z M 133.746 34.556 L 133.746 24.885 L 135.319 24.885 L 135.319 34.556 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 136.542 29.72 C 136.542 26.703 138.468 24.691 141.338 24.691 C 142.655 24.691 144.07 25.426 144.836 26.51 L 144.836 24.885 L 146.409 24.885 L 146.409 34.556 L 144.836 34.556 L 144.836 32.931 C 144.07 34.015 142.655 34.749 141.338 34.749 C 138.468 34.749 136.542 32.737 136.542 29.72 Z M 144.836 29.72 C 144.836 27.515 143.499 26.046 141.495 26.046 C 139.49 26.046 138.113 27.516 138.113 29.72 C 138.113 31.925 139.47 33.396 141.495 33.396 C 143.519 33.396 144.836 31.926 144.836 29.72 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 148.815 32.081 L 148.815 26.239 L 147.242 26.239 L 147.242 24.885 L 148.815 24.885 L 148.815 21.288 L 150.388 21.288 L 150.388 24.885 L 153.258 24.885 L 153.258 26.239 L 150.388 26.239 L 150.388 32.081 C 150.388 32.874 150.899 33.396 151.646 33.396 L 153.357 33.396 L 153.357 34.557 C 152.866 34.674 152.216 34.751 151.745 34.751 C 149.996 34.751 148.816 33.687 148.816 32.082 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 154.731 23.415 L 154.731 21.287 L 156.303 21.287 L 156.303 23.415 Z M 154.731 34.556 L 154.731 24.885 L 156.303 24.885 L 156.303 34.556 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 161.071 34.556 L 157.14 24.885 L 158.831 24.885 L 161.799 32.835 L 164.786 24.885 L 166.477 24.885 L 162.546 34.556 L 161.071 34.556 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 166.281 29.72 C 166.281 26.703 168.266 24.691 171.214 24.691 C 174.163 24.691 176.148 26.78 176.148 29.875 L 175.99 30.03 L 167.872 30.03 C 167.95 32.041 169.287 33.395 171.213 33.395 C 172.668 33.395 173.926 32.544 174.358 31.267 L 175.931 31.267 C 175.303 33.356 173.416 34.749 171.213 34.749 C 168.265 34.749 166.28 32.737 166.28 29.72 Z M 174.478 28.676 C 174.124 27.109 172.807 26.046 171.215 26.046 C 169.623 26.046 168.305 27.109 167.953 28.676 L 174.479 28.676 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 111.81 22.839 L 111.81 21.294 L 101.661 21.294 L 101.661 22.839 L 105.852 22.839 L 105.852 33.003 L 101.661 33.003 L 101.661 34.548 L 111.81 34.548 L 111.81 33.003 L 107.619 33.003 L 107.619 22.839 Z%22 fill=%22rgb(62,62,62)%22></path><path d=%22M 22.24 0 L 18.918 0 C 7.603 0 0 7.848 0 19.53 C 0 31.212 7.603 39.167 18.918 39.167 L 22.24 39.167 C 33.556 39.167 41.158 31.275 41.158 19.53 C 41.158 7.785 33.556 0 22.24 0 Z M 14.636 18.915 C 14.677 13.7 15.228 9.263 16.241 6.058 C 17.2 3.025 18.499 1.351 19.901 1.337 L 19.901 18.915 Z M 19.901 37.83 C 18.5 37.816 17.201 36.13 16.241 33.077 C 15.234 29.872 14.683 25.447 14.636 20.25 L 19.901 20.25 Z M 21.258 15.132 L 21.258 12.684 L 38.759 12.684 C 39.018 13.469 39.229 14.287 39.393 15.132 Z M 21.258 11.349 L 21.258 8.901 L 36.992 8.901 C 37.477 9.671 37.903 10.488 38.264 11.349 Z M 16.89 1.664 C 14.659 4.433 13.34 10.526 13.278 18.915 L 8.096 18.915 C 8.242 9.703 11.654 3.165 16.89 1.664 Z M 13.28 20.251 C 13.351 28.643 14.673 34.735 16.898 37.503 C 11.677 36.002 8.267 29.468 8.097 20.251 Z M 21.258 32.555 L 21.258 29.143 L 28.945 36.707 C 28.081 37.022 27.176 37.272 26.237 37.454 Z M 21.258 27.255 L 21.258 23.842 L 32.497 34.901 C 31.802 35.374 31.068 35.789 30.297 36.15 Z M 24.913 20.251 L 28.381 20.251 L 37.542 29.267 C 37.146 30.004 36.699 30.703 36.203 31.361 Z M 30.299 20.251 L 33.767 20.251 L 39.048 25.447 C 38.808 26.33 38.512 27.178 38.161 27.986 L 30.299 20.25 Z M 39.788 20.251 C 39.752 21.52 39.621 22.74 39.4 23.907 L 35.685 20.251 Z M 21.258 18.915 L 21.258 16.467 L 39.609 16.467 C 39.711 17.26 39.77 18.078 39.791 18.915 Z M 21.258 7.566 L 21.258 5.118 L 33.67 5.118 C 34.126 5.492 34.561 5.891 34.975 6.319 C 35.358 6.716 35.719 7.132 36.057 7.566 Z M 31.77 3.783 L 21.257 3.783 L 21.257 1.336 L 22.24 1.336 C 25.847 1.336 29.077 2.174 31.77 3.784 Z M 6.186 6.319 C 8.059 4.381 10.377 2.991 13.035 2.177 C 9.213 5.2 6.858 11.184 6.739 18.914 L 1.369 18.914 C 1.492 13.808 3.147 9.46 6.186 6.318 Z M 6.187 32.816 C 3.169 29.674 1.513 25.341 1.371 20.251 L 6.741 20.251 C 6.879 27.984 9.235 33.964 13.048 36.987 C 10.385 36.17 8.063 34.77 6.187 32.816 Z M 21.258 37.831 L 21.258 34.444 L 24.571 37.703 C 23.813 37.785 23.037 37.831 22.241 37.831 Z M 34.972 32.816 C 34.535 33.271 34.071 33.692 33.587 34.088 L 21.257 21.955 L 21.257 20.251 L 22.993 20.251 L 35.344 32.405 C 35.221 32.542 35.099 32.682 34.971 32.816 Z%22 fill=%22rgb(62,62,62)%22></path></svg>\")"
+  ],
+  "iframes": [
+    {
+      "src": "https://framer.com/edit?framerSiteId=9c76bebc7421e79b8955f965c953e524235db5c8f38ee80e336369903ffbd38a&source=www.gbdi.io&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%2C%22onPageRichTextBlockSelection%22%3Atrue%7D&loadStart=1794156436411",
+      "title": ""
+    }
+  ],
+  "headings": [
+    {
+      "level": "H3",
+      "text": "CLEAR – Coalition for Life Cycle Emissions Alignment and Reporting"
+    },
+    {
+      "level": "H3",
+      "text": "Info"
+    },
+    {
+      "level": "H3",
+      "text": "Summary"
+    },
+    {
+      "level": "H3",
+      "text": "Key goals"
+    },
+    {
+      "level": "H3",
+      "text": "GBDI experts"
+    },
+    {
+      "level": "H3",
+      "text": "Partners"
+    },
+    {
+      "level": "H3",
+      "text": "Related documents / Links"
+    },
+    {
+      "level": "H3",
+      "text": "Open Data · Better Buildings Better Business · Better Planet"
+    }
+  ]
+}
