@@ -1,0 +1,16 @@
+{%- comment -%}
+  One wall of partner logos on /community, from _data/partners.yml.
+  Parameters: group (lead | development | research | sponsors), title,
+  class (extra classes). Logos with a link open it in a new tab, as on the
+  live site; a partner without a link (BECD) is shown without one.
+{%- endcomment -%}
+{%- assign partners = site.data.partners | where: "group", include.group -%}
+<section class="c-wall{% if include.class %} {{ include.class }}{% endif %}" aria-labelledby="partners-{{ include.group }}">
+  <h2 class="c-wall__title" id="partners-{{ include.group }}">{{ include.title }}</h2>
+  <ul class="c-wall__logos">
+    {%- for p in partners %}
+    {%- capture logo %}<img src="{{ '/assets/img/framer/' | append: p.logo | relative_url }}" alt="{{ p.name }}" width="160" height="80" loading="lazy">{% endcapture %}
+    <li>{% if p.link %}<a href="{{ p.link }}" target="_blank" rel="noopener">{{ logo }}</a>{% else %}{{ logo }}{% endif %}</li>
+    {%- endfor %}
+  </ul>
+</section>
