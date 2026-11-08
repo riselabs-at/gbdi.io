@@ -1,1 +1,218 @@
-// Styles for the about page. Tokens and mixins come from site.css and _mixins.scss.
+// /about. Every size and gap below is measured on the captured Framer page
+// (tools/reference/measure.mjs, 8 Nov 2026) at 1440, 1024 and 390 px.
+// Desktop first; tablet and phone override.
+
+:root {
+  --about-orange: #F59B3A; // phase marks on the timeline ruler
+}
+
+.page-about main { overflow-x: clip; }
+
+// Intro: the h1 of the page, Sk-Modernist, scroll-driven colours (see the page).
+.about-intro {
+  max-width: var(--content);
+  margin: 128px auto 0;
+  padding: 0 32px;
+}
+.about-intro__text {
+  max-width: 965px;
+  @include display(32px, 38.4px);
+  color: var(--text-muted);
+  span { transition: color 0.4s ease; }
+  .i-d0 { color: var(--text); }
+  .i-g1, .i-g2, .i-g3 { color: var(--text-muted); }
+  .i-d0.i-g1 { color: var(--text); }
+  &.s1 .i-d1, &.s2 .i-d2, &.s3 .i-d3 { color: var(--text); }
+  &.s1 .i-g1, &.s2 .i-g2, &.s3 .i-g3 { color: var(--green); }
+}
+
+.about-heading { @include body(24px, 21.6px, 500); min-height: 22px; } // Framer rounds this box to 22 px
+
+// Objectives
+.about-objectives {
+  max-width: var(--content);
+  margin: 136px auto 0;
+  padding: 32px 32px 40px;
+}
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.about-stat {
+  padding: 24px 32px;
+  border-radius: var(--radius-s);
+}
+.about-stat__figure { @include display(54px, 54px); }
+.about-stat__text { margin-top: 10px; @include body(18px, 27px); }
+.about-stat__text--faded { opacity: 0.8; }
+.about-stat--green { background: var(--tint-green); .about-stat__figure { color: var(--green); } .about-stat__text { color: var(--green-deep); } }
+.about-stat--blue { background: var(--tint-blue); .about-stat__figure { color: var(--blue); } .about-stat__text { color: var(--blue-deep); } }
+.about-stat--purple { background: var(--tint-purple); .about-stat__figure { color: var(--purple); } .about-stat__text { color: var(--purple-deep); } }
+// The "2" of CO2e uses the font's denominator figures, as on the live site.
+.about-dnom { font-feature-settings: "dnom" 1; }
+
+// Approach
+.about-approach {
+  max-width: var(--content);
+  margin: 64px auto 0;
+}
+.about-approach__heading { padding-left: 32px; }
+.about-approach__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 23px;
+  padding-bottom: 24px;
+}
+.about-approach__col { padding: 24px 32px; }
+.about-approach__title { font-family: var(--font-body); font-size: 18px; line-height: 28.8px; font-weight: 700; letter-spacing: -0.36px; }
+.about-approach__text { margin-top: 16px; @include body(18px, 23.4px); }
+
+// Timeline
+.about-timeline {
+  margin: 0 32px;
+  padding: 24px 32px;
+  border-radius: var(--radius);
+  background: var(--panel);
+  overflow: hidden;
+}
+.about-timeline__phases { display: grid; grid-template-columns: repeat(3, 1fr); }
+.about-phase__title { font-family: var(--font-body); font-size: 18px; line-height: 28.8px; font-weight: 700; }
+.about-phase__year { @include body(16px, 19.2px); color: var(--text-strong); opacity: 0.6; }
+.about-phase__ruler {
+  position: relative;
+  height: 80px;
+  margin-top: 16px;
+  // Ticks every 12 px, 2 px wide and 40 px tall, as on the live site.
+  background: repeating-linear-gradient(to right, var(--text) 0 2px, transparent 2px 12px) left top / 100% 40px no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 2px; height: 40px;
+    background: var(--about-orange);
+  }
+}
+.about-phase__ruler--first::before { height: 80px; }
+// The live ruler fades out at its right end on desktop.
+.about-phase__ruler--last { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 64px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 64px), transparent); }
+.about-phase__text { max-width: 296px; margin-top: 16px; @include body(18px, 23.4px); }
+
+// Slides in from the right when it scrolls into view (assets/js/about-reveal.js).
+.about-timeline.is-hidden { opacity: 0; transform: translateX(120px); }
+.about-timeline.is-shown { transition: opacity 0.8s ease, transform 0.8s ease; }
+
+// Team
+.about-team {
+  max-width: var(--content);
+  margin: 48px auto 0;
+  padding: 48px 32px 54px;
+}
+.about-team__rows { display: flex; flex-direction: column; gap: 80px; margin-top: 64px; }
+.about-team__row { display: grid; grid-template-columns: repeat(3, 214px); column-gap: 160px; }
+.about-person__frame {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: var(--dl); top: var(--dt);
+    width: var(--dw); height: var(--dh);
+    max-width: none;
+  }
+}
+// Grey diagonal hatching behind the photo, shown until it loads (from the live site).
+.about-person__frame--hatch {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126'%3E%3Cpath d='M126 0v21.584L21.584 126H0v-17.585L108.415 0H126Zm0 108.414V126h-17.586L126 108.414Zm0-84v39.171L63.585 126H24.414L126 24.414Zm0 42v39.17L105.584 126h-39.17L126 66.414ZM105.586 0 0 105.586V66.415L66.415 0h39.171Zm-42 0L0 63.586V24.415L24.415 0h39.171Zm-42 0L0 21.586V0h21.586Z' fill='rgba(136,136,136,0.2)' fill-rule='evenodd'/%3E%3C/svg%3E") left top / 64px auto repeat;
+}
+.about-person__name { margin-top: 16px; @include body(16px, 19.2px, 700); color: var(--text-strong); white-space: nowrap; }
+.about-person__role { margin-top: 4px; @include body(16px, 19.2px); color: var(--text-strong); white-space: nowrap; strong { font-weight: 700; } }
+.about-person__email { margin-top: 16px; @include body(14px, 16.8px); white-space: nowrap; a { color: var(--link); } }
+.about-person__email--tight { letter-spacing: -0.56px; }
+
+.about-small-title { @include body(18px, 23.4px, 700); }
+.about-former {
+  max-width: 429px;
+  margin-top: 84px;
+  opacity: 0.5;
+  p { margin-top: 20px; @include body(18px, 23.4px); }
+}
+.about-bottom {
+  display: grid;
+  grid-template-columns: 429px 429px;
+  column-gap: 214px;
+  align-items: start;
+  margin-top: 144px;
+  p { @include body(18px, 23.4px); }
+  .about-small-title + p, p + p { margin-top: 20px; }
+}
+.about-globe { opacity: 0.5; }
+.about-globe__button { margin-top: 24px; }
+.about-address__mail { color: var(--link); }
+.about-address__mail--tablet { display: none; }
+.about-address__logo { display: block; width: 110px; height: 73px; margin-top: 40px; img { width: 100%; height: 100%; object-fit: contain; } }
+
+@include tablet {
+  .about-intro { margin-top: 128px; padding: 0 64px; }
+  .about-intro__text { max-width: 806px; @include display(26px, 31.2px); }
+  .about-objectives { margin: 136px 32px 0; max-width: none; }
+  .about-stats { grid-template-columns: 1fr; }
+  .about-approach { margin: 64px 32px 0; max-width: none; }
+  .about-approach__heading { padding-left: 0; }
+  .about-approach__cols { grid-template-columns: 309fr 325fr 325fr; }
+  .about-approach__col { padding: 24px 0 24px 16px; &:first-child { padding-left: 0; } }
+  .about-approach__title, .about-approach__text { max-width: 293px; }
+  .about-approach__text { @include body(16px, 20.8px); }
+  .about-timeline { margin: 1px 0 0; }
+  .about-phase__text { max-width: 259px; @include body(16px, 20.8px); }
+  .about-phase__ruler--last { -webkit-mask-image: none; mask-image: none; }
+  .about-team { margin: 47px 32px 0; padding-bottom: 56px; max-width: none; }
+  .about-team__rows { margin-top: 63px; }
+  .about-team__row { grid-template-columns: repeat(3, 1fr); column-gap: 24px; }
+  .about-person__frame img { left: var(--tl); top: var(--tt); width: var(--tw); height: var(--th); }
+  .about-former { max-width: 358px; p { @include body(16px, 20.8px); } }
+  .about-small-title { @include body(16px, 20.8px, 700); }
+  .about-bottom {
+    grid-template-columns: 358px 358px;
+    column-gap: 180px;
+    p { @include body(16px, 20.8px); }
+  }
+  .about-address__logo { margin-top: 50px; }
+}
+@include tablet-only {
+  .about-globe__title { display: none; }
+  .about-globe .about-globe__title + p { margin-top: 0; }
+  .about-address__mail { display: none; }
+  .about-address__mail--tablet { display: inline; }
+}
+
+@include phone {
+  .about-intro { margin-top: 104px; }
+  .about-intro__text { max-width: none; @include display(20px, 24px); }
+  .about-objectives { margin-top: 120px; padding: 32px 0 40px; }
+  .about-approach__cols { grid-template-columns: 1fr; }
+  .about-approach__col, .about-approach__col:first-child { padding: 24px 0; }
+  .about-approach__title, .about-approach__text { max-width: none; }
+  .about-timeline { margin: 0; padding: 24px 32px 23px; }
+  // Phones: no ruler, the three phases listed above the three texts.
+  .about-timeline__phases { display: flex; flex-direction: column; }
+  .about-phase { display: contents; }
+  .about-phase__ruler { display: none; }
+  .about-phase__text { order: 1; max-width: 222px; margin-top: 16px; }
+  .about-team { margin: 1px 32px 0; padding: 48px 0 56px; }
+  .about-team__rows { gap: 80px; }
+  .about-team__row { display: flex; flex-direction: column; gap: 16px; }
+  .about-person__frame img { left: var(--pl); top: var(--pt); width: var(--pw); height: var(--ph); }
+  .about-person__email { margin-top: 16.8px; } // Framer's rounding on the phone layout adds 0.8 px per card
+  .about-former { max-width: none; margin-top: 113px; }
+  .about-bottom { grid-template-columns: 1fr; margin-top: 104px; }
+  .about-address { margin-top: 39px; }
+  .about-address__logo { margin-top: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-timeline.is-hidden { opacity: 1; transform: none; }
+  .about-intro__text span { transition: none; }
+}
