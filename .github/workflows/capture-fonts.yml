@@ -1,0 +1,36 @@
+# Downloads the font files www.gbdi.io loads from Framer, for the github.io
+# preview, until GBDI's own licensed files arrive (open item H3). See
+# tools/capture/capture-fonts.py. Runs here because the AI working
+# environment cannot reach framerusercontent.com.
+name: Capture Framer fonts
+
+on:
+  push:
+    branches: ["step-2-*"]
+    paths:
+      - "tools/capture/capture-fonts.py"
+      - ".github/workflows/capture-fonts.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fonts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tools/capture/capture-fonts.py
+      - name: Commit the fonts to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _source-assets/framer/fonts
+          if git diff --cached --quiet; then echo "Nothing new."; else
+            git commit -m "Capture the Framer font files ($(date -u +%Y-%m-%d))"
+            git push
+          fi

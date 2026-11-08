@@ -1,0 +1,23 @@
+// Footer, identical on every page and layout. Measured: 80 px above the
+// logo, 23 px below the terms link, 447 px in all.
+.site-footer {
+  padding: 80px 16px 23px;
+  text-align: center;
+}
+.site-footer__logo { display: block; width: 180px; height: 40px; margin: 0 auto; }
+.site-footer__tagline {
+  margin-top: 40px;
+  @include body(24px, 31.2px, 500);
+  span { display: block; }
+}
+.site-footer__buttons { display: flex; justify-content: center; gap: 10px; margin-top: 41px; }
+.site-footer__social {
+  display: flex; justify-content: center; gap: 11px; margin-top: 39px;
+  a { display: block; opacity: 0.5; }
+  img { height: 18px; width: auto; }
+}
+.site-footer__copy { margin-top: 22px; @include body(12px, 15.6px, 500); }
+.site-footer__terms {
+  margin-top: 8px; @include body(12px, 15.6px, 500);
+  a { text-decoration: underline; }
+}

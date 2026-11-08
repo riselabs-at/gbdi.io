@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <a class="site-footer__logo" href="{{ '/' | relative_url }}">{% include svg/logo.svg %}</a>
+  <p class="site-footer__tagline"><span>Open Data · Better Buildings</span> <span>Better Business · Better Planet</span></p>
+  <div class="site-footer__buttons">
+    {% include button.html href=site.links.app label="Sign up" arrow=true %}
+    {% include button.html href=site.links.join_form label="Join community" style="secondary" %}
+  </div>
+  <ul class="site-footer__social">
+    <li><a href="{{ site.links.linkedin }}" target="_blank" rel="noopener"><img src="{{ '/assets/img/icon-linkedin.png' | relative_url }}" alt="GBDI on LinkedIn" width="20" height="18"></a></li>
+    <li><a href="{{ site.links.bluesky }}" target="_blank" rel="noopener"><img src="{{ '/assets/img/icon-bluesky.svg' | relative_url }}" alt="GBDI on Bluesky" width="21" height="18"></a></li>
+  </ul>
+  <p class="site-footer__copy">© 2026 GBDI · All rights reserved</p>
+  <p class="site-footer__terms"><a href="{{ '/termsandconditions' | relative_url }}">Terms and conditions</a></p>
+</footer>

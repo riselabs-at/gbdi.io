@@ -1,0 +1,11 @@
+{
+  "name": "gbdi-visual-check",
+  "private": true,
+  "description": "Compares the rebuilt site with the Framer baseline screenshots",
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.65.0",
+    "pixelmatch": "7.1.0",
+    "pngjs": "7.0.0"
+  }
+}

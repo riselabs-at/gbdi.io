@@ -1,0 +1,13 @@
+// Framer's three layouts: desktop from 1200 px, tablet 810 to 1199 px,
+// phone below 810 px (work order 4.3). Styles are written for desktop and
+// overridden below.
+
+@mixin tablet { @media (max-width: 1199.98px) { @content; } }
+@mixin phone { @media (max-width: 809.98px) { @content; } }
+@mixin tablet-only { @media (min-width: 810px) and (max-width: 1199.98px) { @content; } }
+@mixin desktop { @media (min-width: 1200px) { @content; } }
+
+// Type styles as measured. Sizes / line heights in px.
+@mixin display($size, $lh) { font-family: var(--font-display); font-size: $size; line-height: $lh; font-weight: 400; }
+@mixin body($size, $lh, $weight: 400) { font-family: var(--font-body); font-size: $size; line-height: $lh; font-weight: $weight; }
+@mixin ui { font-family: var(--font-ui); font-size: 16px; line-height: 25.6px; letter-spacing: -0.32px; font-weight: 400; }

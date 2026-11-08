@@ -1,0 +1,49 @@
+// Design tokens, measured on the captured Framer site (8 Nov 2026) with
+// tools/reference/measure.mjs. Colours only through these custom properties:
+// no hex values in component rules (same rule as riselabs.at).
+
+:root {
+  // Text
+  --text: #3D3D3D;          // body text and most headings (1,486 uses)
+  --text-strong: #000000;   // team names, some labels
+  --text-muted: #BEBFBF;    // the grey words of the about intro
+  --link: #0099FF;          // inline links and email addresses
+  --white: #FFFFFF;
+
+  // Greens
+  --green: #189D7E;         // highlighted words, statistic 1, active resource link
+  --green-button: #1B9A78;  // primary buttons
+  --green-deep: #206D59;    // statistic 1 caption
+
+  // Blues and purples (statistic cards)
+  --blue: #3592E3;
+  --blue-deep: #31658D;
+  --purple: #8671EF;
+  --purple-deep: #5C5CAE;
+
+  // Surfaces
+  --panel: #F6F8F8;         // header, hero and light panels; resource page background
+  --tint-green: #EAFAF0;
+  --tint-blue: #E9F7FE;
+  --tint-purple: #EFECFE;
+  --divider: #E5E7EB;       // 1 px lines in the resources menu
+  --card-line: #EEF2F2;     // card outlines
+  --card-line-soft: #F0F4F3;
+  --card-line-strong: #E3E6E6;
+  --placeholder: #E3E3E3;
+  --chart-mint: #A6DBC9;
+  --chart-lavender: #BAAEF6;
+  --shade: rgba(0, 0, 0, 0.05);
+  --shade-strong: rgba(0, 0, 0, 0.2);
+
+  // Type
+  --font-display: "Sk-Modernist", "Satoshi", sans-serif;
+  --font-body: "Satoshi", sans-serif;
+  --font-ui: "Satoshi Variable", "Satoshi", sans-serif;
+  --font-banner: "Inter", sans-serif;
+
+  // Shape
+  --radius-s: 4px;
+  --radius: 8px;
+  --content: 1136px;
+}

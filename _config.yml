@@ -1,0 +1,44 @@
+# www.gbdi.io, rebuilt from Framer (Phase A, docs/01-rebuild-work-order.md).
+#
+# url is the live address. The github.io preview is built with
+# --baseurl /gbdi.io by .github/workflows/pages.yml, so every internal link
+# and asset goes through the relative_url filter (work order section 2).
+
+title: Global Building Data Initiative
+url: https://www.gbdi.io
+baseurl: ""
+lang: en
+timezone: Europe/Vienna
+
+# The description Framer gives every page. Pages set their own (an allowed
+# invisible change, work order 0.3) and fall back to this.
+description: "Open Data · Better Buildings · Better Business · Better Planet"
+share_image: /assets/img/share.jpg
+
+# Links used on many pages. Exactly as on the live site, 8 Nov 2026.
+links:
+  join_form: https://docs.google.com/forms/d/e/1FAIpQLSfhUf_u1IkptRj-CPOWTPJhyooyzdQsA8TzX88Rflu-ctdItg/viewform
+  app: https://app.gbdi.io/
+  linkedin: https://www.linkedin.com/company/global-building-data-initiative
+  bluesky: https://bsky.app/profile/gbdi.io
+
+# Plausible (work order step 4). Off until GBDI's account exists (H5) and the
+# domain points here: the preview must not count itself as gbdi.io traffic.
+# Set to true in the pull request that switches the domain.
+plausible: false
+plausible_domain: gbdi.io
+
+sass:
+  style: compressed
+
+# Not published. Folders starting with _ are skipped anyway.
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - docs
+  - tools
+  - vendor
+  - node_modules

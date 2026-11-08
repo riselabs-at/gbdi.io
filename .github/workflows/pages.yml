@@ -1,0 +1,106 @@
+# Builds the site with Jekyll, checks it, and publishes it.
+#
+# On every pull request: build and check. A broken internal link, a missing
+# image or a missing alt attribute fails the check (work order 7.1).
+# External links are checked too, but only reported.
+#
+# On every push to main: the same, then the built site is pushed to the
+# gh-pages branch, which GitHub Pages serves. While the domain still points
+# to Framer, the site is built for the preview address
+# https://riselabs-at.github.io/gbdi.io/ (baseurl /gbdi.io). The pull request
+# that switches the domain (work order step 6) sets PREVIEW to false and adds
+# the CNAME file.
+#
+# Why gh-pages and not actions/deploy-pages: the Pages source cannot be set
+# from the AI working environment, and a gh-pages branch is what GitHub Pages
+# serves by default. Decided in build mode, 8 Nov 2026.
+name: Build, check and publish
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PREVIEW: "true"
+  PREVIEW_BASEURL: /gbdi.io
+  # Pages not built yet, so links to them are not failures. Remove each one
+  # in the pull request that adds it; empty when the rebuild is complete.
+  PENDING: "/,/about,/community,/platform,/termsandconditions"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build
+        env:
+          JEKYLL_ENV: production
+        run: |
+          if [ "$PREVIEW" = "true" ]; then
+            bundle exec jekyll build --baseurl "$PREVIEW_BASEURL" --trace
+          else
+            bundle exec jekyll build --trace
+          fi
+
+      # Internal links, images and alt text. Paths on the preview start with
+      # /gbdi.io; the swap maps them back onto the built folder. Links to
+      # www.gbdi.io pages are checked against the build as well. The live
+      # site has mailto links with a space after "mailto:"; they are kept as
+      # they are (Phase A) and skipped here.
+      - name: Check internal links, images and alt text
+        run: |
+          IGNORE="/^mailto:/"
+          for p in ${PENDING//,/ }; do
+            esc=$(printf '%s' "$p" | sed 's#/#\\/#g')
+            IGNORE="$IGNORE,/^(${PREVIEW_BASEURL//\//\\/})?${esc}(#.*)?\$/"
+          done
+          echo "Ignoring: $IGNORE"
+          bundle exec htmlproofer _site \
+            --disable-external \
+            --swap-urls "^${PREVIEW_BASEURL}/:/,^https\://www\.gbdi\.io/:/" \
+            --ignore-urls "$IGNORE" \
+            --no-enforce-https \
+            --checks "Links,Images,Scripts"
+
+      - name: Report external links (does not fail the build)
+        continue-on-error: true
+        run: |
+          bundle exec htmlproofer _site \
+            --swap-urls "^${PREVIEW_BASEURL}/:/,^https\://www\.gbdi\.io/:/" \
+            --ignore-urls "/^mailto:/,/linkedin\.com/,/docs\.google\.com\/forms/" \
+            --no-enforce-https \
+            --checks "Links" \
+            --only-4xx 2>&1 | tee external-links.txt
+          { echo "## External links"; echo; echo '```'; tail -40 external-links.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+          retention-days: 7
+
+      - name: Publish to gh-pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "Publish ${{ github.sha }}"

@@ -1,0 +1,11 @@
+{
+  "name": "gbdi-reference",
+  "private": true,
+  "description": "Offline render of the captured Framer site, for measuring and the visual check",
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.65.0",
+    "pixelmatch": "7.1.0",
+    "pngjs": "7.0.0"
+  }
+}
