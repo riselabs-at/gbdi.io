@@ -2,7 +2,9 @@
   A button-styled link.
   Parameters: href (site paths start with "/" and go through relative_url),
   label, style (primary | secondary | panel | muted; default primary),
-  arrow (true shows the arrow), class (extra classes).
+  arrow (true shows the arrow), class (extra classes), context (words read
+  only by screen readers after the label, for links like "Learn more" whose
+  label says nothing on its own; invisible, added 8 Nov 2026).
   Links that leave the site open in a new tab, as every external link on the
   live site does.
 {%- endcomment -%}
@@ -10,6 +12,6 @@
 {%- assign first = include.href | slice: 0 -%}
 {%- if first == "/" -%}{%- assign href = include.href | relative_url -%}{%- else -%}{%- assign href = include.href -%}{%- endif -%}
 <a class="btn btn--{{ style }}{% if include.class %} {{ include.class }}{% endif %}" href="{{ href }}"{% if first != "/" and first != "#" %} target="_blank" rel="noopener"{% endif %}>
-  <span class="btn__label">{{ include.label }}</span>
+  <span class="btn__label">{{ include.label }}{% if include.context %}<span class="visually-hidden"> {{ include.context }}</span>{% endif %}</span>
   {%- if include.arrow %}{% include svg/arrow.svg %}{% endif %}
 </a>
