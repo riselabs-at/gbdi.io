@@ -10,4 +10,7 @@
 // Type styles as measured. Sizes / line heights in px.
 @mixin display($size, $lh) { font-family: var(--font-display); font-size: $size; line-height: $lh; font-weight: 400; }
 @mixin body($size, $lh, $weight: 400) { font-family: var(--font-body); font-size: $size; line-height: $lh; font-weight: $weight; }
-@mixin ui { font-family: var(--font-ui); font-size: 16px; line-height: 25.6px; letter-spacing: -0.32px; font-weight: 400; }
+// Framer sets Satoshi Variable to weight 500 on its axis and turns on four
+// character variants; the measured weight (400) is the CSS value only.
+@mixin ui-face { font-family: var(--font-ui); font-weight: 400; font-variation-settings: "wght" 500; font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11"; }
+@mixin ui { @include ui-face; font-size: 16px; line-height: 25.6px; letter-spacing: -0.32px; }
