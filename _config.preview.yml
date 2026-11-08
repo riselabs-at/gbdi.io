@@ -1,0 +1,5 @@
+# Added on top of _config.yml for the github.io preview build only
+# (.github/workflows/pages.yml). Marks every page noindex, so search engines
+# do not list a second copy of the site. Canonical links already point to
+# www.gbdi.io. Removed from the build when the domain switches.
+preview: true

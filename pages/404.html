@@ -1,0 +1,27 @@
+---
+layout: default
+slug: not-found
+permalink: /404.html
+title: "Page not found"
+description: "This page does not exist."
+background: grey
+header_desktop: white
+header_tablet: rounded
+header_phone: white
+styles: [terms]
+sitemap: false
+---
+{%- comment -%}
+  Work order section 1 asks for a 404 page in the site's style. The live
+  Framer site has its own; this one uses the terms page panel. Wording is
+  new (two short lines) and listed in docs/open-questions.md.
+{%- endcomment -%}
+<div class="t-panel">
+  <h1 class="t-title">Page not found</h1>
+  <div class="rt t-text">
+    <p>The page you are looking for does not exist or has moved.</p>
+  </div>
+  <div class="t-text r-actions">
+    {% include button.html href="/" label="Go to the home page" arrow=true %}
+  </div>
+</div>
