@@ -1,0 +1,29 @@
+// Terms and conditions. Desktop as measured on the live site: white panel
+// joined to the header, 600 px text column centred, title 80 px below the
+// header. The live page does not reflow below 1200 px (it stays 1136 px
+// wide); here tablet follows the resource pages and phone the resource
+// pages' phone layout, the allowed responsive change of work order 0.3.
+
+.t-panel {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 80px 0 81px;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--white);
+}
+.t-title, .t-text { width: 600px; margin: 0 auto; }
+.t-title { @include body(24px, 21.6px, 500); strong { font-weight: 700; } }
+.t-text { margin-top: 40px; }
+// The lists here carry Framer's paragraph preset, so unlike the bare lists on
+// the resource pages they keep the 20 px block gap above them.
+.t-text > * + ul, .t-text > * + ol { margin-top: 20px; }
+
+@include tablet {
+  .t-panel { margin: 0 32px; }
+  .t-title, .t-text { max-width: calc(100% - 64px); }
+}
+
+@include phone {
+  .t-panel { margin: 0 16px; padding: 40px 16px 40px; }
+  .t-title, .t-text { width: auto; max-width: none; }
+}

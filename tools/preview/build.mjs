@@ -23,6 +23,7 @@ import * as sass from "sass";
 import yaml from "js-yaml";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { pathToFileURL } from "node:url";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
 const args = process.argv.slice(2);
@@ -106,15 +107,20 @@ function destOf(url) {
 const pageVars = pages.map((p) => ({ ...p.front, url: urlOf(p), path: p.rel }));
 site.pages = pageVars;
 
+let failed = 0;
 for (const [i, p] of pages.entries()) {
   const page = pageVars[i];
   const ext = path.extname(p.rel);
   let output;
+  try {
   if (ext === ".scss") {
     const scss = await engine.parseAndRender(p.content, { site, page });
+    // url makes @import resolve relative to the file first, as Jekyll does.
     output = sass.compileString(scss, {
+      url: pathToFileURL(path.join(ROOT, p.rel)),
       loadPaths: [path.join(ROOT, "_sass")],
       style: config.sass?.style === "compressed" ? "compressed" : "expanded",
+      silenceDeprecations: ["import"],
     }).css;
   } else {
     let body = await engine.parseAndRender(p.content, { site, page });
@@ -129,8 +135,16 @@ for (const [i, p] of pages.entries()) {
     }
     output = body;
   }
+  } catch (e) {
+    // One broken page should not stop the others from building here; Jekyll
+    // itself stops, so the error still has to be fixed.
+    failed++;
+    console.error(`FAILED ${p.rel}: ${String(e.message || e).split("\n")[0]}`);
+    continue;
+  }
   const dest = path.join(OUT, destOf(page.url));
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.writeFileSync(dest, output);
 }
-console.log(`${pages.length} pages and ${files.length - pages.length} files written to ${path.relative(ROOT, OUT)}`);
+if (failed) console.error(`${failed} file(s) failed`);
+console.log(`${pages.length - failed} pages and ${files.length - pages.length} files written to ${path.relative(ROOT, OUT)}`);

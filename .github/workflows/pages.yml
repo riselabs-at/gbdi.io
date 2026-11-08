@@ -34,7 +34,7 @@ env:
   PREVIEW_BASEURL: /gbdi.io
   # Pages not built yet, so links to them are not failures. Remove each one
   # in the pull request that adds it; empty when the rebuild is complete.
-  PENDING: "/,/about,/community,/platform,/termsandconditions"
+  PENDING: "/,/about,/community,/platform"
 
 jobs:
   build:
