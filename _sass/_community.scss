@@ -1,0 +1,122 @@
+// Community page (/community). Measured on the captured site, 8 Nov 2026.
+
+// On phones this page's fixed header sits 32 px from the top (112 px tall),
+// not 16 px as on the other main pages.
+@include phone {
+  .page-community .site-header--fixed { height: 112px; padding-top: 32px; }
+  .page-community main.has-fixed-header { padding-top: 112px; }
+}
+
+// Hero: grey panel joined to the header, photo row, then title and text.
+.c-hero {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 72px 32px 47px;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--panel);
+}
+
+// Photo row: four tiles 140 px tall, 24 px apart; on tablet and phone the
+// row runs past the panel and is cut off at its edge, as on the live site.
+.c-photos {
+  display: flex;
+  gap: 24px;
+  overflow: hidden;
+}
+.c-photo {
+  position: relative;
+  flex: none;
+  width: 250px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: var(--radius-s);
+  img { position: absolute; max-width: none; height: auto; }
+}
+// Each photo is cropped as in Framer: left, top and width per layout.
+@mixin crop($l, $t, $w) { img { left: $l; top: $t; width: $w; } }
+.c-photo--1 { @include crop(-14px, -21px, 300px); }
+.c-photo--2 { @include crop(-5px, -28px, 261px); }
+.c-photo--3 { @include crop(-106px, -48px, 474px); }
+.c-photo--4 { @include crop(0px, -17px, 262px); }
+
+// Title left, text and button right, both ending on the same line.
+.c-intro {
+  display: grid;
+  grid-template-columns: 496px 496px;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 48px;
+}
+.c-title { @include display(60px, 66px); }
+.c-text {
+  @include body(18px, 23.4px);
+  p + p { margin-top: 20px; }
+  .c-join { margin-top: 24px; }
+}
+
+// Logo walls. Each wall: title 80 px from its top, logos 160 x 80 in a
+// centred grid, 40 px below the last row (120 px below the single sponsor).
+.c-walls {
+  max-width: var(--content);
+  margin: 0 auto;
+}
+.c-wall {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+.c-wall--single { padding-bottom: 120px; }
+.c-wall__title {
+  @include body(16px, 19.2px);
+  color: var(--text-strong);
+  opacity: 0.5;
+}
+.c-wall__logos {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  justify-content: center;
+  gap: 40px 102px;
+  margin-top: 80px;
+  a, img { display: block; width: 160px; height: 80px; border-radius: var(--radius); }
+  img { object-fit: contain; }
+}
+.c-wall--single .c-wall__logos { grid-template-columns: 160px; }
+
+@include tablet {
+  .c-hero { margin: 0 32px; }
+  .c-photo { width: 320px; }
+  .c-photo--1 { @include crop(-14px, -21px, 370px); }
+  .c-photo--2 { @include crop(-5px, -28px, 331px); }
+  .c-photo--3 { @include crop(-106px, -48px, 544px); }
+  .c-photo--4 { @include crop(0px, -63px, 332px); }
+  .c-intro { display: block; }
+  .c-title { @include display(44px, 48.4px); }
+  .c-text {
+    margin-top: 32px;
+    @include body(16px, 20.8px);
+  }
+  .c-walls { margin: 0 32px; }
+  .c-wall__logos {
+    grid-template-columns: repeat(3, 160px);
+    column-gap: 131px;
+    margin-top: 40px;
+  }
+}
+
+@include phone {
+  .c-hero { margin: 0 16px; padding-bottom: 48px; }
+  .c-photo { width: 240px; }
+  .c-photo--1 { @include crop(-14px, -21px, 290px); }
+  .c-photo--2 { @include crop(-5px, -28px, 251px); }
+  .c-photo--3 { @include crop(-106px, -48px, 464px); }
+  .c-photo--4 { @include crop(0px, -10px, 252px); }
+  .c-intro { margin-top: 24px; }
+  .c-title { @include display(32px, 35.2px); }
+  .c-text { margin-top: 24px; }
+  .c-walls { margin: 0 32px; }
+  .c-wall__logos {
+    grid-template-columns: 160px;
+    row-gap: 16px;
+    margin-top: 80px;
+  }
+  .c-wall--single .c-wall__logos { margin-top: 40px; }
+}
