@@ -65,3 +65,13 @@ Satoshi 16 / 20.8 or 18 / 23.4.
   `pad: [desktop, tablet, phone]`.
 - Rich text follows Framer's spacing: 20 px between blocks, 40 px above a
   sub-heading, no gap above a list.
+
+## Reading the comparison numbers
+
+`compare.mjs --offline` renders Framer's captured DOM without its scripts.
+Lazy images that had not loaded and elements that fade in on scroll stay
+blank there, so pages with them (Home, About) report higher numbers than
+their real difference. Read the side-by-side images for those pages.
+`tools/visual/text-diff.mjs` compares visible text; text that Framer renders
+behind another layout (the desktop header on the Community tablet layout)
+shows up as a difference without being visible.

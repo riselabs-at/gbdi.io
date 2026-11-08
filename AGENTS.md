@@ -29,28 +29,14 @@ Phase B (content corrections) is a separate work order that does not exist yet.
 
 ## Pushing, pull requests and who merges
 
-### Build mode: in force now (Martin, 8 Nov 2026)
+### Build mode: ended 8 Nov 2026
 
-Martin's instruction: "go ahead without me giving any clearance until you have
-rebuilt the whole gbdi.io page as github page and I can review the outcome."
-Until that review, this section overrides the standing rules below:
-
-- **Merge your own pull requests** once their checks have run and you have
-  read the result. Do not wait for Martin's clearance, including for changes a
-  visitor sees on the github.io preview.
-- **Still one branch and one pull request per step,** with a body written as
-  below, so the history can be reviewed and reverted step by step.
-- **Questions do not stop the work.** Take the most reasonable reading, record
-  it at the top of the pull request and in `docs/open-questions.md`, and carry
-  on. Martin reviews them together with the result.
-- **Phase A ground rules still apply in full.** Text stays verbatim; log,
-  don't fix.
-- **Still stop before anything irreversible or outside the repository:** the
-  DNS switch (step 6 of the work order), anything at the domain registrar,
-  removing the domain from Framer, cancelling Framer.
-- **Build mode ends** when the whole site is live on the github.io preview
-  and Martin has been told it is ready to review. From then on the standing
-  rules below apply again. Update this section when that happens.
+Martin's instruction of 8 Nov 2026 ("go ahead without me giving any
+clearance until you have rebuilt the whole gbdi.io page as github page and I
+can review the outcome") applied while the 13 pages were built. They are all
+on the preview now and Martin has been told; `docs/03-status.md` records where
+things stand. From here the standing rules below apply again: Martin merges
+anything a visitor sees.
 
 ### Standing rules
 
@@ -126,6 +112,7 @@ by step. Update this table whenever a step adds a folder.
 | `.github/workflows/capture.yml` | Runs the capture on GitHub's runner and commits the result |
 | `.github/workflows/pages.yml` | Builds with Jekyll, checks links, images and alt text, publishes `main` to the `gh-pages` branch |
 | `docs/02-design-system.md` | Measured tokens and layout rules, and how they were measured |
+| `docs/03-status.md` | Phase A against the definition of done; what needs Martin |
 | `_config.yml`, `Gemfile` | Jekyll settings, shared links, the Plausible switch |
 | `_data/` | Navigation, resources menu, FAQ, team, partners: edit content here without touching HTML |
 | `_includes/`, `_layouts/` | Header, footer, buttons, components; the default and resource layouts |
