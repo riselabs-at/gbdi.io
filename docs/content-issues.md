@@ -8,8 +8,8 @@ Add a row whenever you notice something. Say which page, what you saw, and why
 it looks wrong. Leave the fix to Phase B.
 
 The first rows come from the website review of 4 November 2026 (ask Martin for
-the link). They were found on desktop in Chrome and are to be confirmed against
-the captured text from step 1.
+the link). They were found on desktop in Chrome. Rows marked "capture 8 Nov"
+were checked against, or found in, the step 1 capture of 8 November 2026.
 
 | Page | What | Why it looks wrong | Source |
 | --- | --- | --- | --- |
@@ -19,12 +19,15 @@ the captured text from step 1.
 | `/termsandconditions` | Privacy-policy template left unfilled | Operator blank, refers to a Cookies Policy that does not exist, gives info@ while the site uses office@; there is no legal notice | Review 4 Nov |
 | `/understanding-the-data-collection-process` | Link to the Platform Guidance Document | Google Drive link is dead | Review 4 Nov |
 | `/understanding-the-data-collection-process` | Data template | Promised on the page but not provided | Review 4 Nov |
-| `/job-opportunities` | Browser title "Join the GBDI Team! - My Framer Site" | Framer default site name left in. Fixed in Phase A as an allowed invisible change | Review 4 Nov |
-| `/job-opportunities` | Different header from all other pages (menu order Home, Platform, Community, About, Resources; "Join community"; "Sign up / sign in"; Resources links to this page) | Built on a different Framer version. Phase A uses the standard header here, as the work order says | Work order 6 Nov |
+| `/job-opportunities` | Browser title "Join the GBDI Team! - My Framer Site" | Seen on 4 Nov. Gone in the capture of 8 Nov: every page now has the same title, "Global Building Data Initiative". Unique titles are an allowed invisible change in Phase A | Review 4 Nov, capture 8 Nov |
+| `/job-opportunities` | Different header from all other pages (menu order Home, Platform, Community, About, Resources; "Join community"; "Sign up / sign in") | Not seen in the capture of 8 Nov: the page is now on the same Framer build as the others (49ba03b) and shows the standard desktop header. That menu order and those labels are what the phone menu shows on every page (`docs/baseline/home-390-menu-open.png`) | Work order 6 Nov, capture 8 Nov |
 | Site-wide | Two different Join targets | Flagged in the review; which links point where is to be confirmed from the capture | Review 4 Nov |
 | Join form (Google Form) | No privacy text | Personal data is collected without saying how it is used | Review 4 Nov |
 | `/about` | Objectives | No target year or method given | Review 4 Nov |
 | `/about` | Phase timeline | Skips 2026 | Review 4 Nov |
 | `/frequently-asked-questions` | Scope described as "upfront embodied" | Flagged in the review; see the review for the reasoning | Review 4 Nov |
 | To confirm from the capture | RISE logo | Links to riseregenerate.com | Review 4 Nov |
-| All pages | No `<h1>`, no unique titles, no `alt`, no `lang` | Fixed in Phase A as allowed invisible changes | Review 4 Nov |
+| All pages | No `<h1>`, one shared title, images without `alt`, no `lang` | Confirmed 8 Nov: no `<h1>` and no `lang` on any page; for example 11 of 13 images on `/` and 12 of 12 on `/about` have no `alt`. Fixed in Phase A as allowed invisible changes | Review 4 Nov, capture 8 Nov |
+| `/` | Launch banner text differs between desktop and phone | Desktop: "The Open Building Data Platform is now live! Take a sneak-peek or try it out. Missed the Online Launch Event? Watch it here." Phone: "...is now live February 17th! Take a sneak-peek." Copy each layout as it is | Capture 8 Nov |
+| Site-wide | Phone menu differs from the desktop header | Phone: Sign up, Join Community, then Home, Platform, Community, About, Resources. Desktop: Home, About, Community, Platform, Resources, Join, Sign in. Copy each layout as it is | Capture 8 Nov |
+| `/frequently-asked-questions` | Answer 3 says "A free data template is available for download on the Open Data Format page" | Matches the review's point that the promised template is missing; to check on `/open-data-format` | Capture 8 Nov |
