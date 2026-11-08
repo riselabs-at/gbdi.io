@@ -1,0 +1,9 @@
+# Left-hand menu of the resource pages (work order section 1), in order.
+- { label: Resources overview, url: /resources }
+- { label: CLEAR, url: /clear }
+- { label: Launch Event, url: /launch-webinar }
+- { label: Data Reporting, url: /the-importance-of-data }
+- { label: Data Collection, url: /understanding-the-data-collection-process }
+- { label: Open Data Format, url: /open-data-format }
+- { label: FAQ, url: /frequently-asked-questions }
+- { label: Job Opportunities, url: /job-opportunities }

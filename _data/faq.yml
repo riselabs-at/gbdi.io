@@ -1,0 +1,17 @@
+# FAQ on /frequently-asked-questions, word for word from the live site
+# (captured 8 Nov 2026). Answers are HTML; <br> is a line break as on the site.
+
+- question: "What is the GBDI?"
+  answer: "The Global Building Data Initiative empowers key actors in the building industry and policy to use building data to reduce resource use and upfront embodied carbon of buildings. We offer The Open Building Data Format (openBDF) – a data format for data reporting and collection, assessment methods for building data analytics, and the Open Building Data Platform – a database for building visualizations and benchmarks. The insights will enable the setting of data-informed targets and the development of decarbonization strategies."
+- question: "For whom is the Open Building Data Platform?"
+  answer: "Policy makers, building owners, design professionals, who wish to drive the transition to sustainable building practices."
+- question: "What kind of data is required to use the Open Building Data Platform?"
+  answer: "The required and optional data for the platform follows a 4-level structure: Project level (general information, project description), Assembly level (construction components, quantities), Product level (assembly elements, LCA results) and Impact level (EPDs, generic data, tech flows).<br>A free data template is available for download on the Open Data Format page on the left menu and in the Platform."
+- question: "Is GBDI aligned with other standards and data models?"
+  answer: "openBDF is a harmonized data structure established by GBDI, which integrates existing data protocols and reporting standards such as ECHO and RICS."
+- question: "Can the data contributions be anonymized?"
+  answer: "The data you provide can be anonymized. However, we encourage you to share as much as possible so that you can use the benchmarking feature and contribute as well as promote knowledge-sharing."
+- question: "Is there a fee to access the platform?"
+  answer: "There is no fee - the Open Building Data Platform is currently free to use."
+- question: "When was the Platform launched?"
+  answer: "The Open Building Data Platform \"Beta\" was launched in February 2025. You can find more details, rewatch the launch or download the presentation by visiting our Launch Event page on the left menu."
