@@ -5,7 +5,7 @@ _site/
 .sass-cache/
 
 # Node tooling
-node_modules/
+node_modules
 
 # Local check output
 .visual/
