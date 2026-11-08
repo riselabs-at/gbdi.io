@@ -1,0 +1,40 @@
+---
+layout: default
+slug: community
+permalink: /community
+title: "Community"
+description: "The GBDI network unites policy makers, industry leaders, design practitioners, data specialists and tool developers in a shared mission to transform the built environment through better buildings."
+header_fixed: true
+header_desktop: joined
+header_tablet: rounded
+header_phone: rounded
+styles: [community]
+---
+<section class="c-hero">
+  {%- comment -%}
+    Four photos, each cropped by its tile exactly as on the live site
+    (positions per layout in _sass/_community.scss). Alt texts come from the
+    photos' layer names in the Framer project.
+  {%- endcomment -%}
+  <div class="c-photos">
+    <div class="c-photo c-photo--1"><img src="{{ '/assets/img/framer/LOZBZSE5vtQhNGnr3uHWSHShHk.webp' | relative_url }}" alt="Group photo of participants at a GLOBE workshop" width="2000" height="1126"></div>
+    <div class="c-photo c-photo--2"><img src="{{ '/assets/img/framer/cjoA9J4WbcpLkFlobyTdpXA3Jak.webp' | relative_url }}" alt="Presentation at the Paris Buildings and Climate Pre-Forum" width="2000" height="1500"></div>
+    <div class="c-photo c-photo--3"><img src="{{ '/assets/img/framer/OBNE05QcM8K8z5xxiA11Zwtfo.webp' | relative_url }}" alt="Participants around a meeting table at a GLOBE workshop" width="2000" height="914"></div>
+    <div class="c-photo c-photo--4"><img src="{{ '/assets/img/framer/0iQG85V5vfv4kkD0XrSjUiIe0.webp' | relative_url }}" alt="Group photo at the GLOBE workshop at Tongji University" width="2000" height="1333"></div>
+  </div>
+  <div class="c-intro">
+    <h1 class="c-title">A global community for better buildings</h1>
+    <div class="c-text">
+      <p>The GBDI network unites policy makers, industry leaders, design practitioners, data specialists and tool developers in a shared mission to transform the built environment through better buildings.</p>
+      <p>Join the community and exchange insights to jointly tackle global challenges and align efforts to decarbonize buildings on a global scale. Connect with a growing network of experts to stay informed on the latest in sustainable building data development.</p>
+      {% include button.html href=site.links.join_form label="Join community" arrow=true class="c-join" %}
+    </div>
+  </div>
+</section>
+
+<div class="c-walls">
+  {% include community-logo-wall.html group="lead" title="Lead Partners" %}
+  {% include community-logo-wall.html group="development" title="Development Partners" %}
+  {% include community-logo-wall.html group="research" title="Research partners" %}
+  {% include community-logo-wall.html group="sponsors" title="Sponsors and Funding Partners" class="c-wall--single" %}
+</div>

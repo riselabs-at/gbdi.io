@@ -1,0 +1,141 @@
+# Partner logos on /community, in the order of the live site (8 Nov 2026).
+# name: shown to screen readers as the logo's alt text, read from the logo itself.
+# logo: file in assets/img/framer/. link: exactly as on the live site, including
+# odd ones (BECD has no link; SE2050 starts with a space). group: which wall.
+
+- name: "EPFL"
+  logo: UggMCZ1NfUbVY6GESnTK1cCtseU.png
+  link: "https://www.epfl.ch/en/"
+  group: lead
+- name: "RISE"
+  logo: ku7i3955NWZmb3b5IJquc1DLAuc.svg
+  link: "https://riseregenerate.com/"
+  group: lead
+- name: "Universidade de São Paulo (USP)"
+  logo: tbcL3CohMCkXD5X6xR2sAN6LY8.webp
+  link: "https://www5.usp.br/"
+  group: lead
+- name: "GLOBE"
+  logo: ptwRkRDSntk7wUkG0R0NLFjMus.png
+  link: "https://globe-consensus.com/"
+  group: lead
+- name: "Arup"
+  logo: rLfjy3kOJytONUGIOyCZ3fBHeg.svg
+  link: "http://www.arup.com"
+  group: development
+- name: "BECD"
+  logo: p7HBf3oDHQIflrIg0p0XjPewiI.png
+  link: null
+  group: development
+- name: "Building Transparency"
+  logo: By0H1UZfvCLlrRIDrFRZsJ5YjAo.png
+  link: "http://www.buildingtransparency.org/"
+  group: development
+- name: "Christian Kongsgaard ApS"
+  logo: qf2wekLQnugS4Pn8jijjr7Nt2UY.png
+  link: "https://kongsgaard.eu/"
+  group: development
+- name: "Carbon Leadership Forum"
+  logo: YtkrzCyAFFhWZ44scsl17vmQ.png
+  link: "https://carbonleadershipforum.org/"
+  group: development
+- name: "CWSC, The Centre for Worldwide Sustainable Construction"
+  logo: 1tYqSvqqP7pcF1hRXEns465q2pI.png
+  link: "https://cwsc.epfl.ch/"
+  group: development
+- name: "ECHO Project"
+  logo: vDZK10maBCmo5sL8uPhcOhbgI.png
+  link: "https://www.echo-project.info/"
+  group: development
+- name: "HEAT"
+  logo: eFN67p8fhC09waqc6VXe5rIzhQU.svg
+  link: "https://www.heat-international.de/"
+  group: development
+- name: "EDGE"
+  logo: 7vLSBZqe3CMTr2d62lE5Gqz6zcg.svg
+  link: "https://edgebuildings.com/"
+  group: development
+- name: "INDICATE"
+  logo: H663u9wyZ0EmMZg9ib6gnQ4epk.webp
+  link: "https://www.indicatedata.com/"
+  group: development
+- name: "The Institution of Structural Engineers"
+  logo: B28kYUIWSejtvXu8CYlPSFCw6mQ.svg
+  link: "https://www.istructe.org/"
+  group: development
+- name: "LC3, Limestone Calcined Clay Cement"
+  logo: lUHN0w610akHENJRZcWa7nwVhc.png
+  link: "https://lc3.ch/"
+  group: development
+- name: "Open Data Institute"
+  logo: U1I88itMjwjs5LU0KcXDvQOWVY.svg
+  link: "http://theodi.org/"
+  group: development
+- name: "Priopta"
+  logo: AuYGg2eV1dPB4GU387FMgEVhn2k.png
+  link: "https://www.priopta.com/"
+  group: development
+- name: "Ramboll"
+  logo: HBKWK5dH8EfpVyAkrdlnpGUUgtI.svg
+  link: "https://www.ramboll.com/"
+  group: development
+- name: "RICS"
+  logo: jtHjmFB5doR6PiSBxDwo4B9Cg.png
+  link: "https://www.rics.org/"
+  group: development
+- name: "SEI and SE 2050"
+  logo: L4Hi2PXqnILnEpWfrRJhaUtrfY4.png
+  link: " https://se2050.org"
+  group: development
+- name: "WBCSD"
+  logo: 73US8NQAhxORbDPTyelS8vxvE.svg
+  link: "http://www.wbcsd.org"
+  group: development
+- name: "DTU"
+  logo: tOzCuw6FeTvPQZffEItyv6qpc.png
+  link: "https://www.dtu.dk/english/"
+  group: research
+- name: "EPFL"
+  logo: UggMCZ1NfUbVY6GESnTK1cCtseU.png
+  link: "https://www.epfl.ch/en/"
+  group: research
+- name: "ETH Zürich"
+  logo: 31THVtjXNZfnQ5QDO9oAzx7umyA.svg
+  link: "https://ethz.ch/"
+  group: research
+- name: "Indian Institute of Technology Madras"
+  logo: GimG2anWNBakkE4vM2MMqZYnF4A.png
+  link: "https://www.iitm.ac.in/"
+  group: research
+- name: "KU Leuven"
+  logo: rQbxMNjpD6WR2yZBDcEEdEYgESE.svg
+  link: "https://www.kuleuven.be/english"
+  group: research
+- name: "Tongji University"
+  logo: 7aN9nY9G6q070m9ReOe2j9TUak.png
+  link: "https://en.tongji.edu.cn/"
+  group: research
+- name: "University of Cambridge"
+  logo: efhjeBgMgUQXvVfq9tYwisilv3s.svg
+  link: "http://www.cam.ac.uk/"
+  group: research
+- name: "Leibniz Universität Hannover"
+  logo: aNrTeldWebqXC8BsxjogLeMUIDk.svg
+  link: "https://www.uni-hannover.de/en/"
+  group: research
+- name: "University of Strathclyde Glasgow"
+  logo: zlpbWE3rdp5wI33nm574n7lPSE.webp
+  link: "https://www.strath.ac.uk/"
+  group: research
+- name: "University of Washington"
+  logo: x3CJq44Ld4udwWAl24n3TOKd4.svg
+  link: "https://www.washington.edu/"
+  group: research
+- name: "Universidade de São Paulo (USP)"
+  logo: SLLFK7UIkrso9AIxntdJyhz5TB8.png
+  link: "https://www5.usp.br/"
+  group: research
+- name: "ClimateWorks Foundation"
+  logo: LY1iB1PCcJQ6xBGachkZDX7c.svg
+  link: "https://climateworks.org/"
+  group: sponsors
