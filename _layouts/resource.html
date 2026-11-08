@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{%- comment -%}
+  Resource pages (work order section 1, pages 5 to 12): white panel joined to
+  the header, left-hand Resources menu, 600 px text column. On phones the
+  menu becomes a scrolling row above the text, as on the live site.
+{%- endcomment -%}
+<div class="r-panel">
+  <nav class="r-menu" aria-label="Resources">
+    <ul>
+      {%- for item in site.data.resources_nav %}
+      <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  {%- comment -%}
+    Space below the text differs per page and layout on the live site;
+    each page sets it as pad: [desktop, tablet, phone] in px (measured).
+  {%- endcomment -%}
+  {%- assign pad = page.pad | default: "" -%}
+  <div class="r-main"{% if pad != "" %} style="--pb-d: {{ pad[0] }}px; --pb-t: {{ pad[1] }}px; --pb-p: {{ pad[2] }}px;{% if page.pad_top_phone %} --pt-p: {{ page.pad_top_phone }}px;{% endif %}"{% endif %}>
+    {{ content }}
+  </div>
+</div>

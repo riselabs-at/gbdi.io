@@ -1,0 +1,20 @@
+{%- comment -%}
+  FAQ accordion (work order 5.5): several items may be open at once, as on
+  the live site. Each question is a button; without JavaScript all answers
+  are shown. Parameter: items (a list of {question, answer}).
+{%- endcomment -%}
+<div class="accordion" data-accordion>
+  {%- for item in include.items %}
+  <div class="accordion__item">
+    <h2 class="accordion__heading">
+      <button class="accordion__button" type="button" aria-expanded="true" aria-controls="faq-{{ forloop.index }}" id="faq-q-{{ forloop.index }}">
+        <span class="accordion__icon" aria-hidden="true"></span>
+        <span class="accordion__question">{{ item.question }}</span>
+      </button>
+    </h2>
+    <div class="accordion__panel" id="faq-{{ forloop.index }}" role="region" aria-labelledby="faq-q-{{ forloop.index }}">
+      <p class="accordion__answer">{{ item.answer }}</p>
+    </div>
+  </div>
+  {%- endfor %}
+</div>
