@@ -1,0 +1,66 @@
+{%- comment -%}
+  Home "A platform built for climate action": three steps that select a chart
+  panel, cycling on their own every 3 s as on the live site (assets/js/
+  home-tabs.js). Without JavaScript the first step and its panel show.
+  Desktop draws the panels in HTML, as Framer does; tablet and phone show
+  Framer's pictures of the same panels.
+  Tablet and phone pictures for steps 2 and 3 load only after interaction on
+  the live site and come from the step 1b capture (_source-assets/framer/late).
+{%- endcomment -%}
+<div class="h-tabs" data-home-tabs>
+  <div class="h-tabs__list" role="tablist" aria-label="Platform features">
+    <button class="h-tab" type="button" role="tab" id="h-tab-1" aria-controls="h-panel-1" aria-selected="true">{% include svg/home-arrow-small.svg %}<span>Open data protocol for global exchange</span></button>
+    <button class="h-tab" type="button" role="tab" id="h-tab-2" aria-controls="h-panel-2" aria-selected="false" tabindex="-1">{% include svg/home-arrow-small.svg %}<span>Database for visualizations and benchmarks </span></button>
+    <button class="h-tab" type="button" role="tab" id="h-tab-3" aria-controls="h-panel-3" aria-selected="false" tabindex="-1">{% include svg/home-arrow-small.svg %}<span>Assessment methods for building data analytics</span></button>
+  </div>
+
+  <div class="h-panels">
+    <div class="h-panel h-panel--portfolio" id="h-panel-1" role="tabpanel" aria-labelledby="h-tab-1">
+      <div class="h-chart only-desktop">
+        <p class="h-chart__title">Portfolio</p>
+        <div class="h-portfolio__head">
+          <p>Project</p><p>Floor Area</p><p class="h-portfolio__ghg">GHG emissions <br>(Life Cycle Stages)</p>
+        </div>
+        {%- assign rows = "Building A,1035,157,37,38|Building B,1291,176,28,28|Building C,455,109,51,72|Building D,202,129,75,28" | split: "|" %}
+        {%- for row in rows %}
+        {%- assign r = row | split: "," %}
+        <div class="h-portfolio__row h-portfolio__row--{{ forloop.index }}">
+          <p>{{ r[0] }}</p><p>{{ r[1] }}</p>
+          <div class="h-bar" aria-hidden="true">
+            <span class="h-bar__a" style="width: {{ r[2] }}px">A</span><span class="h-bar__b" style="width: {{ r[3] }}px">B</span><span class="h-bar__c" style="width: {{ r[4] }}px">C</span>
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
+      <img class="h-panel__img not-desktop" src="{{ '/assets/img/framer/UKuT3523jOijBFTMiYnAXY7628.webp' | relative_url }}" width="488" height="400" alt="Portfolio: floor area and greenhouse gas emissions by life cycle stage for Building A, B, C and D">
+    </div>
+
+    <div class="h-panel h-panel--map" id="h-panel-2" role="tabpanel" aria-labelledby="h-tab-2" hidden>
+      <div class="h-chart only-desktop">
+        <p class="h-chart__title">Map</p>
+        <img class="h-map__img" src="{{ '/assets/img/home/map.webp' | relative_url }}" width="488" height="342" alt="World map with green dots marking buildings in the database, most of them in Europe" loading="lazy">
+      </div>
+      <img class="h-panel__img not-desktop" src="{{ '/assets/img/home/map-tablet.webp' | relative_url }}" width="488" height="400" alt="World map with green dots marking buildings in the database, most of them in Europe" loading="lazy">
+    </div>
+
+    <div class="h-panel h-panel--subsets" id="h-panel-3" role="tabpanel" aria-labelledby="h-tab-3" hidden>
+      <div class="h-chart only-desktop">
+        <p class="h-chart__title">Subsets</p>
+        <p class="h-subsets__ghg">GHG emissions (Life Cycle Stages)</p>
+        <div class="h-subsets__grid" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        {%- comment -%} Box positions in px from the panel edge, read off the live recording. {%- endcomment %}
+        {%- assign subsets = "Typology A,235,463,305,353,415,396|Typology B,177,463,247,265,296,312|Typology C,182,342,252,271,287,285" | split: "|" %}
+        {%- for s in subsets %}
+        {%- assign v = s | split: "," %}
+        <div class="h-subsets__row h-subsets__row--{{ forloop.index }}">
+          <p>{{ v[0] }}</p>
+          <div class="h-box" aria-hidden="true" style="--w0: {{ v[1] }}px; --w1: {{ v[2] }}px; --b0: {{ v[3] }}px; --b1: {{ v[4] }}px; --b2: {{ v[5] }}px; --dot: {{ v[6] }}px;">
+            <span class="h-box__whisker"></span><span class="h-box__light"></span><span class="h-box__dark"></span><span class="h-box__dot"></span>
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
+      <img class="h-panel__img not-desktop" src="{{ '/assets/img/home/subsets-tablet.webp' | relative_url }}" width="488" height="400" alt="Subsets: greenhouse gas emissions by life cycle stage for Typology A, B and C" loading="lazy">
+    </div>
+  </div>
+</div>

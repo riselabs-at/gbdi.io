@@ -1,0 +1,130 @@
+---
+layout: default
+slug: home
+permalink: /
+title: "Global Building Data Initiative"
+description: "Open data for better buildings: GBDI empowers industry leaders and policy makers with data-driven insights to enhance the life cycle performance of buildings."
+header_fixed: true
+header_desktop: joined
+header_tablet: rounded
+header_phone: rounded
+styles: [home]
+scripts: [home-tabs, home-ticker]
+---
+{%- comment -%}
+  Home page, rebuilt from the captured Framer page (8 Nov 2026). Text is
+  word for word from the capture; see docs/content-issues.md for what is
+  known to be wrong and left as it is (Phase A).
+{%- endcomment -%}
+
+<section class="h-hero" aria-labelledby="h-hero-title">
+  <div class="h-hero__panel">
+    <img class="h-hero__illu" src="{{ '/assets/img/home/globe-hands.svg' | relative_url }}" width="276" height="276" alt="">
+    <h1 class="h-hero__title" id="h-hero-title">
+      <span class="h-hero__lead">Open Data,</span>
+      {%- comment -%} The rotating words are decoration; screen readers get all three once. {%- endcomment %}
+      <span class="h-rotator" aria-hidden="true">
+        <span class="h-rotator__track">
+          <span>Better Buildings</span><span>Better Business</span><span>Better Planet</span><span>Better Buildings</span>
+        </span>
+      </span>
+      <span class="visually-hidden">Better Buildings, Better Business, Better Planet</span>
+    </h1>
+    <ul class="h-hero__lines">
+      <li>{% include svg/home-arrow.svg %}Design resilient buildings with better <span class="h-green">environmental performance.</span></li>
+      <li>{% include svg/home-arrow.svg %}Develop effective decarbonization strategies and <span class="h-green">climate policy</span></li>
+      <li>{% include svg/home-arrow.svg %}Improve resource use and decrease <span class="h-green">whole life cycle</span> emissions.</li>
+      <li>{% include svg/home-arrow.svg %}Manage your building portfolio's <span class="h-green">carbon footprint.</span></li>
+    </ul>
+    {%- comment -%} The live site shows different banner text on phones; both are copied as they are. {%- endcomment %}
+    <div class="h-banner not-phone">
+      <p>The Open Building Data Platform is <strong>now<strong> </strong>live</strong>! <a href="{{ '/platform' | relative_url }}">Take a sneak-peek</a> or <a href="https://app.gbdi.io/" target="_blank" rel="noopener">try it out</a>. </p>
+      <p>-&gt; Missed the <strong>Online Launch Event</strong>? <a href="{{ '/launch-webinar' | relative_url }}">Watch it here</a>.</p>
+    </div>
+    <div class="h-banner h-banner--phone only-phone">
+      <p>The Open Building Data Platform is now<strong> </strong>live<strong> February 17th</strong>! <a href="{{ '/platform' | relative_url }}">Take a sneak-peek.</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="h-stats" aria-label="Key figures">
+  <a class="h-stat h-stat--green" href="https://www.architecture2030.org/why-the-built-environment/" target="_blank" rel="noopener">
+    <p class="h-stat__figure">~42%</p>
+    <p class="h-stat__text h-stat__text--soft">of global CO2 emissions are attributed to building construction and operation.<span class="h-fn">1</span></p>
+  </a>
+  <a class="h-stat h-stat--blue" href="https://doi.org/10.1016/j.apenergy.2019.114107" target="_blank" rel="noopener">
+    <p class="h-stat__figure">50-90%</p>
+    <p class="h-stat__text">of new buildings’ whole life cycle emissions are material-related, embodied emissions.<span class="h-fn">2</span></p>
+  </a>
+  <a class="h-stat h-stat--purple" href="https://doi.org/10.1038/s41467-023-40302-0" target="_blank" rel="noopener">
+    <p class="h-stat__figure">75%</p>
+    <p class="h-stat__text">reduction of embodied carbon emissions from concrete materials is possible today.<span class="h-fn">3</span></p>
+  </a>
+</section>
+
+<section class="h-better" aria-labelledby="h-better-title">
+  <h2 class="h-better__title" id="h-better-title">Better buildings</h2>
+  <p class="h-better__intro">GBDI’s mission is to empower industry leaders and policy makers with data-driven insights on how to enhance life cycle performance of buildings through design and engineering, to help define robust benchmarks, identify effective strategies, and set meaningful targets to drive concrete decarbonization action.</p>
+  <div class="h-cards">
+    <article class="h-card h-card--1">
+      <img class="h-card__illu" src="{{ '/assets/img/home/better-decisions.svg' | relative_url }}" width="250" height="250" alt="">
+      <div class="h-card__text">
+        <h3>Better Decisions</h3>
+        <p>Our data-driven insights offer strategic advantages via new perspectives on resource use and carbon emissions throughout the whole life cycle of buildings and across global supply-chains.</p>
+      </div>
+    </article>
+    <article class="h-card h-card--2">
+      <img class="h-card__illu" src="{{ '/assets/img/home/better-materials.svg' | relative_url }}" width="250" height="250" alt="">
+      <div class="h-card__text">
+        <h3>Better Materials</h3>
+        <p>We facilitate appropriate product specifications for better buildings and help scale implementation of improved conventional materials as well as the shift to low carbon material alternatives.</p>
+      </div>
+    </article>
+    <article class="h-card h-card--3">
+      <img class="h-card__illu" src="{{ '/assets/img/home/better-design.svg' | relative_url }}" width="250" height="250" alt="">
+      <div class="h-card__text">
+        <h3>Better Design</h3>
+        <p>Our data and tools help optimize your building design, layout and structure to enhance material efficiency for optimal use of resources within tight financial and environmental budgets.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="h-platform" aria-labelledby="h-platform-title">
+  <div class="h-platform__text">
+    <h2 class="h-platform__title" id="h-platform-title">A platform built for climate action</h2>
+    <p class="h-platform__intro">The Open Building Data Platform uses a coordinated, open and scalable data model to enhance exchange and comparability of life cycle data. Leverage our open tools to go from building data to actionable insights that improve your building and policy design.</p>
+  </div>
+  {% include home-tabs.html %}
+  <div class="h-platform__buttons">
+    {% include button.html href=site.links.app label="Sign up" arrow=true %}
+    <a class="btn btn--panel h-more" href="{{ '/platform' | relative_url }}"><span class="btn__label">Learn more</span>{% include svg/home-arrow-16.svg %}</a>
+  </div>
+</section>
+
+{% include home-photos.html %}
+
+<section class="h-community" aria-labelledby="h-community-title">
+  <h2 class="h-community__title" id="h-community-title">A community initiative</h2>
+  <div class="h-community__cols">
+    <div class="h-community__text">
+      <p>GBDI is implemented under the umbrella of GLOBE - The Global Consensus on Sustainability in the Built Environment. </p>
+      <p>The initiative is led by a team of researchers and experts in the field of sustainable construction materials and whole life carbon benchmarking and policy support, from the École Polytechnique Fédérale de Lausanne (EPFL), The Institute for Regenerative Spatial System Science (RISE) and the <a href="https://www5.usp.br/english/institutional/" target="_blank" rel="noopener">Universidade de São Paulo</a> (USP).</p>
+      <div class="h-community__more">
+        <p>We’re a global community dedicated to reducing resource use and emissions by improving the whole life cycle performance of buildings. Our members are experts on building materials and life cycle assessment of buildings, bringing in unique perspectives from research, industry and policy spaces.</p>
+        <p>By connecting key stakeholders and helping us all align our efforts we ensure the highest quality of support to our community.</p>
+        <p>Through global collaboration, open data and knowledge sharing we champion systems thinking for enabling sustainable building practices. </p>
+        <p>Join today to share your expertise, learn from others, and contribute to our growing ecosystem of open data and tools for improving building’s life cycle performance at scale.</p>
+      </div>
+      <div class="h-community__buttons">
+        {% include button.html href=site.links.join_form label="Join community" arrow=true %}
+        {% include button.html href="/community" label="Learn more" style="panel" %}
+      </div>
+    </div>
+    <div class="h-community__media">
+      <a class="h-community__globe" href="https://globe-consensus.com/" target="_blank" rel="noopener"><img src="{{ '/assets/img/framer/phIaPFOkqa8J5hc6HM4rX7kTR20.png' | relative_url }}" width="346" height="208" alt="GLOBE"></a>
+      <img class="h-community__logos" src="{{ '/assets/img/framer/jjuIogysElnnCri51zVV3n7xzs.png' | relative_url }}" width="2538" height="374" alt="EPFL, RISE and Universidade de São Paulo (USP)">
+      <div class="h-community__collage"><img src="{{ '/assets/img/framer/lf6L3627soRTVUDPorX5h4zOELw.webp' | relative_url }}" width="1121" height="716" alt="Four photos from GBDI and GLOBE meetings: a group photo outdoors, a presentation in a lecture room, a workshop around tables and a large group photo on steps" loading="lazy"></div>
+    </div>
+  </div>
+</section>

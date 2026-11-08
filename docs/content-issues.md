@@ -48,3 +48,8 @@ were checked against, or found in, the step 1 capture of 8 November 2026.
 | `/about` (tablet) | The GLOBE block has no "GLOBE" title | Desktop and phone have it. Copied as it is | Capture 8 Nov |
 | `/about` | Address uses line-separator characters (U+2028): "LMC  Station 12" shows a double space | Copied as it is | Capture 8 Nov |
 | `/about` | Son Pham-Ba, Pierre Guilbert and Yannick Marcon all list enacit4research@epfl.ch | A shared group address, not personal ones | Capture 8 Nov |
+| `/` | Statistic card 3 says "concrete materials"; the Framer layer is named "reduction of embodied carbon emissions from materials" | Possibly an edited claim; check against the cited source (doi 10.1038/s41467-023-40302-0) | Capture 8 Nov |
+| `/` | Hero line "Develop effective decarbonization strategies and climate policy" has no full stop | The other three lines end with one | Capture 8 Nov |
+| `/` | "improving building’s life cycle performance" | Should be "buildings’" | Capture 8 Nov |
+| `/` (tablet) | "Learn more" in the platform block is not a link | It is a link at the other widths. The rebuild links it to `/platform` at every width | Capture 8 Nov |
+| `/` (phone) | The chart panel of the platform block sits off-screen and the step rows run past the screen edge | Layout fault on the live phone layout. Copied as it is | Capture 8 Nov |

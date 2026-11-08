@@ -32,9 +32,6 @@ concurrency:
 env:
   PREVIEW: "true"
   PREVIEW_BASEURL: /gbdi.io
-  # Pages not built yet, so links to them are not failures. Remove each one
-  # in the pull request that adds it; empty when the rebuild is complete.
-  PENDING: "/"
 
 jobs:
   build:
@@ -65,16 +62,10 @@ jobs:
       # they are (Phase A) and skipped here.
       - name: Check internal links, images and alt text
         run: |
-          IGNORE="/^mailto:/"
-          for p in ${PENDING//,/ }; do
-            esc=$(printf '%s' "$p" | sed 's#/#\\/#g')
-            IGNORE="$IGNORE,/^(${PREVIEW_BASEURL//\//\\/})?${esc}(#.*)?\$/"
-          done
-          echo "Ignoring: $IGNORE"
           bundle exec htmlproofer _site \
             --disable-external \
             --swap-urls "^${PREVIEW_BASEURL}/:/,^https\://www\.gbdi\.io/:/" \
-            --ignore-urls "$IGNORE" \
+            --ignore-urls "/^mailto:/" \
             --no-enforce-https \
             --checks "Links,Images,Scripts"
 
