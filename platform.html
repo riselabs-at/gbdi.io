@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platform – Global Building Data Initiative</title>
+  <meta name="description" content="Make net-zero whole life cycle (WLC) emissions buildings the new norm using GBDI’s open building data platform.">
+  <link rel="canonical" href="https://www.gbdi.io/platform">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.gbdi.io/platform">
+  <meta property="og:title" content="Platform – Global Building Data Initiative">
+  <meta property="og:description" content="Make net-zero whole life cycle (WLC) emissions buildings the new norm using GBDI’s open building data platform.">
+  <meta property="og:image" content="https://www.gbdi.io/assets/img/share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Platform – Global Building Data Initiative">
+  <meta name="twitter:description" content="Make net-zero whole life cycle (WLC) emissions buildings the new norm using GBDI’s open building data platform.">
+  <meta name="twitter:image" content="https://www.gbdi.io/assets/img/share.jpg">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/gbdi.io/assets/img/favicon-light.jpg" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/gbdi.io/assets/img/favicon-dark.jpg" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="/gbdi.io/assets/fonts/satoshi-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/gbdi.io/assets/fonts/sk-modernist-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="/gbdi.io/assets/css/site.css">
+  <link rel="stylesheet" href="/gbdi.io/assets/css/page-platform.css">
+</head>
+<body class="page--white page-platform">
+  <a class="skip-link visually-hidden" href="#main">Skip to content</a>
+  <header class="site-header site-header--fixed hd-rounded ht-rounded hp-rounded">
+  <div class="site-header__panel">
+    <a class="site-header__logo" href="/gbdi.io/"><svg class="logo-svg" role="img" aria-label="Global Building Data Initiative" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" fill="none">
+<path d="M365.31 102.54V28.01H374V102.54H365.31Z" fill="#3F3F3F"></path>
+<path d="M380.08 75.38C380.08 58.43 391.05 47.13 407.35 47.13C423.65 47.13 434.62 58.43 434.62 75.38C434.62 92.33 423.65 103.63 407.35 103.63C391.05 103.63 380.08 92.33 380.08 75.38ZM425.93 75.38C425.93 62.99 418.43 54.74 407.35 54.74C396.27 54.74 388.77 63 388.77 75.38C388.77 87.76 396.27 96.02 407.35 96.02C418.43 96.02 425.93 87.76 425.93 75.38Z" fill="#3F3F3F"></path>
+<path d="M448.32 93.3V102.54H439.63V28.01H448.32V57.45C452.56 51.26 460.49 47.13 468.09 47.13C484.17 47.13 495.03 58.43 495.03 75.38C495.03 92.33 484.17 103.63 468.09 103.63C460.49 103.63 452.55 99.5 448.32 93.31V93.3ZM486.34 75.38C486.34 62.99 478.63 54.74 467.22 54.74C455.81 54.74 448.32 63 448.32 75.38C448.32 87.76 455.93 96.02 467.22 96.02C478.51 96.02 486.34 87.76 486.34 75.38Z" fill="#3F3F3F"></path>
+<path d="M499.18 75.38C499.18 58.43 509.83 47.13 525.69 47.13C532.97 47.13 540.79 51.26 545.03 57.34V48.21H553.72V102.53H545.03V93.4C540.79 99.48 532.97 103.61 525.69 103.61C509.83 103.61 499.18 92.31 499.18 75.36V75.38ZM545.03 75.38C545.03 62.99 537.64 54.74 526.56 54.74C515.48 54.74 507.87 63 507.87 75.38C507.87 87.76 515.37 96.02 526.56 96.02C537.75 96.02 545.03 87.76 545.03 75.38Z" fill="#3F3F3F"></path>
+<path d="M561.07 102.54V28.01H569.76V102.54H561.07Z" fill="#3F3F3F"></path>
+<path d="M318.34 58.55V67.24H347.94C347.36 81.95 339.31 92.34 326.99 94.74C324.41 95.32 321.44 95.64 318.04 95.63C315.19 95.63 311.94 95.35 309.08 94.74H309.09C296.3 92.25 288.1 81.13 288.1 65.5C288.1 49.87 296.29 38.94 309.09 36.47C311.94 35.86 315.19 35.58 318.05 35.58C321.45 35.58 324.43 35.89 327 36.47H326.98C334.91 38 341.07 42.82 344.61 49.96L353.22 45.51C347.3 34.11 335.97 27.25 321.36 27.25H314.74C292.9 27.25 278.34 42.57 278.34 65.5C278.34 88.43 292.9 103.97 314.74 103.97H321.36C343.2 103.97 357.76 88.54 357.76 65.5V58.55H318.34Z" fill="#3F3F3F"></path>
+<path d="M715.15 48.22V102.54H706.46V95.59C702.66 100.37 695.81 103.63 689.51 103.63C675.93 103.63 666.91 94.94 666.91 81.9V48.22H675.6V80.38C675.6 89.72 681.79 96.03 691.03 96.03C700.27 96.03 706.46 89.73 706.46 80.38V48.22H715.15Z" fill="#3F3F3F"></path>
+<path d="M724.52 39.96V28.01H733.21V39.96H724.52ZM724.52 102.54V48.22H733.21V102.54H724.52Z" fill="#3F3F3F"></path>
+<path d="M743.66 102.54V28.01H752.35V102.54H743.66Z" fill="#3F3F3F"></path>
+<path d="M759.11 75.38C759.11 58.43 769.97 47.13 786.05 47.13C793.66 47.13 801.59 51.26 805.82 57.45V28.01H814.51V102.54H805.82V93.3C801.58 99.49 793.65 103.62 786.05 103.62C769.97 103.62 759.11 92.32 759.11 75.37V75.38ZM805.83 75.38C805.83 62.99 798.22 54.74 786.93 54.74C775.64 54.74 767.81 63 767.81 75.38C767.81 87.76 775.52 96.02 786.93 96.02C798.34 96.02 805.83 87.76 805.83 75.38Z" fill="#3F3F3F"></path>
+<path d="M824.03 39.96V28.01H832.72V39.96H824.03ZM824.03 102.54V48.22H832.72V102.54H824.03Z" fill="#3F3F3F"></path>
+<path d="M842.09 102.54V48.22H850.78V55.17C854.58 50.39 861.43 47.13 867.73 47.13C881.31 47.13 890.33 55.82 890.33 68.86V102.54H881.64V70.38C881.64 61.04 875.45 54.73 866.21 54.73C856.97 54.73 850.78 61.03 850.78 70.38V102.54H842.09Z" fill="#3F3F3F"></path>
+<path d="M941.03 48.22H949.72V96.68C949.72 112.98 938.96 123.84 922.99 123.84C909.84 123.84 899.63 115.26 897.46 102.54H905.61C907.24 110.69 914.19 116.23 922.99 116.23C933.75 116.23 941.03 108.41 941.03 96.67V92.87C937.12 98.63 929.51 102.54 922.23 102.54C906.69 102.54 896.26 91.46 896.26 74.83C896.26 58.2 906.69 47.12 922.23 47.12C929.51 47.12 937.01 51.03 941.03 56.9V48.21V48.22ZM941.03 74.83C941.03 62.77 933.86 54.73 923.1 54.73C912.34 54.73 904.96 62.77 904.96 74.83C904.96 86.89 912.24 94.93 923.1 94.93C933.96 94.93 941.03 86.89 941.03 74.83Z" fill="#3F3F3F"></path>
+<path d="M647.74 61.71C652.51 58.24 655.77 52.37 655.77 46.95C655.77 35.88 646.98 28.39 633.74 28.39H598.81V102.85H638.62C652.41 102.85 661.63 94.38 661.63 81.69C661.63 72.68 656.1 64.65 647.74 61.72V61.71ZM608.58 37.07H633.74C641.12 37.07 646.01 41.41 646.01 47.81C646.01 54.21 641.12 58.55 633.74 58.55H608.58V37.06V37.07ZM638.62 94.17H608.58V67.25H638.73C646.55 67.25 651.86 72.68 651.86 80.82C651.86 88.96 646.54 94.17 638.62 94.17Z" fill="#3E3E3E"></path>
+<path d="M411.27 166.94C411.27 149.99 421.92 138.69 437.78 138.69C445.06 138.69 452.88 142.82 457.12 148.9V139.77H465.81V194.09H457.12V184.96C452.88 191.04 445.06 195.17 437.78 195.17C421.92 195.17 411.27 183.87 411.27 166.92V166.94ZM457.12 166.94C457.12 154.55 449.73 146.3 438.65 146.3C427.57 146.3 419.96 154.56 419.96 166.94C419.96 179.32 427.46 187.58 438.65 187.58C449.84 187.58 457.12 179.32 457.12 166.94Z" fill="#3F3F3F"></path>
+<path d="M478.43 180.19V147.38H469.74V139.77H478.43V119.56H487.12V139.77H502.98V147.38H487.12V180.19C487.12 184.64 489.94 187.58 494.07 187.58H503.52V194.1C500.8 194.75 497.22 195.19 494.61 195.19C484.94 195.19 478.42 189.21 478.42 180.2L478.43 180.19Z" fill="#3F3F3F"></path>
+<path d="M504.86 166.94C504.86 149.99 515.51 138.69 531.37 138.69C538.65 138.69 546.47 142.82 550.71 148.9V139.77H559.4V194.09H550.71V184.96C546.47 191.04 538.65 195.17 531.37 195.17C515.51 195.17 504.86 183.87 504.86 166.92V166.94ZM550.71 166.94C550.71 154.55 543.32 146.3 532.24 146.3C521.16 146.3 513.55 154.56 513.55 166.94C513.55 179.32 521.05 187.58 532.24 187.58C543.43 187.58 550.71 179.32 550.71 166.94Z" fill="#3F3F3F"></path>
+<path d="M371.13 119.6H337.27V194.06H371.13C392.4 194.06 406.63 179.08 406.63 156.72C406.63 134.36 392.41 119.6 371.13 119.6ZM371.13 185.39H347.04V128.29H371.13C386.55 128.29 396.85 139.69 396.85 156.73C396.85 173.77 386.54 185.39 371.13 185.39Z" fill="#3E3E3E"></path>
+<path d="M651.16 194.1V139.78H659.85V146.73C663.65 141.95 670.5 138.69 676.8 138.69C690.38 138.69 699.4 147.38 699.4 160.42V194.1H690.71V161.94C690.71 152.6 684.52 146.29 675.28 146.29C666.04 146.29 659.85 152.59 659.85 161.94V194.1H651.16Z" fill="#3F3F3F"></path>
+<path d="M708.76 131.52V119.57H717.45V131.52H708.76ZM708.76 194.1V139.78H717.45V194.1H708.76Z" fill="#3F3F3F"></path>
+<path d="M732.25 180.19V147.38H723.56V139.77H732.25V119.56H740.94V139.77H756.8V147.38H740.94V180.19C740.94 184.64 743.76 187.58 747.89 187.58H757.34V194.1C754.62 194.75 751.04 195.19 748.43 195.19C738.76 195.19 732.24 189.21 732.24 180.2L732.25 180.19Z" fill="#3F3F3F"></path>
+<path d="M765.63 131.52V119.57H774.32V131.52H765.63ZM765.63 194.1V139.78H774.32V194.1H765.63Z" fill="#3F3F3F"></path>
+<path d="M781.07 166.94C781.07 149.99 791.72 138.69 807.58 138.69C814.86 138.69 822.68 142.82 826.92 148.9V139.77H835.61V194.09H826.92V184.96C822.68 191.04 814.86 195.17 807.58 195.17C791.72 195.17 781.07 183.87 781.07 166.92V166.94ZM826.92 166.94C826.92 154.55 819.53 146.3 808.45 146.3C797.37 146.3 789.76 154.56 789.76 166.94C789.76 179.32 797.26 187.58 808.45 187.58C819.64 187.58 826.92 179.32 826.92 166.94Z" fill="#3F3F3F"></path>
+<path d="M848.91 180.19V147.38H840.22V139.77H848.91V119.56H857.6V139.77H873.46V147.38H857.6V180.19C857.6 184.64 860.42 187.58 864.55 187.58H874V194.1C871.28 194.75 867.7 195.19 865.09 195.19C855.42 195.19 848.9 189.21 848.9 180.2L848.91 180.19Z" fill="#3F3F3F"></path>
+<path d="M881.62 131.52V119.57H890.31V131.52H881.62ZM881.62 194.1V139.78H890.31V194.1H881.62Z" fill="#3F3F3F"></path>
+<path d="M916.67 194.1L894.94 139.78H904.28L920.69 184.43L937.2 139.78H946.54L924.81 194.1H916.66H916.67Z" fill="#3F3F3F"></path>
+<path d="M945.46 166.94C945.46 149.99 956.43 138.69 972.73 138.69C989.03 138.69 1000 150.42 1000 167.81L999.13 168.68H954.26C954.69 179.98 962.08 187.58 972.73 187.58C980.77 187.58 987.72 182.8 990.11 175.63H998.8C995.32 187.36 984.89 195.19 972.72 195.19C956.42 195.19 945.45 183.89 945.45 166.94H945.46ZM990.77 161.07C988.81 152.27 981.53 146.29 972.73 146.29C963.93 146.29 956.65 152.27 954.69 161.07H990.76H990.77Z" fill="#3F3F3F"></path>
+<path d="M644.38 128.29V119.61H588.28V128.29H611.45V185.38H588.28V194.06H611.45H621.22H644.39V185.38H621.22V128.29H644.39H644.38Z" fill="#3E3E3E"></path>
+<path d="M122.93 0H104.57C42.02 0 0 44.09 0 109.7C0 175.31 42.02 220 104.57 220H122.93C185.48 220 227.5 175.67 227.5 109.7C227.5 43.73 185.48 0 122.93 0ZM80.9 106.25C81.12 76.96 84.17 52.03 89.78 34.03C95.08 17 102.26 7.59 110.01 7.51V106.25H80.91H80.9ZM110 113.75V212.49C102.26 212.41 95.08 202.94 89.77 185.79C84.2 167.79 81.15 142.94 80.9 113.75H110ZM117.5 85V71.25H214.23C215.66 75.66 216.83 80.25 217.73 85H117.5ZM117.5 63.75V50H204.47C207.15 54.33 209.5 58.92 211.5 63.75H117.51H117.5ZM93.36 9.35C81.03 24.9 73.74 59.13 73.4 106.25H44.75C45.56 54.5 64.42 17.78 93.36 9.35ZM73.4 113.75C73.8 160.89 81.1 195.1 93.4 210.65C64.54 202.22 45.69 165.52 44.75 113.75H73.39H73.4ZM117.5 182.87V163.7L159.99 206.19C155.21 207.96 150.22 209.36 145.02 210.39L117.5 182.87ZM117.5 153.09V133.92L179.62 196.04C175.78 198.69 171.72 201.03 167.46 203.05L117.5 153.09ZM137.7 113.75H156.87L207.51 164.39C205.32 168.53 202.85 172.45 200.11 176.16L137.7 113.75ZM167.48 113.75H186.65L215.84 142.94C214.52 147.9 212.88 152.66 210.94 157.2L167.49 113.75H167.48ZM197.25 113.75H219.92C219.72 120.87 219 127.73 217.78 134.28L197.25 113.75ZM218.15 106.25H117.5V92.5H218.93C219.49 96.96 219.82 101.55 219.93 106.25H218.14H218.15ZM199.3 42.5H117.5V28.75H186.1C188.61 30.85 191.02 33.09 193.31 35.5C195.43 37.73 197.42 40.07 199.29 42.5H199.3ZM175.61 21.25H117.5V7.5H122.93C142.87 7.5 160.72 12.21 175.61 21.25ZM34.19 35.5C44.54 24.61 57.36 16.8 72.05 12.24C50.92 29.22 37.91 62.83 37.25 106.26H7.57C8.25 77.57 17.4 53.16 34.19 35.51V35.5ZM34.2 184.32C17.52 166.68 8.37 142.33 7.58 113.75H37.26C38.02 157.18 51.05 190.78 72.12 207.76C57.41 203.17 44.57 195.3 34.19 184.33L34.2 184.32ZM117.5 212.5V193.47L135.81 211.78C131.62 212.24 127.33 212.5 122.93 212.5H117.5ZM193.3 184.32C190.88 186.88 188.32 189.25 185.65 191.47L117.5 123.32V113.75H127.1L195.37 182.02C194.69 182.79 194.01 183.58 193.31 184.32H193.3Z" fill="#3E3E3E"></path>
+</svg>
+</a>
+    <nav class="site-header__nav only-desktop" aria-label="Main">
+      <ul>
+        <li><a href="/gbdi.io/">Home</a></li>
+        <li><a href="/gbdi.io/about">About</a></li>
+        <li><a href="/gbdi.io/community">Community</a></li>
+        <li><a href="/gbdi.io/platform" aria-current="page">Platform</a></li>
+        <li><a href="/gbdi.io/resources">Resources</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions not-phone"><a class="btn btn--secondary only-desktop" href="https://docs.google.com/forms/d/e/1FAIpQLSfhUf_u1IkptRj-CPOWTPJhyooyzdQsA8TzX88Rflu-ctdItg/viewform" target="_blank" rel="noopener">
+  <span class="btn__label">Join</span>
+</a>
+
+      <a class="btn btn--secondary only-tablet" href="https://app.gbdi.io/" target="_blank" rel="noopener">
+  <span class="btn__label">Join</span>
+</a>
+
+      <a class="btn btn--primary" href="https://app.gbdi.io/" target="_blank" rel="noopener">
+  <span class="btn__label">Sign in</span><svg class="icon-arrow" viewBox="0 0 10.667 10" width="11" height="10" aria-hidden="true" focusable="false"><path fill="currentColor" d="M 5.594 9.18 L 4.787 8.383 L 7.587 5.582 L 1.22 5.582 L 1.22 4.418 L 7.587 4.418 L 4.787 1.622 L 5.594 0.82 L 9.774 5 Z"/></svg>
+
+</a>
+
+    </div>
+    <button class="site-header__toggle not-desktop" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu" hidden>
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-menu" id="site-menu" hidden>
+      <a class="btn btn--primary" href="https://app.gbdi.io/" target="_blank" rel="noopener">
+  <span class="btn__label">Sign up</span><svg class="icon-arrow" viewBox="0 0 10.667 10" width="11" height="10" aria-hidden="true" focusable="false"><path fill="currentColor" d="M 5.594 9.18 L 4.787 8.383 L 7.587 5.582 L 1.22 5.582 L 1.22 4.418 L 7.587 4.418 L 4.787 1.622 L 5.594 0.82 L 9.774 5 Z"/></svg>
+
+</a>
+
+      <a class="site-menu__join" href="https://docs.google.com/forms/d/e/1FAIpQLSfhUf_u1IkptRj-CPOWTPJhyooyzdQsA8TzX88Rflu-ctdItg/viewform" target="_blank" rel="noopener">Join Community</a>
+      <ul>
+        <li><a href="/gbdi.io/">Home</a></li>
+        <li><a href="/gbdi.io/platform" aria-current="page">Platform</a></li>
+        <li><a href="/gbdi.io/community">Community</a></li>
+        <li><a href="/gbdi.io/about">About</a></li>
+        <li><a href="/gbdi.io/resources">Resources</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <main id="main" class="has-fixed-header">
+    <section class="pf-hero">
+  <div class="pf-hero__text">
+    <h1 class="pf-hero__title">Open Building Data Platform</h1>
+    <p>Make net-zero whole life cycle (WLC) emissions buildings the new norm using GBDI’s open building data platform. Identify scalable strategies for embodied carbon reduction and removal, and improve building life cycle performance.</p>
+    <p>Get actionable insights and learn from best-in-class examples and emerging practice to set tangible targets and create effective policy.</p>
+    <div class="pf-hero__buttons">
+      <a class="btn btn--primary" href="https://app.gbdi.io/" target="_blank" rel="noopener">
+  <span class="btn__label">Sign up</span><svg class="icon-arrow" viewBox="0 0 10.667 10" width="11" height="10" aria-hidden="true" focusable="false"><path fill="currentColor" d="M 5.594 9.18 L 4.787 8.383 L 7.587 5.582 L 1.22 5.582 L 1.22 4.418 L 7.587 4.418 L 4.787 1.622 L 5.594 0.82 L 9.774 5 Z"/></svg>
+
+</a>
+
+      <a class="btn btn--panel" href="https://app.gbdi.io/" target="_blank" rel="noopener">
+  <span class="btn__label">Sign in</span>
+</a>
+
+    </div>
+  </div>
+  <div class="pf-hero__map not-phone">
+    <div class="pf-hero__map-card">
+      <img src="/gbdi.io/assets/img/framer/NAzWKT33xDMXiziYcrhNu4wAak.png" width="2401" height="1073" alt="World map with green dots marking buildings in the Open Building Data Platform, most of them in Europe.">
+    </div>
+  </div>
+</section>
+<section class="pf-carousel" aria-roledescription="carousel" aria-labelledby="pf-benefits-heading" data-carousel>
+  <h2 class="visually-hidden" id="pf-benefits-heading">Benefits</h2>
+  <div class="pf-carousel__viewport">
+    <ul class="pf-carousel__track">
+      <li class="pf-card pf-card--clone" aria-hidden="true" inert>
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/effective-policy.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Effective Policy</h3>
+        <p class="pf-card__text">Develop and implement effective policy for improving life cycle climate performance of buildings in public and private portfolios.</p>
+      </li>
+      <li class="pf-card pf-card--clone" aria-hidden="true" inert>
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/reduced-emissions.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Reduced Emissions</h3>
+        <p class="pf-card__text">Dynamically assess buildings and portfolios using prospective LCA methods to effectively manage emission reduction.</p>
+      </li>
+      <li class="pf-card pf-card--clone" aria-hidden="true" inert>
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/open-data.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Open Data</h3>
+        <p class="pf-card__text">Be part of the global exchange of detailed, high-quality WLC data on buildings across platforms, thanks to the openBDF format.</p>
+      </li>
+      <li class="pf-card" aria-roledescription="slide" aria-label="1 of 3">
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/effective-policy.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Effective Policy</h3>
+        <p class="pf-card__text">Develop and implement effective policy for improving life cycle climate performance of buildings in public and private portfolios.</p>
+      </li>
+      <li class="pf-card" aria-roledescription="slide" aria-label="2 of 3">
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/reduced-emissions.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Reduced Emissions</h3>
+        <p class="pf-card__text">Dynamically assess buildings and portfolios using prospective LCA methods to effectively manage emission reduction.</p>
+      </li>
+      <li class="pf-card" aria-roledescription="slide" aria-label="3 of 3">
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/open-data.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Open Data</h3>
+        <p class="pf-card__text">Be part of the global exchange of detailed, high-quality WLC data on buildings across platforms, thanks to the openBDF format.</p>
+      </li>
+      <li class="pf-card pf-card--clone" aria-hidden="true" inert>
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/effective-policy.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Effective Policy</h3>
+        <p class="pf-card__text">Develop and implement effective policy for improving life cycle climate performance of buildings in public and private portfolios.</p>
+      </li>
+      <li class="pf-card pf-card--clone" aria-hidden="true" inert>
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/reduced-emissions.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Reduced Emissions</h3>
+        <p class="pf-card__text">Dynamically assess buildings and portfolios using prospective LCA methods to effectively manage emission reduction.</p>
+      </li>
+      <li class="pf-card pf-card--clone" aria-hidden="true" inert>
+        <img class="pf-card__image" src="/gbdi.io/assets/img/platform/open-data.svg" width="250" height="250" alt="" loading="lazy">
+        <h3 class="pf-card__title">Open Data</h3>
+        <p class="pf-card__text">Be part of the global exchange of detailed, high-quality WLC data on buildings across platforms, thanks to the openBDF format.</p>
+      </li>
+    </ul>
+  </div>
+  <button class="pf-carousel__arrow pf-carousel__arrow--prev" type="button" aria-label="Previous card" hidden>
+    <img src="/gbdi.io/assets/img/framer/6tTbkXggWgQCAJ4DO2QEdXXmgM.svg" width="40" height="40" alt="">
+  </button>
+  <button class="pf-carousel__arrow pf-carousel__arrow--next" type="button" aria-label="Next card" hidden>
+    <img src="/gbdi.io/assets/img/framer/11KSGbIZoRSg4pjdnUoif6MKHI.svg" width="40" height="40" alt="">
+  </button>
+  <div class="pf-carousel__dots" hidden>
+    <button class="pf-carousel__dot" type="button" aria-label="Show card 1: Effective Policy" aria-current="true"><span></span></button>
+    <button class="pf-carousel__dot" type="button" aria-label="Show card 2: Reduced Emissions"><span></span></button>
+    <button class="pf-carousel__dot" type="button" aria-label="Show card 3: Open Data"><span></span></button>
+  </div>
+</section>
+
+<section class="pf-features" aria-labelledby="pf-features-heading">
+  <h2 class="visually-hidden" id="pf-features-heading">Features</h2>
+  <div class="pf-dash">
+    <div class="pf-dash__card">
+      <picture>
+        <source media="(max-width: 809.98px)" srcset="/gbdi.io/assets/img/platform/dashboard-390.webp" width="780" height="656">
+        <source media="(max-width: 1199.98px)" srcset="/gbdi.io/assets/img/platform/dashboard-1024.webp" width="1282" height="736">
+        <img src="/gbdi.io/assets/img/platform/dashboard-1440.webp" width="1651" height="736" alt="Dashboard of the Open Building Data Platform: GWP intensity for Australia, Austria, Belgium and Brazil, with filters for typology, life cycle stage and gross floor area." loading="lazy">
+      </picture>
+    </div>
+  </div>
+  <ul class="pf-tiles">
+    <li class="pf-tile">
+      <h3 class="pf-tile__title"><svg class="pf-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="none" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><svg viewBox="0 0 24 24" fill="none" width="100%" height="100%">
+<mask id="svg-2031513309_476_mask0_380_4717" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="#D9D9D9"></rect>
+</mask>
+<g mask="url(#svg-2031513309_476_mask0_380_4717)">
+<path d="M2 21V3H12V7H22V21H2ZM4 19H10V17H4V19ZM4 15H10V13H4V15ZM4 11H10V9H4V11ZM4 7H10V5H4V7ZM12 19H20V9H12V19ZM14 13V11H18V13H14ZM14 17V15H18V17H14Z" fill="#1C1B1F"></path>
+</g>
+</svg></svg>
+<span>Open Building Data Format</span></h3>
+      <p class="pf-tile__text">Facilitates open data exchange via the open building data format (openBDF)</p>
+    </li>
+    <li class="pf-tile">
+      <h3 class="pf-tile__title"><svg class="pf-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="none" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><svg viewBox="0 0 24 24" fill="none" width="100%" height="100%">
+<mask id="svg450880924_3022_mask0_380_4716" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="#D9D9D9"></rect>
+</mask>
+<g mask="url(#svg450880924_3022_mask0_380_4716)">
+<path d="M12 22C10.6333 22 9.34167 21.7375 8.125 21.2125C6.90833 20.6875 5.84583 19.9708 4.9375 19.0625C4.02917 18.1542 3.3125 17.0917 2.7875 15.875C2.2625 14.6583 2 13.3667 2 12C2 10.6167 2.2625 9.32083 2.7875 8.1125C3.3125 6.90417 4.02917 5.84583 4.9375 4.9375C5.84583 4.02917 6.90833 3.3125 8.125 2.7875C9.34167 2.2625 10.6333 2 12 2C13.3833 2 14.6792 2.2625 15.8875 2.7875C17.0958 3.3125 18.1542 4.02917 19.0625 4.9375C19.9708 5.84583 20.6875 6.90417 21.2125 8.1125C21.7375 9.32083 22 10.6167 22 12C22 13.3667 21.7375 14.6583 21.2125 15.875C20.6875 17.0917 19.9708 18.1542 19.0625 19.0625C18.1542 19.9708 17.0958 20.6875 15.8875 21.2125C14.6792 21.7375 13.3833 22 12 22ZM12 19.95C12.4333 19.35 12.8083 18.725 13.125 18.075C13.4417 17.425 13.7 16.7333 13.9 16H10.1C10.3 16.7333 10.5583 17.425 10.875 18.075C11.1917 18.725 11.5667 19.35 12 19.95ZM9.4 19.55C9.1 19 8.8375 18.4292 8.6125 17.8375C8.3875 17.2458 8.2 16.6333 8.05 16H5.1C5.58333 16.8333 6.1875 17.5583 6.9125 18.175C7.6375 18.7917 8.46667 19.25 9.4 19.55ZM14.6 19.55C15.5333 19.25 16.3625 18.7917 17.0875 18.175C17.8125 17.5583 18.4167 16.8333 18.9 16H15.95C15.8 16.6333 15.6125 17.2458 15.3875 17.8375C15.1625 18.4292 14.9 19 14.6 19.55ZM4.25 14H7.65C7.6 13.6667 7.5625 13.3375 7.5375 13.0125C7.5125 12.6875 7.5 12.35 7.5 12C7.5 11.65 7.5125 11.3125 7.5375 10.9875C7.5625 10.6625 7.6 10.3333 7.65 10H4.25C4.16667 10.3333 4.10417 10.6625 4.0625 10.9875C4.02083 11.3125 4 11.65 4 12C4 12.35 4.02083 12.6875 4.0625 13.0125C4.10417 13.3375 4.16667 13.6667 4.25 14ZM9.65 14H14.35C14.4 13.6667 14.4375 13.3375 14.4625 13.0125C14.4875 12.6875 14.5 12.35 14.5 12C14.5 11.65 14.4875 11.3125 14.4625 10.9875C14.4375 10.6625 14.4 10.3333 14.35 10H9.65C9.6 10.3333 9.5625 10.6625 9.5375 10.9875C9.5125 11.3125 9.5 11.65 9.5 12C9.5 12.35 9.5125 12.6875 9.5375 13.0125C9.5625 13.3375 9.6 13.6667 9.65 14ZM16.35 14H19.75C19.8333 13.6667 19.8958 13.3375 19.9375 13.0125C19.9792 12.6875 20 12.35 20 12C20 11.65 19.9792 11.3125 19.9375 10.9875C19.8958 10.6625 19.8333 10.3333 19.75 10H16.35C16.4 10.3333 16.4375 10.6625 16.4625 10.9875C16.4875 11.3125 16.5 11.65 16.5 12C16.5 12.35 16.4875 12.6875 16.4625 13.0125C16.4375 13.3375 16.4 13.6667 16.35 14ZM15.95 8H18.9C18.4167 7.16667 17.8125 6.44167 17.0875 5.825C16.3625 5.20833 15.5333 4.75 14.6 4.45C14.9 5 15.1625 5.57083 15.3875 6.1625C15.6125 6.75417 15.8 7.36667 15.95 8ZM10.1 8H13.9C13.7 7.26667 13.4417 6.575 13.125 5.925C12.8083 5.275 12.4333 4.65 12 4.05C11.5667 4.65 11.1917 5.275 10.875 5.925C10.5583 6.575 10.3 7.26667 10.1 8ZM5.1 8H8.05C8.2 7.36667 8.3875 6.75417 8.6125 6.1625C8.8375 5.57083 9.1 5 9.4 4.45C8.46667 4.75 7.6375 5.20833 6.9125 5.825C6.1875 6.44167 5.58333 7.16667 5.1 8Z" fill="#1C1B1F"></path>
+</g>
+</svg></svg>
+<span>Global Benchmarking</span></h3>
+      <p class="pf-tile__text">Provides analytics and benchmarking against a global buildings database</p>
+    </li>
+    <li class="pf-tile">
+      <h3 class="pf-tile__title"><svg class="pf-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="none" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><svg viewBox="0 0 24 24" fill="none" width="100%" height="100%">
+<mask id="svg1575151682_2509_mask0_380_4726" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="#D9D9D9"></rect>
+</mask>
+<g mask="url(#svg1575151682_2509_mask0_380_4726)">
+<path d="M12 9.025C13.4333 9.025 14.9125 8.80833 16.4375 8.375C17.9625 7.94167 18.8167 7.49167 19 7.025C18.8167 6.54167 17.9792 6.08333 16.4875 5.65C14.9958 5.21667 13.5 5 12 5C10.4833 5 8.99583 5.2125 7.5375 5.6375C6.07917 6.0625 5.23333 6.525 5 7.025C5.25 7.50833 6.12083 7.9625 7.6125 8.3875C9.10417 8.8125 10.5667 9.025 12 9.025ZM10.475 18.925C10.6417 19.3083 10.8333 19.675 11.05 20.025C11.2667 20.375 11.5167 20.7 11.8 21C10.5833 20.9833 9.4375 20.8708 8.3625 20.6625C7.2875 20.4542 6.35417 20.1708 5.5625 19.8125C4.77083 19.4542 4.14583 19.0333 3.6875 18.55C3.22917 18.0667 3 17.55 3 17V7C3 6.45 3.2375 5.93333 3.7125 5.45C4.1875 4.96667 4.83333 4.54167 5.65 4.175C6.46667 3.80833 7.42083 3.52083 8.5125 3.3125C9.60417 3.10417 10.7667 3 12 3C13.2333 3 14.3958 3.10417 15.4875 3.3125C16.5792 3.52083 17.5333 3.80833 18.35 4.175C19.1667 4.54167 19.8125 4.96667 20.2875 5.45C20.7625 5.93333 21 6.45 21 7C21 7.55 20.7625 8.06667 20.2875 8.55C19.8125 9.03333 19.1667 9.45833 18.35 9.825C17.5333 10.1917 16.5792 10.4792 15.4875 10.6875C14.3958 10.8958 13.2333 11 12 11C10.5833 11 9.275 10.875 8.075 10.625C6.875 10.375 5.85 10.0083 5 9.525V12.05C5.66667 12.6667 6.5 13.1167 7.5 13.4C8.5 13.6833 9.50833 13.8667 10.525 13.95C10.3917 14.2 10.2833 14.4875 10.2 14.8125C10.1167 15.1375 10.0583 15.5 10.025 15.9C9.025 15.7833 8.09583 15.6167 7.2375 15.4C6.37917 15.1833 5.63333 14.8917 5 14.525V17C5.23333 17.4167 5.875 17.8083 6.925 18.175C7.975 18.5417 9.15833 18.7917 10.475 18.925ZM21.6 23L18.9 20.3C18.5333 20.5167 18.15 20.6875 17.75 20.8125C17.35 20.9375 16.9333 21 16.5 21C15.25 21 14.1875 20.5625 13.3125 19.6875C12.4375 18.8125 12 17.75 12 16.5C12 15.25 12.4375 14.1875 13.3125 13.3125C14.1875 12.4375 15.25 12 16.5 12C17.75 12 18.8125 12.4375 19.6875 13.3125C20.5625 14.1875 21 15.25 21 16.5C21 16.9333 20.9375 17.35 20.8125 17.75C20.6875 18.15 20.5167 18.5333 20.3 18.9L23 21.6L21.6 23ZM16.5 19C17.2 19 17.7917 18.7583 18.275 18.275C18.7583 17.7917 19 17.2 19 16.5C19 15.8 18.7583 15.2083 18.275 14.725C17.7917 14.2417 17.2 14 16.5 14C15.8 14 15.2083 14.2417 14.725 14.725C14.2417 15.2083 14 15.8 14 16.5C14 17.2 14.2417 17.7917 14.725 18.275C15.2083 18.7583 15.8 19 16.5 19Z" fill="#1C1B1F"></path>
+</g>
+</svg></svg>
+<span>Life cycle assessment</span></h3>
+      <p class="pf-tile__text">Drives in-depth analysis of current and future WLC impacts</p>
+    </li>
+    <li class="pf-tile">
+      <h3 class="pf-tile__title"><svg class="pf-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="none" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><svg viewBox="0 0 24 24" fill="none" width="100%" height="100%">
+<mask id="svg-982648206_927_mask0_380_4749" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="#D9D9D9"></rect>
+</mask>
+<g mask="url(#svg-982648206_927_mask0_380_4749)">
+<path d="M15.3 10.25L18.825 6.7L18.125 6L15.3 8.825L13.875 7.4L13.175 8.125L15.3 10.25ZM3 20V18H15V20H3ZM16 13C14.6167 13 13.4375 12.5125 12.4625 11.5375C11.4875 10.5625 11 9.38333 11 8C11 6.61667 11.4875 5.4375 12.4625 4.4625C13.4375 3.4875 14.6167 3 16 3C17.3833 3 18.5625 3.4875 19.5375 4.4625C20.5125 5.4375 21 6.61667 21 8C21 9.38333 20.5125 10.5625 19.5375 11.5375C18.5625 12.5125 17.3833 13 16 13ZM3 12V10H9.3C9.41667 10.3667 9.55 10.7167 9.7 11.05C9.85 11.3833 10.0333 11.7 10.25 12H3ZM3 16V14H12.4C12.7833 14.2333 13.1917 14.4292 13.625 14.5875C14.0583 14.7458 14.5167 14.8583 15 14.925V16H3Z" fill="#1C1B1F"></path>
+</g>
+</svg></svg>
+<span>From Analysis to Action</span></h3>
+      <p class="pf-tile__text">Supports identification of effective decarbonization strategies at scale</p>
+    </li>
+    <li class="pf-tile">
+      <h3 class="pf-tile__title"><svg class="pf-icon" aria-hidden="true" focusable="false" viewBox="0 0 25 25" preserveAspectRatio="none" width="25" height="25" xmlns="http://www.w3.org/2000/svg"><svg viewBox="0 0 25 25" fill="none" width="100%" height="100%">
+<mask id="svg1290374979_1101_mask0_380_4758" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+<rect x="0.294922" y="0.577576" width="24" height="24" fill="#D9D9D9"></rect>
+</mask>
+<g mask="url(#svg1290374979_1101_mask0_380_4758)">
+<path d="M2.29492 20.5776V10.5776C2.29492 10.0276 2.49076 9.55674 2.88242 9.16508C3.27409 8.77341 3.74492 8.57758 4.29492 8.57758H7.29492V6.57758C7.29492 6.02758 7.49076 5.55674 7.88242 5.16508C8.27409 4.77341 8.74492 4.57758 9.29492 4.57758H15.2949C15.8449 4.57758 16.3158 4.77341 16.7074 5.16508C17.0991 5.55674 17.2949 6.02758 17.2949 6.57758V8.57758H20.2949C20.8449 8.57758 21.3158 8.77341 21.7074 9.16508C22.0991 9.55674 22.2949 10.0276 22.2949 10.5776V20.5776H2.29492ZM8.29492 15.5776V16.5776H6.29492V15.5776H4.29492V18.5776H20.2949V15.5776H18.2949V16.5776H16.2949V15.5776H8.29492ZM4.29492 10.5776V13.5776H6.29492V12.5776H8.29492V13.5776H16.2949V12.5776H18.2949V13.5776H20.2949V10.5776H4.29492ZM9.29492 8.57758H15.2949V6.57758H9.29492V8.57758Z" fill="#1C1B1F"></path>
+</g>
+</svg></svg>
+<span>Open API Integration</span></h3>
+      <p class="pf-tile__text">Enables third parties to create custom instances and integrations</p>
+    </li>
+    <li class="pf-tile">
+      <h3 class="pf-tile__title"><svg class="pf-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="none" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><svg viewBox="0 0 24 24" fill="none" width="100%" height="100%">
+<mask id="svg-147252796_2439_mask0_380_4733" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="#D9D9D9"></rect>
+</mask>
+<g mask="url(#svg-147252796_2439_mask0_380_4733)">
+<path d="M7 22C6.16667 22 5.45833 21.7083 4.875 21.125C4.29167 20.5417 4 19.8333 4 19C4 18.35 4.1875 17.7667 4.5625 17.25C4.9375 16.7333 5.41667 16.375 6 16.175V7.825C5.41667 7.625 4.9375 7.26667 4.5625 6.75C4.1875 6.23333 4 5.65 4 5C4 4.16667 4.29167 3.45833 4.875 2.875C5.45833 2.29167 6.16667 2 7 2C7.83333 2 8.54167 2.29167 9.125 2.875C9.70833 3.45833 10 4.16667 10 5C10 5.65 9.8125 6.23333 9.4375 6.75C9.0625 7.26667 8.58333 7.625 8 7.825V8C8 8.83333 8.29167 9.54167 8.875 10.125C9.45833 10.7083 10.1667 11 11 11H13C14.3833 11 15.5625 11.4875 16.5375 12.4625C17.5125 13.4375 18 14.6167 18 16V16.175C18.5833 16.375 19.0625 16.7333 19.4375 17.25C19.8125 17.7667 20 18.35 20 19C20 19.8333 19.7083 20.5417 19.125 21.125C18.5417 21.7083 17.8333 22 17 22C16.1667 22 15.4583 21.7083 14.875 21.125C14.2917 20.5417 14 19.8333 14 19C14 18.35 14.1875 17.7667 14.5625 17.25C14.9375 16.7333 15.4167 16.375 16 16.175V16C16 15.1667 15.7083 14.4583 15.125 13.875C14.5417 13.2917 13.8333 13 13 13H11C10.4333 13 9.89583 12.9125 9.3875 12.7375C8.87917 12.5625 8.41667 12.3167 8 12V16.175C8.58333 16.375 9.0625 16.7333 9.4375 17.25C9.8125 17.7667 10 18.35 10 19C10 19.8333 9.70833 20.5417 9.125 21.125C8.54167 21.7083 7.83333 22 7 22ZM7 20C7.28333 20 7.52083 19.9042 7.7125 19.7125C7.90417 19.5208 8 19.2833 8 19C8 18.7167 7.90417 18.4792 7.7125 18.2875C7.52083 18.0958 7.28333 18 7 18C6.71667 18 6.47917 18.0958 6.2875 18.2875C6.09583 18.4792 6 18.7167 6 19C6 19.2833 6.09583 19.5208 6.2875 19.7125C6.47917 19.9042 6.71667 20 7 20ZM17 20C17.2833 20 17.5208 19.9042 17.7125 19.7125C17.9042 19.5208 18 19.2833 18 19C18 18.7167 17.9042 18.4792 17.7125 18.2875C17.5208 18.0958 17.2833 18 17 18C16.7167 18 16.4792 18.0958 16.2875 18.2875C16.0958 18.4792 16 18.7167 16 19C16 19.2833 16.0958 19.5208 16.2875 19.7125C16.4792 19.9042 16.7167 20 17 20ZM7 6C7.28333 6 7.52083 5.90417 7.7125 5.7125C7.90417 5.52083 8 5.28333 8 5C8 4.71667 7.90417 4.47917 7.7125 4.2875C7.52083 4.09583 7.28333 4 7 4C6.71667 4 6.47917 4.09583 6.2875 4.2875C6.09583 4.47917 6 4.71667 6 5C6 5.28333 6.09583 5.52083 6.2875 5.7125C6.47917 5.90417 6.71667 6 7 6Z" fill="#1C1B1F"></path>
+</g>
+</svg></svg>
+<span>Custom analytics</span></h3>
+      <p class="pf-tile__text">Tailored solutions adapted to the needs of your organization or clients</p>
+    </li>
+  </ul>
+</section>
+
+<section class="pf-audiences">
+  <h2 class="pf-audiences__title">From Portfolio to Policy</h2>
+  <p class="pf-audiences__lead">High quality whole life cycle data is essential for informed decision making and effective development of building portfolios. GBDI empowers stakeholders to implement effective decarbonization strategies and robust climate policy.</p>
+  <div class="pf-tabs not-phone" data-tabs>
+    <div class="pf-tabs__list" role="tablist" aria-label="Who the platform is for">
+      <button class="pf-tabs__tab" type="button" role="tab" id="pf-tab-1" aria-controls="pf-panel-1" aria-selected="true">Policy Makers</button>
+      <button class="pf-tabs__tab" type="button" role="tab" id="pf-tab-2" aria-controls="pf-panel-2" aria-selected="false" tabindex="-1">Portfolio Managers</button>
+      <button class="pf-tabs__tab" type="button" role="tab" id="pf-tab-3" aria-controls="pf-panel-3" aria-selected="false" tabindex="-1">Building Designers</button>
+    </div>
+    <p class="pf-tabs__panel" role="tabpanel" id="pf-panel-1" aria-labelledby="pf-tab-1" tabindex="0">Use the open building data format (openBDF) to facilitate exchange  of building life cycle data. The open building data platform offers you open-source data management and advanced analytics to implement monitoring, verification, and reporting (MRV). We help you understand the life cycle climate performance of regional and national building stocks to design and implement effective policies.</p>
+    <p class="pf-tabs__panel" role="tabpanel" id="pf-panel-2" aria-labelledby="pf-tab-2" tabindex="0" hidden>Understand the carbon footprint of buildings in your portfolio to check compliance, assess value, and identify potential for cost-effective improvements to ensure robust development of your assets through challenging times. GBDI’s open formats and platform help you facilitate data exchange across partners to reduce friction and advance insights.</p>
+    <p class="pf-tabs__panel" role="tabpanel" id="pf-panel-3" aria-labelledby="pf-tab-3" tabindex="0" hidden>Improve your design through detailed comparison against a global database of best-practice cases relevant to your context. Identify hotspots of resource use and emissions using our systematic protocol. We help you identify effective strategies for optimizing the life cycle performance of your buildings.</p>
+  </div>
+  <div class="pf-stack only-phone">
+    <p><strong>Policy Makers</strong><br>Use the open building data format (openBDF) to facilitate exchange  of building life cycle data. The open building data platform offers you open-source data management and advanced analytics to implement monitoring, verification, and reporting (MRV). We help you understand the life cycle climate performance of regional and national building stocks to design and implement effective policies.</p>
+    <p><br></p>
+    <p><strong>Portfolio Managers</strong><br>Understand the carbon footprint of buildings in your portfolio to check compliance, assess value, and identify potential for cost-effective improvements to ensure robust development of your assets through challenging times. GBDI’s open formats and platform help you facilitate data exchange across partners to reduce friction and advance insights.</p>
+    <p><strong>Building Designers</strong><br>Improve your design through detailed comparison against a global database of best-practice cases relevant to your context. Identify hotspots of resource use and emissions using our systematic protocol. We help you identify effective strategies for optimizing the life cycle performance of your buildings.</p>
+  </div>
+
+  <a class="btn pf-contact" href="mailto: office@gbdi.io" target="_blank" rel="noopener"><span class="btn__label">Get in touch</span><svg class="pf-icon" aria-hidden="true" focusable="false" viewBox="0 0 15 16" preserveAspectRatio="none" width="15" height="16" xmlns="http://www.w3.org/2000/svg"><svg viewBox="-1 -1 15 16" fill="none" width="100%" height="100%">
+<path d="M6.56029 13.27L5.35064 12.0738L9.5508 7.87361H0V6.12635H9.5508L5.35064 1.93291L6.56029 0.72998L12.8303 6.99998L6.56029 13.27Z" fill="white"></path>
+</svg></svg>
+</a>
+</section>
+
+  </main>
+  <footer class="site-footer">
+  <a class="site-footer__logo" href="/gbdi.io/"><svg class="logo-svg" role="img" aria-label="Global Building Data Initiative" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" fill="none">
+<path d="M365.31 102.54V28.01H374V102.54H365.31Z" fill="#3F3F3F"></path>
+<path d="M380.08 75.38C380.08 58.43 391.05 47.13 407.35 47.13C423.65 47.13 434.62 58.43 434.62 75.38C434.62 92.33 423.65 103.63 407.35 103.63C391.05 103.63 380.08 92.33 380.08 75.38ZM425.93 75.38C425.93 62.99 418.43 54.74 407.35 54.74C396.27 54.74 388.77 63 388.77 75.38C388.77 87.76 396.27 96.02 407.35 96.02C418.43 96.02 425.93 87.76 425.93 75.38Z" fill="#3F3F3F"></path>
+<path d="M448.32 93.3V102.54H439.63V28.01H448.32V57.45C452.56 51.26 460.49 47.13 468.09 47.13C484.17 47.13 495.03 58.43 495.03 75.38C495.03 92.33 484.17 103.63 468.09 103.63C460.49 103.63 452.55 99.5 448.32 93.31V93.3ZM486.34 75.38C486.34 62.99 478.63 54.74 467.22 54.74C455.81 54.74 448.32 63 448.32 75.38C448.32 87.76 455.93 96.02 467.22 96.02C478.51 96.02 486.34 87.76 486.34 75.38Z" fill="#3F3F3F"></path>
+<path d="M499.18 75.38C499.18 58.43 509.83 47.13 525.69 47.13C532.97 47.13 540.79 51.26 545.03 57.34V48.21H553.72V102.53H545.03V93.4C540.79 99.48 532.97 103.61 525.69 103.61C509.83 103.61 499.18 92.31 499.18 75.36V75.38ZM545.03 75.38C545.03 62.99 537.64 54.74 526.56 54.74C515.48 54.74 507.87 63 507.87 75.38C507.87 87.76 515.37 96.02 526.56 96.02C537.75 96.02 545.03 87.76 545.03 75.38Z" fill="#3F3F3F"></path>
+<path d="M561.07 102.54V28.01H569.76V102.54H561.07Z" fill="#3F3F3F"></path>
+<path d="M318.34 58.55V67.24H347.94C347.36 81.95 339.31 92.34 326.99 94.74C324.41 95.32 321.44 95.64 318.04 95.63C315.19 95.63 311.94 95.35 309.08 94.74H309.09C296.3 92.25 288.1 81.13 288.1 65.5C288.1 49.87 296.29 38.94 309.09 36.47C311.94 35.86 315.19 35.58 318.05 35.58C321.45 35.58 324.43 35.89 327 36.47H326.98C334.91 38 341.07 42.82 344.61 49.96L353.22 45.51C347.3 34.11 335.97 27.25 321.36 27.25H314.74C292.9 27.25 278.34 42.57 278.34 65.5C278.34 88.43 292.9 103.97 314.74 103.97H321.36C343.2 103.97 357.76 88.54 357.76 65.5V58.55H318.34Z" fill="#3F3F3F"></path>
+<path d="M715.15 48.22V102.54H706.46V95.59C702.66 100.37 695.81 103.63 689.51 103.63C675.93 103.63 666.91 94.94 666.91 81.9V48.22H675.6V80.38C675.6 89.72 681.79 96.03 691.03 96.03C700.27 96.03 706.46 89.73 706.46 80.38V48.22H715.15Z" fill="#3F3F3F"></path>
+<path d="M724.52 39.96V28.01H733.21V39.96H724.52ZM724.52 102.54V48.22H733.21V102.54H724.52Z" fill="#3F3F3F"></path>
+<path d="M743.66 102.54V28.01H752.35V102.54H743.66Z" fill="#3F3F3F"></path>
+<path d="M759.11 75.38C759.11 58.43 769.97 47.13 786.05 47.13C793.66 47.13 801.59 51.26 805.82 57.45V28.01H814.51V102.54H805.82V93.3C801.58 99.49 793.65 103.62 786.05 103.62C769.97 103.62 759.11 92.32 759.11 75.37V75.38ZM805.83 75.38C805.83 62.99 798.22 54.74 786.93 54.74C775.64 54.74 767.81 63 767.81 75.38C767.81 87.76 775.52 96.02 786.93 96.02C798.34 96.02 805.83 87.76 805.83 75.38Z" fill="#3F3F3F"></path>
+<path d="M824.03 39.96V28.01H832.72V39.96H824.03ZM824.03 102.54V48.22H832.72V102.54H824.03Z" fill="#3F3F3F"></path>
+<path d="M842.09 102.54V48.22H850.78V55.17C854.58 50.39 861.43 47.13 867.73 47.13C881.31 47.13 890.33 55.82 890.33 68.86V102.54H881.64V70.38C881.64 61.04 875.45 54.73 866.21 54.73C856.97 54.73 850.78 61.03 850.78 70.38V102.54H842.09Z" fill="#3F3F3F"></path>
+<path d="M941.03 48.22H949.72V96.68C949.72 112.98 938.96 123.84 922.99 123.84C909.84 123.84 899.63 115.26 897.46 102.54H905.61C907.24 110.69 914.19 116.23 922.99 116.23C933.75 116.23 941.03 108.41 941.03 96.67V92.87C937.12 98.63 929.51 102.54 922.23 102.54C906.69 102.54 896.26 91.46 896.26 74.83C896.26 58.2 906.69 47.12 922.23 47.12C929.51 47.12 937.01 51.03 941.03 56.9V48.21V48.22ZM941.03 74.83C941.03 62.77 933.86 54.73 923.1 54.73C912.34 54.73 904.96 62.77 904.96 74.83C904.96 86.89 912.24 94.93 923.1 94.93C933.96 94.93 941.03 86.89 941.03 74.83Z" fill="#3F3F3F"></path>
+<path d="M647.74 61.71C652.51 58.24 655.77 52.37 655.77 46.95C655.77 35.88 646.98 28.39 633.74 28.39H598.81V102.85H638.62C652.41 102.85 661.63 94.38 661.63 81.69C661.63 72.68 656.1 64.65 647.74 61.72V61.71ZM608.58 37.07H633.74C641.12 37.07 646.01 41.41 646.01 47.81C646.01 54.21 641.12 58.55 633.74 58.55H608.58V37.06V37.07ZM638.62 94.17H608.58V67.25H638.73C646.55 67.25 651.86 72.68 651.86 80.82C651.86 88.96 646.54 94.17 638.62 94.17Z" fill="#3E3E3E"></path>
+<path d="M411.27 166.94C411.27 149.99 421.92 138.69 437.78 138.69C445.06 138.69 452.88 142.82 457.12 148.9V139.77H465.81V194.09H457.12V184.96C452.88 191.04 445.06 195.17 437.78 195.17C421.92 195.17 411.27 183.87 411.27 166.92V166.94ZM457.12 166.94C457.12 154.55 449.73 146.3 438.65 146.3C427.57 146.3 419.96 154.56 419.96 166.94C419.96 179.32 427.46 187.58 438.65 187.58C449.84 187.58 457.12 179.32 457.12 166.94Z" fill="#3F3F3F"></path>
+<path d="M478.43 180.19V147.38H469.74V139.77H478.43V119.56H487.12V139.77H502.98V147.38H487.12V180.19C487.12 184.64 489.94 187.58 494.07 187.58H503.52V194.1C500.8 194.75 497.22 195.19 494.61 195.19C484.94 195.19 478.42 189.21 478.42 180.2L478.43 180.19Z" fill="#3F3F3F"></path>
+<path d="M504.86 166.94C504.86 149.99 515.51 138.69 531.37 138.69C538.65 138.69 546.47 142.82 550.71 148.9V139.77H559.4V194.09H550.71V184.96C546.47 191.04 538.65 195.17 531.37 195.17C515.51 195.17 504.86 183.87 504.86 166.92V166.94ZM550.71 166.94C550.71 154.55 543.32 146.3 532.24 146.3C521.16 146.3 513.55 154.56 513.55 166.94C513.55 179.32 521.05 187.58 532.24 187.58C543.43 187.58 550.71 179.32 550.71 166.94Z" fill="#3F3F3F"></path>
+<path d="M371.13 119.6H337.27V194.06H371.13C392.4 194.06 406.63 179.08 406.63 156.72C406.63 134.36 392.41 119.6 371.13 119.6ZM371.13 185.39H347.04V128.29H371.13C386.55 128.29 396.85 139.69 396.85 156.73C396.85 173.77 386.54 185.39 371.13 185.39Z" fill="#3E3E3E"></path>
+<path d="M651.16 194.1V139.78H659.85V146.73C663.65 141.95 670.5 138.69 676.8 138.69C690.38 138.69 699.4 147.38 699.4 160.42V194.1H690.71V161.94C690.71 152.6 684.52 146.29 675.28 146.29C666.04 146.29 659.85 152.59 659.85 161.94V194.1H651.16Z" fill="#3F3F3F"></path>
+<path d="M708.76 131.52V119.57H717.45V131.52H708.76ZM708.76 194.1V139.78H717.45V194.1H708.76Z" fill="#3F3F3F"></path>
+<path d="M732.25 180.19V147.38H723.56V139.77H732.25V119.56H740.94V139.77H756.8V147.38H740.94V180.19C740.94 184.64 743.76 187.58 747.89 187.58H757.34V194.1C754.62 194.75 751.04 195.19 748.43 195.19C738.76 195.19 732.24 189.21 732.24 180.2L732.25 180.19Z" fill="#3F3F3F"></path>
+<path d="M765.63 131.52V119.57H774.32V131.52H765.63ZM765.63 194.1V139.78H774.32V194.1H765.63Z" fill="#3F3F3F"></path>
+<path d="M781.07 166.94C781.07 149.99 791.72 138.69 807.58 138.69C814.86 138.69 822.68 142.82 826.92 148.9V139.77H835.61V194.09H826.92V184.96C822.68 191.04 814.86 195.17 807.58 195.17C791.72 195.17 781.07 183.87 781.07 166.92V166.94ZM826.92 166.94C826.92 154.55 819.53 146.3 808.45 146.3C797.37 146.3 789.76 154.56 789.76 166.94C789.76 179.32 797.26 187.58 808.45 187.58C819.64 187.58 826.92 179.32 826.92 166.94Z" fill="#3F3F3F"></path>
+<path d="M848.91 180.19V147.38H840.22V139.77H848.91V119.56H857.6V139.77H873.46V147.38H857.6V180.19C857.6 184.64 860.42 187.58 864.55 187.58H874V194.1C871.28 194.75 867.7 195.19 865.09 195.19C855.42 195.19 848.9 189.21 848.9 180.2L848.91 180.19Z" fill="#3F3F3F"></path>
+<path d="M881.62 131.52V119.57H890.31V131.52H881.62ZM881.62 194.1V139.78H890.31V194.1H881.62Z" fill="#3F3F3F"></path>
+<path d="M916.67 194.1L894.94 139.78H904.28L920.69 184.43L937.2 139.78H946.54L924.81 194.1H916.66H916.67Z" fill="#3F3F3F"></path>
+<path d="M945.46 166.94C945.46 149.99 956.43 138.69 972.73 138.69C989.03 138.69 1000 150.42 1000 167.81L999.13 168.68H954.26C954.69 179.98 962.08 187.58 972.73 187.58C980.77 187.58 987.72 182.8 990.11 175.63H998.8C995.32 187.36 984.89 195.19 972.72 195.19C956.42 195.19 945.45 183.89 945.45 166.94H945.46ZM990.77 161.07C988.81 152.27 981.53 146.29 972.73 146.29C963.93 146.29 956.65 152.27 954.69 161.07H990.76H990.77Z" fill="#3F3F3F"></path>
+<path d="M644.38 128.29V119.61H588.28V128.29H611.45V185.38H588.28V194.06H611.45H621.22H644.39V185.38H621.22V128.29H644.39H644.38Z" fill="#3E3E3E"></path>
+<path d="M122.93 0H104.57C42.02 0 0 44.09 0 109.7C0 175.31 42.02 220 104.57 220H122.93C185.48 220 227.5 175.67 227.5 109.7C227.5 43.73 185.48 0 122.93 0ZM80.9 106.25C81.12 76.96 84.17 52.03 89.78 34.03C95.08 17 102.26 7.59 110.01 7.51V106.25H80.91H80.9ZM110 113.75V212.49C102.26 212.41 95.08 202.94 89.77 185.79C84.2 167.79 81.15 142.94 80.9 113.75H110ZM117.5 85V71.25H214.23C215.66 75.66 216.83 80.25 217.73 85H117.5ZM117.5 63.75V50H204.47C207.15 54.33 209.5 58.92 211.5 63.75H117.51H117.5ZM93.36 9.35C81.03 24.9 73.74 59.13 73.4 106.25H44.75C45.56 54.5 64.42 17.78 93.36 9.35ZM73.4 113.75C73.8 160.89 81.1 195.1 93.4 210.65C64.54 202.22 45.69 165.52 44.75 113.75H73.39H73.4ZM117.5 182.87V163.7L159.99 206.19C155.21 207.96 150.22 209.36 145.02 210.39L117.5 182.87ZM117.5 153.09V133.92L179.62 196.04C175.78 198.69 171.72 201.03 167.46 203.05L117.5 153.09ZM137.7 113.75H156.87L207.51 164.39C205.32 168.53 202.85 172.45 200.11 176.16L137.7 113.75ZM167.48 113.75H186.65L215.84 142.94C214.52 147.9 212.88 152.66 210.94 157.2L167.49 113.75H167.48ZM197.25 113.75H219.92C219.72 120.87 219 127.73 217.78 134.28L197.25 113.75ZM218.15 106.25H117.5V92.5H218.93C219.49 96.96 219.82 101.55 219.93 106.25H218.14H218.15ZM199.3 42.5H117.5V28.75H186.1C188.61 30.85 191.02 33.09 193.31 35.5C195.43 37.73 197.42 40.07 199.29 42.5H199.3ZM175.61 21.25H117.5V7.5H122.93C142.87 7.5 160.72 12.21 175.61 21.25ZM34.19 35.5C44.54 24.61 57.36 16.8 72.05 12.24C50.92 29.22 37.91 62.83 37.25 106.26H7.57C8.25 77.57 17.4 53.16 34.19 35.51V35.5ZM34.2 184.32C17.52 166.68 8.37 142.33 7.58 113.75H37.26C38.02 157.18 51.05 190.78 72.12 207.76C57.41 203.17 44.57 195.3 34.19 184.33L34.2 184.32ZM117.5 212.5V193.47L135.81 211.78C131.62 212.24 127.33 212.5 122.93 212.5H117.5ZM193.3 184.32C190.88 186.88 188.32 189.25 185.65 191.47L117.5 123.32V113.75H127.1L195.37 182.02C194.69 182.79 194.01 183.58 193.31 184.32H193.3Z" fill="#3E3E3E"></path>
+</svg>
+</a>
+  <p class="site-footer__tagline"><span>Open Data · Better Buildings</span> <span>Better Business · Better Planet</span></p>
+  <div class="site-footer__buttons">
+    <a class="btn btn--primary" href="https://app.gbdi.io/" target="_blank" rel="noopener">
+  <span class="btn__label">Sign up</span><svg class="icon-arrow" viewBox="0 0 10.667 10" width="11" height="10" aria-hidden="true" focusable="false"><path fill="currentColor" d="M 5.594 9.18 L 4.787 8.383 L 7.587 5.582 L 1.22 5.582 L 1.22 4.418 L 7.587 4.418 L 4.787 1.622 L 5.594 0.82 L 9.774 5 Z"/></svg>
+
+</a>
+
+    <a class="btn btn--secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfhUf_u1IkptRj-CPOWTPJhyooyzdQsA8TzX88Rflu-ctdItg/viewform" target="_blank" rel="noopener">
+  <span class="btn__label">Join community</span>
+</a>
+
+  </div>
+  <ul class="site-footer__social">
+    <li><a href="https://www.linkedin.com/company/global-building-data-initiative" target="_blank" rel="noopener"><img src="/gbdi.io/assets/img/icon-linkedin.png" alt="GBDI on LinkedIn" width="20" height="18"></a></li>
+    <li><a href="https://bsky.app/profile/gbdi.io" target="_blank" rel="noopener"><img src="/gbdi.io/assets/img/icon-bluesky.svg" alt="GBDI on Bluesky" width="21" height="18"></a></li>
+  </ul>
+  <p class="site-footer__copy">© 2026 GBDI · All rights reserved</p>
+  <p class="site-footer__terms"><a href="/gbdi.io/termsandconditions">Terms and conditions</a></p>
+</footer>
+
+  <script src="/gbdi.io/assets/js/menu.js" defer></script>
+  <script src="/gbdi.io/assets/js/platform-carousel.js" defer></script>
+  <script src="/gbdi.io/assets/js/platform-tabs.js" defer></script>
+</body>
+</html>
