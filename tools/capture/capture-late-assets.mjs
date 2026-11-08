@@ -13,9 +13,9 @@ import { chromium } from "playwright";
 import fs from "node:fs";
 
 const BASE = process.argv[2] || "https://www.gbdi.io";
-const PAGES = ["/", "/about", "/community", "/platform", "/resources", "/clear", "/launch-webinar",
-  "/the-importance-of-data", "/understanding-the-data-collection-process", "/open-data-format",
-  "/frequently-asked-questions", "/job-opportunities", "/termsandconditions"];
+// Only the pages with tabs, carousels or scroll effects; the first full run
+// (all 13 pages, three widths) ran out of time on 8 Nov 2026.
+const PAGES = ["/", "/platform", "/about"];
 const SRC = "_source-assets/framer";
 const OUT = `${SRC}/late`;
 fs.mkdirSync(OUT, { recursive: true });
@@ -23,7 +23,7 @@ const have = new Set([...fs.readdirSync(SRC), ...fs.readdirSync(`${SRC}/fonts`)]
 const found = new Map(); // name -> {url, pages:Set}
 
 const browser = await chromium.launch();
-for (const width of [1440, 1024, 390]) {
+for (const width of [1440, 390]) {
   for (const path of PAGES) {
     const context = await browser.newContext({ viewport: { width, height: 900 } });
     const page = await context.newPage();
@@ -55,7 +55,7 @@ for (const width of [1440, 1024, 390]) {
         els.forEach((e, i) => e.setAttribute("data-late-click", i));
         return els.length;
       });
-      for (let i = 0; i < Math.min(n, 80); i++) {
+      for (let i = 0; i < Math.min(n, 40); i++) {
         await page.locator(`[data-late-click="${i}"]`).click({ timeout: 2000, force: true }).catch(() => {});
         await page.waitForTimeout(400);
       }
