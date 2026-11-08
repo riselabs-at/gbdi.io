@@ -124,3 +124,15 @@ by step. Update this table whenever a step adds a folder.
 | `_source-assets/framer/` | Everything captured from the Framer site (step 1): CDN files, HTML, text, metadata, inline SVGs. Not published |
 | `tools/capture/` | The capture scripts (step 1); see its README |
 | `.github/workflows/capture.yml` | Runs the capture on GitHub's runner and commits the result |
+| `.github/workflows/pages.yml` | Builds with Jekyll, checks links, images and alt text, publishes `main` to the `gh-pages` branch |
+| `docs/02-design-system.md` | Measured tokens and layout rules, and how they were measured |
+| `_config.yml`, `Gemfile` | Jekyll settings, shared links, the Plausible switch |
+| `_data/` | Navigation, resources menu, FAQ, team, partners: edit content here without touching HTML |
+| `_includes/`, `_layouts/` | Header, footer, buttons, components; the default and resource layouts |
+| `_sass/` | Tokens, fonts, base, one partial per component or page |
+| `assets/` | Compiled CSS entry point, scripts, fonts (with `README.md`), images, the launch PDF |
+| `pages/` | One file per page, `permalink` set to the exact live URL |
+| `tools/reference/` | Offline render and measuring of the captured Framer pages |
+| `tools/preview/` | Local stand-in for `jekyll build` (Jekyll cannot run in the AI environment) |
+| `tools/visual/` | Visual check against the baseline |
+| `tools/assets/` | Makes web versions of the captured images |

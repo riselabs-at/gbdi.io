@@ -1,0 +1,18 @@
+# Navigation, exactly as on the live site (8 Nov 2026).
+
+# Desktop header, left to right.
+main:
+  - { label: Home, url: / }
+  - { label: About, url: /about }
+  - { label: Community, url: /community }
+  - { label: Platform, url: /platform }
+  - { label: Resources, url: /resources }
+
+# Phone and tablet menu, top to bottom. A different order from the desktop
+# header on the live site; logged in docs/content-issues.md.
+menu:
+  - { label: Home, url: / }
+  - { label: Platform, url: /platform }
+  - { label: Community, url: /community }
+  - { label: About, url: /about }
+  - { label: Resources, url: /resources }

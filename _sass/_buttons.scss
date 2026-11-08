@@ -1,0 +1,18 @@
+// Buttons as on the live site: 42 px tall, 4 px corners, Satoshi Variable
+// 16 / 25.6, arrow 10 px after the label.
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 42px;
+  padding: 8px 16px;
+  border-radius: var(--radius-s);
+  @include ui;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+  &:hover { opacity: 0.85; }
+  .icon-arrow { flex: none; width: 11px; height: 10px; }
+}
+.btn--primary { background: var(--green-button); color: var(--white); }
+.btn--secondary { background: var(--white); color: var(--text); }
+.btn--panel { background: var(--panel); color: var(--text); }

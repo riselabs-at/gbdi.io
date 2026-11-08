@@ -1,0 +1,19 @@
+// Stand-in font files until GBDI's own arrive (H3): see assets/fonts/README.md.
+
+@mixin face($family, $file, $weight: 400, $format: "woff2") {
+  @font-face {
+    font-family: $family;
+    src: url("../fonts/#{$file}") format($format);
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@include face("Sk-Modernist", "sk-modernist-regular.woff", 400, "woff");
+@include face("Satoshi", "satoshi-400.woff2", 400);
+@include face("Satoshi", "satoshi-500.woff2", 500);
+@include face("Satoshi", "satoshi-700.woff2", 700);
+@include face("Satoshi Variable", "satoshi-variable.woff2", 400);
+@include face("Inter", "inter-400-latin.woff2", 400);
+@include face("Inter", "inter-700-latin.woff2", 700);

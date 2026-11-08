@@ -1,0 +1,42 @@
+{%- comment -%}
+  Site header. Framer styles it per page and per layout; each page sets
+  header_desktop, header_tablet and header_phone in its front matter:
+    joined   grey panel, rounded at the top, runs into the grey hero below
+    rounded  grey panel, rounded all round
+    white    white panel, rounded at the top, 1 px line below
+  header_fixed: true keeps it at the top while scrolling (the four main
+  pages); resource pages scroll it away.
+{%- endcomment -%}
+{%- assign hd = page.header_desktop | default: "rounded" -%}
+{%- assign ht = page.header_tablet | default: "rounded" -%}
+{%- assign hp = page.header_phone | default: "rounded" -%}
+<header class="site-header{% if page.header_fixed %} site-header--fixed{% endif %} hd-{{ hd }} ht-{{ ht }} hp-{{ hp }}">
+  <div class="site-header__panel">
+    <a class="site-header__logo" href="{{ '/' | relative_url }}">{% include svg/logo.svg %}</a>
+    <nav class="site-header__nav only-desktop" aria-label="Main">
+      <ul>
+        {%- for item in site.data.nav.main %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <div class="site-header__actions not-phone">
+      {%- comment -%} The live site's Join goes to the form on desktop and to the app on tablet. {%- endcomment -%}
+      {% include button.html href=site.links.join_form label="Join" style="secondary" class="only-desktop" %}
+      {% include button.html href=site.links.app label="Join" style="secondary" class="only-tablet" %}
+      {% include button.html href=site.links.app label="Sign in" arrow=true %}
+    </div>
+    <button class="site-header__toggle not-desktop" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu" hidden>
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-menu" id="site-menu" hidden>
+      {% include button.html href=site.links.app label="Sign up" arrow=true %}
+      <a class="site-menu__join" href="{{ site.links.join_form }}" target="_blank" rel="noopener">Join Community</a>
+      <ul>
+        {%- for item in site.data.nav.menu %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</header>

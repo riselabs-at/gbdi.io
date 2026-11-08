@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- comment -%}
+    Titles and descriptions per page are an allowed invisible change (work
+    order 0.3). The live site gives every page the site title and the
+    tagline; pages here set their own.
+  {%- endcomment -%}
+  {%- if page.title and page.url != "/" %}{% assign full_title = page.title | append: " – " | append: site.title %}{% else %}{% assign full_title = site.title %}{% endif %}
+  {%- assign description = page.description | default: site.description %}
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ description | xml_escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ full_title | xml_escape }}">
+  <meta property="og:description" content="{{ description | xml_escape }}">
+  <meta property="og:image" content="{{ site.share_image | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ full_title | xml_escape }}">
+  <meta name="twitter:description" content="{{ description | xml_escape }}">
+  <meta name="twitter:image" content="{{ site.share_image | absolute_url }}">
+  <meta name="robots" content="max-image-preview:large">
+  <link rel="icon" href="{{ '/assets/img/favicon-light.jpg' | relative_url }}" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="{{ '/assets/img/favicon-dark.jpg' | relative_url }}" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="{{ '/assets/fonts/satoshi-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/sk-modernist-regular.woff' | relative_url }}" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {%- if site.plausible and jekyll.environment == "production" %}
+  <script defer data-domain="{{ site.plausible_domain }}" src="https://plausible.io/js/script.js"></script>
+  {%- endif %}
+</head>
+<body class="page--{{ page.background | default: 'white' }} page-{{ page.slug }}">
+  <a class="skip-link visually-hidden" href="#main">Skip to content</a>
+  {% include header.html %}
+  <main id="main"{% if page.header_fixed %} class="has-fixed-header"{% endif %}>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/menu.js' | relative_url }}" defer></script>
+  {%- for script in page.scripts %}
+  <script src="{{ '/assets/js/' | append: script | append: '.js' | relative_url }}" defer></script>
+  {%- endfor %}
+</body>
+</html>

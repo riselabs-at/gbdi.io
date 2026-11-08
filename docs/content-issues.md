@@ -31,3 +31,11 @@ were checked against, or found in, the step 1 capture of 8 November 2026.
 | `/` | Launch banner text differs between desktop and phone | Desktop: "The Open Building Data Platform is now live! Take a sneak-peek or try it out. Missed the Online Launch Event? Watch it here." Phone: "...is now live February 17th! Take a sneak-peek." Copy each layout as it is | Capture 8 Nov |
 | Site-wide | Phone menu differs from the desktop header | Phone: Sign up, Join Community, then Home, Platform, Community, About, Resources. Desktop: Home, About, Community, Platform, Resources, Join, Sign in. Copy each layout as it is | Capture 8 Nov |
 | `/frequently-asked-questions` | Answer 3 says "A free data template is available for download on the Open Data Format page" | Matches the review's point that the promised template is missing; to check on `/open-data-format` | Capture 8 Nov |
+| Tablet header | "Join" links to app.gbdi.io on tablet, to the Google Form on desktop | Same label, different target depending on screen width. Copied as it is | Capture 8 Nov |
+| `/job-opportunities`, `/about` and others | Email links written `mailto: name@...` with a space | Works in most mail programs but is not a valid address; copied as it is | Capture 8 Nov |
+| `/community` | SE2050 link is " https://se2050.org" with a leading space | Copied as it is | Capture 8 Nov |
+| `/launch-webinar` | The sentence after "Beta" is joined with an em-dash (U+2014) | House style for new writing avoids em-dashes; GBDI's text is copied as it is | Capture 8 Nov |
+| `/clear` | "Founded by RICS, WBSCD, and GBDI" | "WBSCD" looks like a typo for WBCSD (spelled WBCSD elsewhere on the page) | Capture 8 Nov |
+| `/clear` | "Category of activity : collaboration", "Harmonized WLCA framework : " | Space before the colon | Capture 8 Nov |
+| `/open-data-format` | Email address office@gbdi.io in plain text, not a link | Inconsistent with other pages | Capture 8 Nov |
+| `/understanding-the-data-collection-process` | Link to the Open Data Format page uses the full address https://www.gbdi.io/open-data-format and opens in a new tab | Other internal links are relative and open in the same tab | Capture 8 Nov |
