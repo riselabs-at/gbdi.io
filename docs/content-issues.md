@@ -42,3 +42,5 @@ were checked against, or found in, the step 1 capture of 8 November 2026.
 | `/community` | EPFL and USP appear twice, in Lead Partners and in Research partners | USP uses a different logo file each time. Possibly intended | Capture 8 Nov |
 | `/community` | "Research partners" in lower case | The other three wall titles are capitalised | Capture 8 Nov |
 | `/community` | RISE logo links to riseregenerate.com | Confirms the review: it is in Lead Partners on this page | Review 4 Nov, capture 8 Nov |
+| `/platform` | "Get in touch" links to `mailto: office@gbdi.io` (space after the colon) | Same as the other mailto links; copied as it is | Capture 8 Nov |
+| `/platform` | Policy Makers text: "exchange  of" with a double space | Not visible in HTML; copied as it is | Capture 8 Nov |
