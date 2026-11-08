@@ -26,7 +26,6 @@ were checked against, or found in, the step 1 capture of 8 November 2026.
 | `/about` | Objectives | No target year or method given | Review 4 Nov |
 | `/about` | Phase timeline | Skips 2026 | Review 4 Nov |
 | `/frequently-asked-questions` | Scope described as "upfront embodied" | Flagged in the review; see the review for the reasoning | Review 4 Nov |
-| To confirm from the capture | RISE logo | Links to riseregenerate.com | Review 4 Nov |
 | All pages | No `<h1>`, one shared title, images without `alt`, no `lang` | Confirmed 8 Nov: no `<h1>` and no `lang` on any page; for example 11 of 13 images on `/` and 12 of 12 on `/about` have no `alt`. Fixed in Phase A as allowed invisible changes | Review 4 Nov, capture 8 Nov |
 | `/` | Launch banner text differs between desktop and phone | Desktop: "The Open Building Data Platform is now live! Take a sneak-peek or try it out. Missed the Online Launch Event? Watch it here." Phone: "...is now live February 17th! Take a sneak-peek." Copy each layout as it is | Capture 8 Nov |
 | Site-wide | Phone menu differs from the desktop header | Phone: Sign up, Join Community, then Home, Platform, Community, About, Resources. Desktop: Home, About, Community, Platform, Resources, Join, Sign in. Copy each layout as it is | Capture 8 Nov |
@@ -39,3 +38,7 @@ were checked against, or found in, the step 1 capture of 8 November 2026.
 | `/clear` | "Category of activity : collaboration", "Harmonized WLCA framework : " | Space before the colon | Capture 8 Nov |
 | `/open-data-format` | Email address office@gbdi.io in plain text, not a link | Inconsistent with other pages | Capture 8 Nov |
 | `/understanding-the-data-collection-process` | Link to the Open Data Format page uses the full address https://www.gbdi.io/open-data-format and opens in a new tab | Other internal links are relative and open in the same tab | Capture 8 Nov |
+| `/community` | BECD logo has no link | Every other logo links to its partner. Kept without a link | Capture 8 Nov |
+| `/community` | EPFL and USP appear twice, in Lead Partners and in Research partners | USP uses a different logo file each time. Possibly intended | Capture 8 Nov |
+| `/community` | "Research partners" in lower case | The other three wall titles are capitalised | Capture 8 Nov |
+| `/community` | RISE logo links to riseregenerate.com | Confirms the review: it is in Lead Partners on this page | Review 4 Nov, capture 8 Nov |
